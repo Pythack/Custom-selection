@@ -17,3 +17,4 @@
 
 # Screenshots
 <img alt="Screenshot settings_page" src="https://pythack.github.io/Selection-customizer/settings%20page.png">
+<img alt="Screenshot settings_page" src="https://pythack.github.io/Selection-customizer/settings%20page.png">
