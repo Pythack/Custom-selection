@@ -5,7 +5,7 @@ function restoreOptions() {
   };
 
   function setCurrentChoice(result) {
-    var css = '::selection { background: ' + result.background_color + '; color: ' + result.color + ';}';
+    var css = '::selection { background: ' + result.background_color + '; color: ' + result.color + /*'; text-decoration: ' + result.underline + */'}';
     console.log(css);
     browser.tabs.insertCSS({code: css});
   };
