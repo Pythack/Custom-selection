@@ -1,7 +1,7 @@
 # Selection-customizer
 <div align="center">
     <br> Github repository stats:
-    <img src="https://badgen.net/github/stars/Pythack/Selection-customize" >
+    <img src="https://badgen.net/github/stars/Pythack/Selection-customizer" >
     <img src="https://badgen.net/github/open-issues/Pythack/Selection-customizer" >
     <img src="https://badgen.net/github/open-prs/Pythack/Selection-customizer" >
     <img src="https://badgen.net/github/tag/Pythack/Selection-customizer" >
