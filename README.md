@@ -20,8 +20,8 @@
 ### Available
 * Change the text color of the text selection
 * Change the background color of the selection
-* View live preview while editing
 * Change the text shadow of the selection
+* View live preview while editing
 
 ### In development
 * Customize for specific websites
