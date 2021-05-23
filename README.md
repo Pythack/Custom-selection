@@ -21,9 +21,10 @@
 * Change the text color of the text selection
 * Change the background color of the selection
 * View live preview while editing
+* Change the text shadow of the selection
 
 ### In development
-* Change the text shadow of the selection
+* Customize for specific websites
 
 # Screenshots
 <img alt="Screenshot settings_page" src="https://pythack.github.io/Selection-customizer/settings%20page.png">
