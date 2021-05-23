@@ -5,7 +5,11 @@ function restoreOptions() {
   };
 
   function setCurrentChoice(result) {
-    var css = '::selection { background: ' + result.background_color + '; color: ' + result.color + /*'; text-decoration: ' + result.underline + */'}';
+    if (result.shadowActivated) {
+      var css = '::selection { background: ' + result.background_color + '; color: ' + result.color + '; text-shadow: ' + result.shadowColor + ' 0px 0px 15px}';
+    } else {
+      var css = '::selection { background: ' + result.background_color + '; color: ' + result.color + '; text-shadow: }';
+    }
     console.log(css);
     browser.tabs.insertCSS({code: css});
   };
