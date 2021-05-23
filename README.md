@@ -26,6 +26,11 @@
 ### In development
 * Customize for specific websites
 
+## Permissions
+* Display notifications to you
+* Access browser tabs
+* Access your data for all web sites
+
 # Screenshots
 <img alt="Screenshot settings_page" src="https://pythack.github.io/Selection-customizer/settings%20page.png">
 <img alt="Screenshot settings_page" src="https://pythack.github.io/Selection-customizer/google%20demo.png">
