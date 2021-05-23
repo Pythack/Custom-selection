@@ -6,7 +6,7 @@ function restoreOptions() {
 
   function setCurrentChoice(result) {
     if (result.shadowActivated) {
-      var css = '::selection { background: ' + result.background_color + '; color: ' + result.color + '; text-shadow: ' + result.shadowColor + ' 0px 0px 15px}';
+      var css = '::selection { background: ' + result.background_color + '; color: ' + result.color + '; text-shadow: ' + result.shadowColor + ' 0px 0px ' + result.shadowBlur + 'px}';
     } else {
       var css = '::selection { background: ' + result.background_color + '; color: ' + result.color + '; text-shadow: }';
     }

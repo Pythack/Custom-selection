@@ -14,7 +14,8 @@ function saveOptions(e) {
     background_color: document.querySelector("#background_color").value || "#007ef3",
     color: document.querySelector("#color").value || "white",
     shadowActivated: document.querySelector("input#activate_textShadow").checked || false,
-    shadowColor: document.querySelector("#shadow-color").value || "none"
+    shadowColor: document.querySelector("#shadow-color").value || "none",
+    shadowBlur: document.querySelector("#shadow-blur").value || "0"
     //fontSize: document.querySelector("#font-size").value || "auto",
   });
   preferencesSave.then(saveSuccess, saveError)
@@ -27,7 +28,7 @@ function updatePreview() {
   document.querySelector("#preview").style.background = document.querySelector("#background_color").value;
   document.querySelector("#preview").style.color = document.querySelector("#color").value;
   if (document.querySelector("input#activate_textShadow").checked) {
-    document.querySelector("#preview").style.textShadow = document.querySelector("#shadow-color").value + " 0px 0px 15px";
+    document.querySelector("#preview").style.textShadow = document.querySelector("#shadow-color").value + " 0px 0px " + document.querySelector("#shadow-blur").value + "px";
   } else {
     document.querySelector("#preview").style.textShadow = "";
   }
@@ -42,6 +43,7 @@ function restoreOptions() {
     document.querySelector("#color-picker-textColor").value = result.color || "#ffffff";
     document.querySelector("#shadow-color").value = result.shadowColor || "#ffffff";
     document.querySelector("input#color-picker-shadowColor").value = result.shadowColor;
+    document.querySelector("#shadow-blur").value = result.shadowBlur || "0px";
     document.querySelector("input#activate_textShadow").checked = result.shadowActivated;
     if (result.shadowActivated) {
       document.querySelector('div#textSadowOptions').style.display = "block";
@@ -56,7 +58,7 @@ function restoreOptions() {
     document.querySelector("#preview").style.background = document.querySelector("#background_color").value;
     document.querySelector("#preview").style.color = document.querySelector("#color").value;
     if (document.querySelector("input#activate_textShadow").checked) {
-      document.querySelector("#preview").style.textShadow = document.querySelector("#shadow-color").value + " 0px 0px 15px";
+      document.querySelector("#preview").style.textShadow = document.querySelector("#shadow-color").value + " 0px 0px " + document.querySelector("#shadow-blur").value + "px";
     } else {
       document.querySelector("#preview").style.textShadow = "";
     }

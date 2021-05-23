@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Selection styler",
   "author": "Pythack",
-  "version": "1.1.7",
+  "version": "1.2",
   "description": "Change the color and background color of the selection",
   "background": {
     "scripts": ["./background.js"]
