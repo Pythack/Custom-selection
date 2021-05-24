@@ -32,5 +32,7 @@
 * Access your data for all web sites
 
 # Screenshots
-<img alt="Screenshot settings_page" src="https://pythack.github.io/Selection-customizer/settings%20page.png">
-<img alt="Screenshot settings_page" src="https://pythack.github.io/Selection-customizer/google%20demo.png">
+Screenshot | Caption
+----- | -------
+<img alt="Screenshot settings_page" src="https://pythack.github.io/Selection-customizer/settings%20page.png"> | Settings page
+<img alt="Screenshot settings_page" src="https://pythack.github.io/Selection-customizer/google%20demo.png"> | Demo on Google
