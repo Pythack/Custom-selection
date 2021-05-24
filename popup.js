@@ -8,6 +8,16 @@ function saveError(item) {
   setTimeout(function(){browser.notifications.clear("selesty-save-status");}, 5000);
 }
 
+class Custom_option {
+  constructor(url, color, background, shadowActivated, shadowColor, shadowBlur) {
+    this.url = url;
+    this.color = color;
+    this.background = background;
+    this.shadowActivated = shadowActivated;
+    this.shadowColor = shadowColor;
+    this.shadowBlur = shadowBlur;
+  }
+
 function saveOptions(e) {
   e.preventDefault();
   let preferencesSave = browser.storage.local.set({
