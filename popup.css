@@ -97,6 +97,10 @@ input[type="url"]:valid {
   display: none;
 }
 
+#remove_custom {
+  display: none;
+}
+
 #save_btn {
   color: #ffffff;
   background: #0060df;

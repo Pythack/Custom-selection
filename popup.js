@@ -1,23 +1,8 @@
-function saveSuccess(item) {
-  browser.notifications.create("selesty-save-status", {type: 'basic', title: 'Selection styler: Saving success', message: "Preferences saved successfully. ", "iconUrl": browser.runtime.getURL("./icon.png")})
-  setTimeout(function(){browser.notifications.clear("selesty-save-status");}, 5000);
-}
+function saveSuccess(item){browser.notifications.create("selesty-save-status",{type:'basic',title:'Selection styler: Saving success',message:"Preferences saved successfully. ","iconUrl":browser.runtime.getURL("./icon.png")});setTimeout(function(){browser.notifications.clear("selesty-save-status")},5000)};
+function saveError(item){browser.notifications.create("selesty-save-status",{type:'basic',title:'Selection styler: Saving error',message:"Error saving preferences","iconUrl":browser.runtime.getURL("./icon.png")});setTimeout(function(){browser.notifications.clear("selesty-save-status")},5000)};
 
-function saveError(item) {
-  browser.notifications.create("selesty-save-status", {type: 'basic', title: 'Selection styler: Saving error', message: "Error saving preferences", "iconUrl": browser.runtime.getURL("./icon.png")})
-  setTimeout(function(){browser.notifications.clear("selesty-save-status");}, 5000);
-}
+class Custom_option{constructor(url,background,color,shadowActivated,shadowColor,shadowBlur){this.url=url;this.color=color;this.background=background;this.shadowActivated=shadowActivated;this.shadowColor=shadowColor;this.shadowBlur=shadowBlur}};
 
-class Custom_option {
-  constructor(url, background, color, shadowActivated, shadowColor, shadowBlur) {
-    this.url = url;
-    this.color = color;
-    this.background = background;
-    this.shadowActivated = shadowActivated;
-    this.shadowColor = shadowColor;
-    this.shadowBlur = shadowBlur;
-  }
-}
 
 function addCustom() {
 
@@ -34,6 +19,11 @@ function addCustom() {
     browser.storage.local.set({
       customOptions: customs
     });
+    var optionToAdd = document.createElement("option");
+    optionToAdd.textContent = custom_url;
+    optionToAdd.value = custom_url;
+    var select = document.querySelector("#custom_select");
+    select.appendChild(optionToAdd);
   }
 
   function onError(error) {
@@ -43,6 +33,29 @@ function addCustom() {
   let getting = browser.storage.local.get();
   getting.then(continueCustom, onError);
 }
+
+function removeCustom() {
+
+  function continueCustom(result) {
+    var selectIndex = document.querySelector("#custom_select").selectedIndex - 1;
+    console.log("Select index: " + selectIndex);
+    var customs = result.customOptions;
+    customs.splice(selectIndex, 1);
+    browser.storage.local.set({
+      customOptions: customs
+    });
+    console.log(document.querySelector("#custom_select").selectedIndex);
+    var optionToRemove = document.querySelector("#custom_select").childNodes.item(document.querySelector("#custom_select").selectedIndex);
+    optionToRemove.remove();
+  }
+
+  function onError(error) {
+    console.log(`Error: ${error}`);
+  }
+
+  let getting = browser.storage.local.get();
+  getting.then(continueCustom, onError);
+};
 
 function saveOptions(e) {
   e.preventDefault();
@@ -58,7 +71,7 @@ function saveOptions(e) {
   browser.runtime.sendMessage({
           request:"inject-css"
   });
-}
+};
 
 function updatePreview() {
   document.querySelector("#preview").style.background = document.querySelector("#background_color").value;
@@ -68,7 +81,7 @@ function updatePreview() {
   } else {
     document.querySelector("#preview").style.textShadow = "";
   }
-}
+};
 
 function restoreOptions() {
 
@@ -91,11 +104,11 @@ function restoreOptions() {
       var select = document.querySelector("#custom_select");
       select.appendChild(option);
     });
-  }
+  };
 
   function onError(error) {
     console.log(`Error: ${error}`);
-  }
+  };
 
   function updatePreview() {
     document.querySelector("#preview").style.background = document.querySelector("#background_color").value;
@@ -105,59 +118,25 @@ function restoreOptions() {
     } else {
       document.querySelector("#preview").style.textShadow = "";
     }
-  }
+  };
 
   let getting = browser.storage.local.get();
   getting.then(setCurrentChoice, onError);
   updatePreview();
-}
+};
 
 
-function updateColorInput() {
-  var color = document.querySelector("input#color-picker-textColor").value;
-  document.querySelector("input#color").value = color;
-}
-
-function updateBackgroundColorInput() {
-  var color = document.querySelector("input#color-picker-backgroundColor").value;
-  document.querySelector("input#background_color").value = color;
-}
-
-function updateColorInputColor() {
-  var color = document.querySelector("input#color").value;
-  document.querySelector("input#color-picker-textColor").value = color;
-}
-
-function updateBackgroundColorInputColor() {
-  var color = document.querySelector("input#background_color").value;
-  document.querySelector("input#color-picker-backgroundColor").value = color;
-}
-
-function updateShadowColorInput() {
-  var color = document.querySelector("input#color-picker-shadowColor").value;
-  document.querySelector("input#shadow-color").value = color;
-}
-
-function updateShadowColorInputColor() {
-  var color = document.querySelector("input#shadow-color").value;
-  document.querySelector("input#color-picker-shadowColor").value = color;
-}
-
-function updateShadowColorDisplay() {
-  if (document.querySelector("input#activate_textShadow").checked) {
-    document.querySelector('div#textSadowOptions').style.display = "block";
-  } else {
-    document.querySelector('div#textSadowOptions').style.display = "none";
-  }
-}
+function updateColorInput(){var color=document.querySelector("input#color-picker-textColor").value;document.querySelector("input#color").value=color};function updateBackgroundColorInput(){var color=document.querySelector("input#color-picker-backgroundColor").value;document.querySelector("input#background_color").value=color};function updateColorInputColor(){var color=document.querySelector("input#color").value;document.querySelector("input#color-picker-textColor").value=color};function updateBackgroundColorInputColor(){var color=document.querySelector("input#background_color").value;document.querySelector("input#color-picker-backgroundColor").value=color};function updateShadowColorInput(){var color=document.querySelector("input#color-picker-shadowColor").value;document.querySelector("input#shadow-color").value=color};function updateShadowColorInputColor(){var color=document.querySelector("input#shadow-color").value;document.querySelector("input#color-picker-shadowColor").value=color};function updateShadowColorDisplay(){if(document.querySelector("input#activate_textShadow").checked){document.querySelector('div#textSadowOptions').style.display="block"}else{document.querySelector('div#textSadowOptions').style.display="none"}};
 
 function changeCustomDisplay() {
   var selectIndex = document.querySelector("#custom_select").selectedIndex;
   if (selectIndex != 0) {
     document.querySelector("#url_div").style.display = "block";
     document.querySelector("#url_div").value = document.querySelector("#custom_select").value;
+    document.querySelector("#remove_custom").style.display = "block";
   } else {
     document.querySelector("#url_div").style.display = "none";
+    document.querySelector("#remove_custom").style.display = "none";
   }
 }
 
@@ -167,6 +146,7 @@ document.querySelector("form").addEventListener("submit", saveOptions);
 document.querySelector("form").addEventListener("keyup", updatePreview);
 document.querySelector("form").addEventListener("input", updatePreview);
 document.querySelector("#add_custom").addEventListener("click", addCustom);
+document.querySelector("#remove_custom").addEventListener("click", removeCustom);
 document.querySelector("input#activate_textShadow").addEventListener("change", updatePreview);
 document.querySelector("select#custom_select").addEventListener("change", changeCustomDisplay);
 document.querySelector("input#color-picker-textColor").addEventListener("input", updateColorInput);

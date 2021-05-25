@@ -1,3 +1,1 @@
-browser.runtime.sendMessage({
-        request:"inject-css"
-});
+browser.runtime.sendMessage({request:"inject-css"});
