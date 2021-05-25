@@ -1,4 +1,5 @@
 # Selection-customizer
+Customize the text selection.
 ## Stats
 <div align="center">
     <br> Github repository stats:
