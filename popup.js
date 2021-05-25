@@ -45,8 +45,17 @@ function removeCustom() {
       customOptions: customs
     });
     console.log(document.querySelector("#custom_select").selectedIndex);
-    var optionToRemove = document.querySelector("#custom_select").childNodes.item(document.querySelector("#custom_select").selectedIndex);
-    optionToRemove.remove();
+    var optionToRemove = document.querySelector("#custom_select");
+    optionToRemove.remove(document.querySelector("#custom_select").selectedIndex);
+    var selectIndex = document.querySelector("#custom_select").selectedIndex;
+    if (selectIndex != 0) {
+      document.querySelector("#url_div").style.display = "block";
+      document.querySelector("#url_div").value = document.querySelector("#custom_select").value;
+      document.querySelector("#remove_custom").style.display = "block";
+    } else {
+      document.querySelector("#url_div").style.display = "none";
+      document.querySelector("#remove_custom").style.display = "none";
+    }
   }
 
   function onError(error) {
