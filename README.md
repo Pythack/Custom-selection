@@ -23,9 +23,10 @@ Customize the text selection.
 * Change the background color of the selection
 * Change the text shadow of the selection
 * View live preview while editing
+* Customize for specific websites
 
 ### In development
-* Customize for specific websites
+* Style
 
 ## Permissions
 * Display notifications to you
