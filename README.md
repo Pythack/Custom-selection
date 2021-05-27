@@ -37,7 +37,7 @@ Customize the text selection.
 
 <i>Settings page</i><br/>
 <img alt="Screenshot settings_page" src="https://pythack.github.io/Selection-customizer/settings%20page.png">
-<i>Custom settings page</i><br/>
+<br/><i>Custom settings page</i><br/>
 <img alt="Screenshot settings_page" src="https://pythack.github.io/Selection-customizer/custom%20settings%20page.png">
 <br/><i>Demo on Google</i><br/>
 <img alt="Screenshot settings_page" src="https://pythack.github.io/Selection-customizer/google%20demo.png">
