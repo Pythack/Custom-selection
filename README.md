@@ -38,8 +38,8 @@ Customize the text selection.
 <i>Settings page</i><br/>
 <img alt="Screenshot settings_page" src="https://pythack.github.io/Selection-customizer/settings%20page.png">
 <i>Custom settings page</i><br/>
-<img alt="Screenshot settings_page" src="https://pythack.github.io/Selection-customizer/settings%20page.png">
+<img alt="Screenshot settings_page" src="https://pythack.github.io/Selection-customizer/custom%20settings%20page.png">
 <br/><i>Demo on Google</i><br/>
 <img alt="Screenshot settings_page" src="https://pythack.github.io/Selection-customizer/google%20demo.png">
 <br/><i>Custom demo on Github</i><br/>
-<img alt="Screenshot settings_page" src="https://pythack.github.io/Selection-customizer/google%20demo.png">
+<img alt="Screenshot settings_page" src="https://pythack.github.io/Selection-customizer/github%20demo.png">
