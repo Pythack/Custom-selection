@@ -8,7 +8,13 @@
   <body>
     <h1 id="title">Selection customizer</h1>
     <form>
+        <select class="" id="custom_select" name="">
+          <option value="general">General</option>
+        </select><button type="button" id="remove_custom">-</button><br/>
+        <label>Url: </label><br/><input type="url" placeholder="www.google.com" id="add_url"><button type="button" id="add_custom">+</button><br/><br/>
         <!--<label>Url (optional): </label><br/><input type="url" placeholder="https://www.google.com/" id="url"><br/><br/>-->
+        <hr/>
+        <div id="url_div"><label>Url: </label><br/><input type="url" placeholder="white" id="change_url"><br/><br/></div>
         <label>Color: </label><br/><input type="text" placeholder="white" id="color"> <input id="color-picker-textColor" type="color"><br/><br/>
         <label>Background color: </label><br/><input type="text" placeholder="#007ef3" id="background_color"> <input id="color-picker-backgroundColor" type="color"><br/><br/>
         <input id="activate_textShadow" name="activate_textShadow" type="checkbox"><label for="activate_textShadow">Activate text shadow </label><br/><br/>

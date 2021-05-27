@@ -47,6 +47,10 @@ input {
   background: #0060df;
 }
 
+#url_div {
+  display: none;
+}
+
 p {
   width: 3cm;
 }
@@ -90,6 +94,10 @@ input[type="url"]:valid {
 }
 
 #textSadowOptions {
+  display: none;
+}
+
+#remove_custom {
   display: none;
 }
 
