@@ -7,27 +7,26 @@ function restoreOptions(sender) {
     if(result.shadowActivated) {
       var css = '::selection { background: ' + result.background_color + '; color: ' + result.color + '; text-shadow: ' + result.shadowColor + ' 0px 0px ' + result.shadowBlur + 'px}'
     } else {
-      var css = '::selection { background: ' + result.background_color + '; color: ' + result.color + '; text-shadow: }'
-    }
+      var css = '::selection { background: ' + result.background_color + '; color: ' + result.color + '; text-shadow: none}'
+    };
     browser.tabs.insertCSS({
+      allFrames: true,
       code: css
     });
     var url = new URL(sender);
     url = url.host;
-    console.log(url);
     result.customOptions.forEach(element => {
-      console.log(element.url);
       if (element.url.includes(url)) {
         if(element.shadowActivated) {
           var css = '::selection { background: ' + element.background + '; color: ' + element.color + '; text-shadow: ' + element.shadowColor + ' 0px 0px ' + element.shadowBlur + 'px}'
         } else {
-          var css = '::selection { background: ' + element.background + '; color: ' + element.color + '; text-shadow: }'
-        }
-        console.log(css);
+          var css = '::selection { background: ' + element.background + '; color: ' + element.color + '; text-shadow: none}'
+        };
         browser.tabs.insertCSS({
+          allFrames: true,
           code: css
         });
-      }
+      };
     });
 	};
 	let getting = browser.storage.local.get();
@@ -38,7 +37,7 @@ browser.runtime.onMessage.addListener((message) => {
 		case "inject-css":
 			restoreOptions(message.url);
 			break
-	}
+	};
 });
 
 function onIconClicked() {
