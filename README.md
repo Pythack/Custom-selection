@@ -20,8 +20,8 @@ Customize the text selection.
 ## Features
 ### Available
 * Change the text color of the text selection
-* Change the background color of the selection
-* Change the text shadow of the selection
+* Change the background color of the text selection
+* Change the text shadow of the text selection
 * Customize for specific websites
 * View live preview while editing
 
