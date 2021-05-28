@@ -1,2 +1,0 @@
-test:
-- any: ['src/manifest.json.js']
