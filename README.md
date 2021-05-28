@@ -16,6 +16,8 @@ Customize the text selection.
 ## Features
 <img src="https://badgen.net/amo/rating/selection-customizer/"> <img src="https://badgen.net/amo/stars/selection-customizer/"> <img src="https://badgen.net/amo/reviews/selection-customizer/" >
 
+⚠️Extensions can't interact with mozilla websites
+
 Name | Support
 ---- | -------
 Change the color of the text selection | ✔️
@@ -23,7 +25,7 @@ Change the background color of the text selection | ✔️
 Change the text shadow of the text selection | ✔️
 Customize for specific websites | ✔️
 View live preview while editing | ✔️
-Good graphical interface | ⚠️
+Good graphical interface | ❌
 Dark theme | ❌
 
 ### Feature request
