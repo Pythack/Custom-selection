@@ -17,14 +17,14 @@ function addCustom() {
 		optionToAdd.textContent = custom_url;
 		optionToAdd.value = custom_url;
 		var select = document.querySelector("#custom_select");
-		select.appendChild(optionToAdd)
+		select.appendChild(optionToAdd);
 	};
 
 	function onError(error) {
-		console.log(`Error:${error}`)
+		console.log(`Error:${error}`);
 	};
 	let getting = browser.storage.local.get();
-	getting.then(continueCustom, onError)
+	getting.then(continueCustom, onError);
 };
 
 function removeCustom() {
@@ -41,10 +41,10 @@ function removeCustom() {
 		if(selectIndex != 0) {
 			document.querySelector("#url_div").style.display = "block";
 			document.querySelector("#url_div").value = document.querySelector("#custom_select").value;
-			document.querySelector("#remove_custom").style.display = "block"
+			document.querySelector("#remove_custom").style.display = "block";
 		} else {
 			document.querySelector("#url_div").style.display = "none";
-			document.querySelector("#remove_custom").style.display = "none"
+			document.querySelector("#remove_custom").style.display = "none";
 		}
 		document.querySelector("#background_color").value = result.background_color || "#007ef3";
 		document.querySelector("#color-picker-backgroundColor").value = result.background_color || "#007ef3";
@@ -55,9 +55,9 @@ function removeCustom() {
 		document.querySelector("#shadow-blur").value = result.shadowBlur || "0px";
 		document.querySelector("input#activate_textShadow").checked = result.shadowActivated;
 		if(result.shadowActivated) {
-			document.querySelector('div#textShadowOptions').style.display = "block"
+			document.querySelector('div#textShadowOptions').style.display = "block";
 		} else {
-			document.querySelector('div#textShadowOptions').style.display = "none"
+			document.querySelector('div#textShadowOptions').style.display = "none";
 		}
 		document.querySelector("#preview").style.background = document.querySelector("#background_color").value;
 		document.querySelector("#preview").style.color = document.querySelector("#color").value;
@@ -69,10 +69,10 @@ function removeCustom() {
 	};
 
 	function onError(error) {
-		console.log(`Error:${error}`)
+		console.log(`Error:${error}`);
 	};
 	let getting = browser.storage.local.get();
-	getting.then(continueCustom, onError)
+	getting.then(continueCustom, onError);
 };
 
 function saveOptions(e) {
@@ -89,7 +89,7 @@ function saveOptions(e) {
 		preferencesSave.then(saveSuccess, saveError);
     browser.runtime.sendMessage({
 			request: "inject-css"
-		})
+		});
 	} else {
 		function continueCustom(result) {
 			var selectIndex = document.querySelector("#custom_select").selectedIndex - 1;
@@ -108,15 +108,15 @@ function saveOptions(e) {
 			preferencesSave.then(saveSuccess, saveError);
       browser.runtime.sendMessage({
 				request: "inject-css"
-			})
+			});
 		};
 
 		function onError(error) {
 			console.log(`Error:${error}`)
 		};
 		let getting = browser.storage.local.get();
-		getting.then(continueCustom, onError)
-	}
+		getting.then(continueCustom, onError);
+	};
 };
 function updatePreview() {
   document.querySelector("#preview").style.background = document.querySelector("#background_color").value;
@@ -141,7 +141,7 @@ function restoreOptions() {
     document.querySelector("input#activate_textShadow").checked = result.shadowActivated;
     if (result.shadowActivated) {
       document.querySelector('div#textShadowOptions').style.display = "block";
-    }
+    };
     result.customOptions.forEach(element => {
       var option = document.createElement("option");
       option.textContent = element.url;
@@ -162,7 +162,7 @@ function restoreOptions() {
       document.querySelector("#preview").style.textShadow = document.querySelector("#shadow-color").value + " 0px 0px " + document.querySelector("#shadow-blur").value + "px";
     } else {
       document.querySelector("#preview").style.textShadow = "";
-    }
+    };
   };
 
   let getting = browser.storage.local.get();
@@ -191,24 +191,24 @@ function changeCustomDisplay() {
 			document.querySelector("#shadow-blur").value = customs[selectIndex - 1].shadowBlur || "0px";
 			document.querySelector("input#activate_textShadow").checked = customs[selectIndex - 1].shadowActivated;
 			if(customs[selectIndex - 1].shadowActivated) {
-				document.querySelector('div#textShadowOptions').style.display = "block"
+				document.querySelector('div#textShadowOptions').style.display = "block";
 			} else {
-				document.querySelector('div#textShadowOptions').style.display = "none"
-			}
+				document.querySelector('div#textShadowOptions').style.display = "none";
+			};
 			document.querySelector("#preview").style.background = document.querySelector("#background_color").value;
 			document.querySelector("#preview").style.color = document.querySelector("#color").value;
 			if (document.querySelector("input#activate_textShadow").checked) {
 				document.querySelector("#preview").style.textShadow = document.querySelector("#shadow-color").value + " 0px 0px " + document.querySelector("#shadow-blur").value + "px";
 			} else {
 				document.querySelector("#preview").style.textShadow = "";
-			}
+			};
 		};
 
 		function onError(error) {
-			console.log(`Error:${error}`)
+			console.log(`Error:${error}`);
 		};
 		let getting = browser.storage.local.get();
-		getting.then(setCurrentChoice, onError)
+		getting.then(setCurrentChoice, onError);
 	} else {
 		document.querySelector("#url_div").style.display = "none";
 		document.querySelector("#remove_custom").style.display = "none";
@@ -223,9 +223,9 @@ function changeCustomDisplay() {
 			document.querySelector("#shadow-blur").value = result.shadowBlur || "0px";
 			document.querySelector("input#activate_textShadow").checked = result.shadowActivated;
 			if(result.shadowActivated) {
-				document.querySelector('div#textShadowOptions').style.display = "block"
+				document.querySelector('div#textShadowOptions').style.display = "block";
 			} else {
-				document.querySelector('div#textShadowOptions').style.display = "none"
+				document.querySelector('div#textShadowOptions').style.display = "none";
 			}
 			document.querySelector("#preview").style.background = document.querySelector("#background_color").value;
 			document.querySelector("#preview").style.color = document.querySelector("#color").value;
@@ -233,15 +233,15 @@ function changeCustomDisplay() {
 				document.querySelector("#preview").style.textShadow = document.querySelector("#shadow-color").value + " 0px 0px " + document.querySelector("#shadow-blur").value + "px";
 			} else {
 				document.querySelector("#preview").style.textShadow = "";
-			}
+			};
 		};
 
 		function onError(error) {
-			console.log(`Error:${error}`)
+			console.log(`Error:${error}`);
 		};
 		let getting = browser.storage.local.get();
-		getting.then(setCurrentChoice, onError)
-	}
+		getting.then(setCurrentChoice, onError);
+	};
 };
 document.addEventListener("DOMContentLoaded", restoreOptions);
 document.addEventListener("DOMContentLoaded", updatePreview);
