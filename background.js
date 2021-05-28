@@ -4,10 +4,11 @@ function restoreOptions(sender) {
 	};
 
 	function setCurrentChoice(sender, result) {
+		var css;
     if(result.shadowActivated) {
-      var css = '::selection { background: ' + result.background_color + '; color: ' + result.color + '; text-shadow: ' + result.shadowColor + ' 0px 0px ' + result.shadowBlur + 'px}';
+      css = '::selection { background: ' + result.background_color + '; color: ' + result.color + '; text-shadow: ' + result.shadowColor + ' 0px 0px ' + result.shadowBlur + 'px}';
     } else {
-      var css = '::selection { background: ' + result.background_color + '; color: ' + result.color + '; text-shadow: none}';
+      css = '::selection { background: ' + result.background_color + '; color: ' + result.color + '; text-shadow: none}';
     };
     browser.tabs.insertCSS({
       allFrames: true,
@@ -43,6 +44,6 @@ browser.runtime.onMessage.addListener((message) => {
 function onIconClicked() {
 	browser.tabs.create({
 		url: browser.extension.getURL('./popup.html')
-	})
+	});
 };
 browser.browserAction.onClicked.addListener(onIconClicked);
