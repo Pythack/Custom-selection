@@ -11,6 +11,7 @@ Customize the text selection.
     <br/> Firefox addon stats:
     <img src="https://badgen.net/amo/users/selection-customizer/" >
     <img src="https://badgen.net/amo/rating/selection-customizer/" >
+    <img src="https://badgen.net/amo/stars/selection-customizer/?color=green" >
     <img src="https://badgen.net/amo/reviews/selection-customizer/" >
     <img src="https://badgen.net/amo/v/selection-customizer/" >
 </div>
