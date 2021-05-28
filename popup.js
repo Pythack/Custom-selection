@@ -1,7 +1,7 @@
-function saveSuccess(item){browser.notifications.create("selesty-save-status",{type:'basic',title:'Selection styler: Saving success',message:"Preferences saved successfully. ","iconUrl":browser.runtime.getURL("./icon.png")});setTimeout(function(){browser.notifications.clear("selesty-save-status")},5000)};
-function saveError(item){browser.notifications.create("selesty-save-status",{type:'basic',title:'Selection styler: Saving error',message:"Error saving preferences","iconUrl":browser.runtime.getURL("./icon.png")});setTimeout(function(){browser.notifications.clear("selesty-save-status")},5000)};
+function saveSuccess(item){browser.notifications.create("selesty-save-status",{type:'basic',title:'Selection styler: Saving success',message:"Preferences saved successfully. ","iconUrl":browser.runtime.getURL("./icon.png")});setTimeout(function(){browser.notifications.clear("selesty-save-status");},5000)};
+function saveError(item){browser.notifications.create("selesty-save-status",{type:'basic',title:'Selection styler: Saving error',message:"Error saving preferences","iconUrl":browser.runtime.getURL("./icon.png")});setTimeout(function(){browser.notifications.clear("selesty-save-status");},5000)};
 
-class Custom_option{constructor(url,background,color,shadowActivated,shadowColor,shadowBlur){this.url=url;this.color=color;this.background=background;this.shadowActivated=shadowActivated;this.shadowColor=shadowColor;this.shadowBlur=shadowBlur}};
+class Custom_option{constructor(url,background,color,shadowActivated,shadowColor,shadowBlur){this.url=url;this.color=color;this.background=background;this.shadowActivated=shadowActivated;this.shadowColor=shadowColor;this.shadowBlur=shadowBlur;}};
 
 
 function addCustom() {
@@ -37,8 +37,8 @@ function removeCustom() {
 		});
 		var optionToRemove = document.querySelector("#custom_select");
 		optionToRemove.remove(document.querySelector("#custom_select").selectedIndex);
-		var selectIndex = document.querySelector("#custom_select").selectedIndex;
-		if(selectIndex != 0) {
+		var selectTrueIndex = document.querySelector("#custom_select").selectedIndex;
+		if(selectTrueIndex != 0) {
 			document.querySelector("#url_div").style.display = "block";
 			document.querySelector("#url_div").value = document.querySelector("#custom_select").value;
 			document.querySelector("#remove_custom").style.display = "block";
