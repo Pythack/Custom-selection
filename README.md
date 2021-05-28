@@ -31,6 +31,7 @@ Customize the text selection.
 <img src="https://badgen.net/github/open-prs/Pythack/Selection-customizer/?color=blue"> <img src="https://badgen.net/github/open-issues/Pythack/Selection-customizer/?color=blue" >
 
 You can contribute by creating a [pull request](https://github.com/Pythack/Selection-customizer/compare) or by creating an [issue](https://github.com/Pythack/Selection-customizer/issues/new). 
+Currently, it would be helpfull to contribute to the settings page style. 
 
 ## Permissions
 * Display notifications to you
