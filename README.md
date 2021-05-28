@@ -39,7 +39,7 @@ Currently, it would be helpfull to contribute to the [settings page style]().
 * Access browser tabs
 * Access your data for all web sites
 
-# Screenshots
+## Screenshots
 
 <i>Settings page</i><br/>
 <img alt="Screenshot settings_page" src="https://pythack.github.io/Selection-customizer/settings%20page.png">
