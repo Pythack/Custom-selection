@@ -80,7 +80,7 @@ input:focus {
 
 input:invalid {
   border: #d70022 solid 2px;
-  box-shadow: 0 0 0 1px #d70022, 0 0 0 4px rgba(251, 0, 34, 0.3)
+  box-shadow: 0 0 0 1px #d70022, 0 0 0 4px rgba(251, 0, 34, 0.3);
 }
 
 input[type="url"]:placeholder-shown {
@@ -90,7 +90,7 @@ input[type="url"]:placeholder-shown {
 
 input[type="url"]:valid {
   border: #00cc22 solid 2px;
-  box-shadow: 0 0 0 1px #00cc22, 0 0 0 4px rgba(0, 204, 34, 0.3)
+  box-shadow: 0 0 0 1px #00cc22, 0 0 0 4px rgba(0, 204, 34, 0.3);
 }
 
 #textSadowOptions {
