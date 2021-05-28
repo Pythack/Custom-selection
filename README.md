@@ -8,15 +8,14 @@ Customize the text selection.
     <img src="https://badgen.net/github/license/Pythack/Selection-customizer/" >
     <br/> Firefox addon stats:
     <img src="https://badgen.net/amo/users/selection-customizer/" >
-    <img src="https://badgen.net/amo/rating/selection-customizer/" >
-    <img src="https://badgen.net/amo/stars/selection-customizer/" >
-    <img src="https://badgen.net/amo/reviews/selection-customizer/" >
     <img src="https://badgen.net/amo/v/selection-customizer/?cache=5" >
 </div>
 
 <a text-align="center" href="https://addons.mozilla.org/en-GB/firefox/addon/selection-customizer/"><img alt="Get for Firefox" src="https://addons.cdn.mozilla.net/static/img/addons-buttons/AMO-button_1.png" width="172" height="60"></a> or <a href="https://addons.mozilla.org/firefox/downloads/file/3775633/selection_customizer-1.1-fx.xpi">install now</a> !
 
 ## Features
+<img src="https://badgen.net/amo/rating/selection-customizer/"> <img src="https://badgen.net/amo/stars/selection-customizer/"> <img src="https://badgen.net/amo/reviews/selection-customizer/" >
+
 Name | Support
 ---- | -------
 Change the text color of the text selection | ✔️
