@@ -26,6 +26,9 @@ Customize for specific websites | ✔️
 View live preview while editing | ✔️
 Good graphical interface | ⚠️
 
+### Feature request
+To request a feature, just open a [new issue](https://github.com/Pythack/Selection-customizer/issues/new). 
+
 ## Contributing
 <img src="https://badgen.net/github/open-prs/Pythack/Selection-customizer/?color=blue"> <img src="https://badgen.net/github/open-issues/Pythack/Selection-customizer/?color=blue" >
 
