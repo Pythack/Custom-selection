@@ -4,7 +4,76 @@ function saveError(item){browser.notifications.create("selesty-save-status",{typ
 class Custom_option{constructor(url,background,color,shadowActivated,shadowColor,shadowBlur){this.url=url;this.color=color;this.background=background;this.shadowActivated=shadowActivated;this.shadowColor=shadowColor;this.shadowBlur=shadowBlur}};
 
 
-function addCustom(){function continueCustom(result){var custom_url=document.querySelector("#add_url").value;var customSettings=new Custom_option(custom_url,document.querySelector("#background_color").value||"#007ef3",document.querySelector("#color").value||"white",document.querySelector("input#activate_textShadow").checked||false,document.querySelector("#shadow-color").value||"none",document.querySelector("#shadow-blur").value||"0");var customs=result.customOptions||[];customs.push(customSettings);browser.storage.local.set({customOptions:customs});var optionToAdd=document.createElement("option");optionToAdd.textContent=custom_url;optionToAdd.value=custom_url;var select=document.querySelector("#custom_select");select.appendChild(optionToAdd)};function onError(error){console.log(`Error:${error}`)};let getting=browser.storage.local.get();getting.then(continueCustom,onError)};function removeCustom(){function continueCustom(result){var selectIndex=document.querySelector("#custom_select").selectedIndex-1;var customs=result.customOptions;customs.splice(selectIndex,1);browser.storage.local.set({customOptions:customs});var optionToRemove=document.querySelector("#custom_select");optionToRemove.remove(document.querySelector("#custom_select").selectedIndex);var selectIndex=document.querySelector("#custom_select").selectedIndex;if(selectIndex!=0){document.querySelector("#url_div").style.display="block";document.querySelector("#url_div").value=document.querySelector("#custom_select").value;document.querySelector("#remove_custom").style.display="block"}else{document.querySelector("#url_div").style.display="none";document.querySelector("#remove_custom").style.display="none"}};function onError(error){console.log(`Error:${error}`)};let getting=browser.storage.local.get();getting.then(continueCustom,onError)};
+function addCustom() {
+	function continueCustom(result) {
+		var custom_url = document.querySelector("#add_url").value;
+		var customSettings = new Custom_option(custom_url, document.querySelector("#background_color").value || "#007ef3", document.querySelector("#color").value || "white", document.querySelector("input#activate_textShadow").checked || false, document.querySelector("#shadow-color").value || "none", document.querySelector("#shadow-blur").value || "0");
+		var customs = result.customOptions || [];
+		customs.push(customSettings);
+		browser.storage.local.set({
+			customOptions: customs
+		});
+		var optionToAdd = document.createElement("option");
+		optionToAdd.textContent = custom_url;
+		optionToAdd.value = custom_url;
+		var select = document.querySelector("#custom_select");
+		select.appendChild(optionToAdd)
+	};
+
+	function onError(error) {
+		console.log(`Error:${error}`)
+	};
+	let getting = browser.storage.local.get();
+	getting.then(continueCustom, onError)
+};
+
+function removeCustom() {
+	function continueCustom(result) {
+		var selectIndex = document.querySelector("#custom_select").selectedIndex - 1;
+		var customs = result.customOptions;
+		customs.splice(selectIndex, 1);
+		browser.storage.local.set({
+			customOptions: customs
+		});
+		var optionToRemove = document.querySelector("#custom_select");
+		optionToRemove.remove(document.querySelector("#custom_select").selectedIndex);
+		var selectIndex = document.querySelector("#custom_select").selectedIndex;
+		if(selectIndex != 0) {
+			document.querySelector("#url_div").style.display = "block";
+			document.querySelector("#url_div").value = document.querySelector("#custom_select").value;
+			document.querySelector("#remove_custom").style.display = "block"
+		} else {
+			document.querySelector("#url_div").style.display = "none";
+			document.querySelector("#remove_custom").style.display = "none"
+		}
+		document.querySelector("#background_color").value = result.background_color || "#007ef3";
+		document.querySelector("#color-picker-backgroundColor").value = result.background_color || "#007ef3";
+		document.querySelector("#color").value = result.color || "white";
+		document.querySelector("#color-picker-textColor").value = result.color || "#ffffff";
+		document.querySelector("#shadow-color").value = result.shadowColor || "#ffffff";
+		document.querySelector("input#color-picker-shadowColor").value = result.shadowColor;
+		document.querySelector("#shadow-blur").value = result.shadowBlur || "0px";
+		document.querySelector("input#activate_textShadow").checked = result.shadowActivated;
+		if(result.shadowActivated) {
+			document.querySelector('div#textShadowOptions').style.display = "block"
+		} else {
+			document.querySelector('div#textShadowOptions').style.display = "none"
+		}
+		document.querySelector("#preview").style.background = document.querySelector("#background_color").value;
+		document.querySelector("#preview").style.color = document.querySelector("#color").value;
+		if (document.querySelector("input#activate_textShadow").checked) {
+			document.querySelector("#preview").style.textShadow = document.querySelector("#shadow-color").value + " 0px 0px " + document.querySelector("#shadow-blur").value + "px";
+		} else {
+			document.querySelector("#preview").style.textShadow = "";
+		}
+	};
+
+	function onError(error) {
+		console.log(`Error:${error}`)
+	};
+	let getting = browser.storage.local.get();
+	getting.then(continueCustom, onError)
+};
 
 function saveOptions(e) {
 	e.preventDefault();
