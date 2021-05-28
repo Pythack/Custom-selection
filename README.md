@@ -4,8 +4,6 @@ Customize the text selection.
 <div align="center">
     <br> Github repository stats:
     <img src="https://badgen.net/github/stars/Pythack/Selection-customizer/" >
-    <img src="https://badgen.net/github/open-issues/Pythack/Selection-customizer/" >
-    <img src="https://badgen.net/github/open-prs/Pythack/Selection-customizer/" >
     <img src="https://badgen.net/github/tag/Pythack/Selection-customizer/?cache=5" >
     <img src="https://badgen.net/github/license/Pythack/Selection-customizer/" >
     <br/> Firefox addon stats:
@@ -28,6 +26,11 @@ Customize the text selection.
 
 ### In development
 * Style
+
+## Contributing
+<img src="https://badgen.net/github/open-prs/Pythack/Selection-customizer/?color=blue"> <img src="https://badgen.net/github/open-issues/Pythack/Selection-customizer/?color=blue" >
+
+You can contribute by creating a pull request or by creating an issue. 
 
 ## Permissions
 * Display notifications to you
