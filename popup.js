@@ -1,5 +1,5 @@
-function saveSuccess(item){browser.notifications.create("selesty-save-status",{type:'basic',title:'Selection styler: Saving success',message:"Preferences saved successfully. ","iconUrl":browser.runtime.getURL("./icon.png")});setTimeout(function(){browser.notifications.clear("selesty-save-status");},5000)};
-function saveError(item){browser.notifications.create("selesty-save-status",{type:'basic',title:'Selection styler: Saving error',message:"Error saving preferences","iconUrl":browser.runtime.getURL("./icon.png")});setTimeout(function(){browser.notifications.clear("selesty-save-status");},5000)};
+function saveSuccess(item){browser.notifications.create("selesty-save-status",{type:'basic',title:'Selection styler: Saving success',message:"Preferences saved successfully. ","iconUrl":browser.runtime.getURL("./icon.png")});setTimeout(function(){browser.notifications.clear("selesty-save-status");},5000);};
+function saveError(item){browser.notifications.create("selesty-save-status",{type:'basic',title:'Selection styler: Saving error',message:"Error saving preferences","iconUrl":browser.runtime.getURL("./icon.png")});setTimeout(function(){browser.notifications.clear("selesty-save-status");},5000);};
 
 class Custom_option{constructor(url,background,color,shadowActivated,shadowColor,shadowBlur){this.url=url;this.color=color;this.background=background;this.shadowActivated=shadowActivated;this.shadowColor=shadowColor;this.shadowBlur=shadowBlur;}};
 
@@ -172,7 +172,6 @@ function restoreOptions() {
 
 
 function updateColorInput(){var color=document.querySelector("input#color-picker-textColor").value;document.querySelector("input#color").value=color};function updateBackgroundColorInput(){var color=document.querySelector("input#color-picker-backgroundColor").value;document.querySelector("input#background_color").value=color};function updateColorInputColor(){var color=document.querySelector("input#color").value;document.querySelector("input#color-picker-textColor").value=color};function updateBackgroundColorInputColor(){var color=document.querySelector("input#background_color").value;document.querySelector("input#color-picker-backgroundColor").value=color};function updateShadowColorInput(){var color=document.querySelector("input#color-picker-shadowColor").value;document.querySelector("input#shadow-color").value=color};function updateShadowColorInputColor(){var color=document.querySelector("input#shadow-color").value;document.querySelector("input#color-picker-shadowColor").value=color};function updateShadowColorDisplay(){if(document.querySelector("input#activate_textShadow").checked){document.querySelector('div#textShadowOptions').style.display="block"}else{document.querySelector('div#textShadowOptions').style.display="none"}};
-
 function changeCustomDisplay() {
 	var selectIndex = document.querySelector("#custom_select").selectedIndex;
 	if(selectIndex != 0) {
