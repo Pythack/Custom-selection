@@ -17,21 +17,20 @@ Customize the text selection.
 <a text-align="center" href="https://addons.mozilla.org/en-GB/firefox/addon/selection-customizer/"><img alt="Get for Firefox" src="https://addons.cdn.mozilla.net/static/img/addons-buttons/AMO-button_1.png" width="172" height="60"></a> or <a href="https://addons.mozilla.org/firefox/downloads/file/3775633/selection_customizer-1.1-fx.xpi">install now</a> !
 
 ## Features
-### Available
-* Change the text color of the text selection
-* Change the background color of the text selection
-* Change the text shadow of the text selection
-* Customize for specific websites
-* View live preview while editing
-
-### In development
-* Style
+Name | Support
+---- | -------
+Change the text color of the text selection | ✔️
+Change the background color of the text selection | ✔️
+Change the text shadow of the text selection | ✔️
+Customize for specific websites | ✔️
+View live preview while editing | ✔️
+Good graphical interface | ⚠️
 
 ## Contributing
 <img src="https://badgen.net/github/open-prs/Pythack/Selection-customizer/?color=blue"> <img src="https://badgen.net/github/open-issues/Pythack/Selection-customizer/?color=blue" >
 
 You can contribute by creating a [pull request](https://github.com/Pythack/Selection-customizer/compare) or by creating an [issue](https://github.com/Pythack/Selection-customizer/issues/new). 
-Currently, it would be helpfull to contribute to the settings page style. 
+Currently, it would be helpfull to contribute to the [settings page style](). 
 
 ## Permissions
 * Display notifications to you
