@@ -26,6 +26,7 @@ Customize for specific websites | ✔️
 View live preview while editing | ✔️
 Good graphical interface | ⚠️
 
+
 ## Contributing
 <img src="https://badgen.net/github/open-prs/Pythack/Selection-customizer/?color=blue"> <img src="https://badgen.net/github/open-issues/Pythack/Selection-customizer/?color=blue" >
 
