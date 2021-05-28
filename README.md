@@ -30,7 +30,7 @@ Customize the text selection.
 ## Contributing
 <img src="https://badgen.net/github/open-prs/Pythack/Selection-customizer/?color=blue"> <img src="https://badgen.net/github/open-issues/Pythack/Selection-customizer/?color=blue" >
 
-You can contribute by creating a pull request or by creating an issue. 
+You can contribute by creating a pull request or by creating an [issue](https://github.com/Pythack/Selection-customizer/issues/new). 
 
 ## Permissions
 * Display notifications to you
