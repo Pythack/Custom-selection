@@ -18,7 +18,7 @@ Customize the text selection.
 
 Name | Support
 ---- | -------
-Change the text color of the text selection | ✔️
+Change the color of the text selection | ✔️
 Change the background color of the text selection | ✔️
 Change the text shadow of the text selection | ✔️
 Customize for specific websites | ✔️
