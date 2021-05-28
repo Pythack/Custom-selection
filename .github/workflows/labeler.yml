@@ -1,2 +1,2 @@
-frontend:
+test:
 - any: ['src/manifest.json.js']
