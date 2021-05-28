@@ -24,6 +24,7 @@ Change the text shadow of the text selection | ✔️
 Customize for specific websites | ✔️
 View live preview while editing | ✔️
 Good graphical interface | ⚠️
+Dark theme | ❌
 
 ### Feature request
 To request a feature, just open a [new issue](https://github.com/Pythack/Selection-customizer/issues/new) with the **enhancement** tag. 
