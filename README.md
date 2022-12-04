@@ -11,7 +11,9 @@ Customize the text selection.
     <img src="https://badgen.net/amo/v/selection-customizer/?cache=5" >
 </div>
 
-<a text-align="center" href="https://addons.mozilla.org/en-GB/firefox/addon/selection-customizer/"><img alt="Get for Firefox" src="https://addons.cdn.mozilla.net/static/img/addons-buttons/AMO-button_1.png" width="172" height="60"></a> or <a href="https://addons.mozilla.org/firefox/downloads/file/3783303/selection_customizer-1.2.4.2-fx.xpi">install now</a> !
+⚠️Extensions can't interact with mozilla websites
+
+<a text-align="center" href="https://addons.mozilla.org/firefox/addon/selection-customizer/"><img alt="Get for Firefox" src="https://addons.cdn.mozilla.net/static/img/addons-buttons/AMO-button_1.png" width="172" height="60"></a> or <a href="https://addons.mozilla.org/firefox/downloads/file/3783303/selection_customizer-1.2.4.2-fx.xpi">install now</a> !
 
 ## Features
 <img src="https://badgen.net/amo/rating/selection-customizer/"> <img src="https://badgen.net/amo/stars/selection-customizer/"> <img src="https://badgen.net/amo/reviews/selection-customizer/" >
@@ -23,7 +25,7 @@ Change the background color of the text selection | ✔️
 Change the text shadow of the text selection | ✔️
 Customize for specific websites | ✔️
 View live preview while editing | ✔️
-Good graphical interface | ⚠️
+Good graphical interface | ❌
 Dark theme | ❌
 
 ### Feature request
