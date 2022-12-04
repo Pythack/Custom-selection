@@ -243,7 +243,7 @@ function changeCustomDisplay() {
 	};
 };
 document.addEventListener("DOMContentLoaded", restoreOptions);
-document.addEventListener("DOMContentLoaded", updatePreview);
+document.addEventListener("DOMContentLoaded", () => {setTimeout(updatePreview, 1000)});
 document.querySelector("form").addEventListener("submit", saveOptions);
 document.querySelector("form").addEventListener("keyup", updatePreview);
 document.querySelector("form").addEventListener("input", updatePreview);
