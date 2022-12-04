@@ -47,6 +47,10 @@ input {
   background: #0060df;
 }
 
+#textShadowOptions {
+  display: none;
+}
+
 #url_div {
   display: none;
 }
