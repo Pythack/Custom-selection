@@ -1,18 +1,18 @@
 {
   "manifest_version": 2,
-  "name": "Selection styler",
+  "name": "Selection customizer",
   "author": "Pythack",
-  "version": "1.2.4.3",
-  "description": "Change the color and background color of the selection",
+  "version": "1.2.4.4",
+  "description": "Change the color, background color, and the text shadow of the text selection",
   "background": {
     "scripts": ["./background.js"]
   },
   "content_scripts": [
-  {
-    "matches": ["<all_urls>"],
-    "js": ["injector.js"]
-  }
-],
+    {
+      "matches": ["<all_urls>"],
+      "js": ["injector.js"]
+    }
+  ],
   "permissions": [
     "storage",
     "<all_urls>",
@@ -22,7 +22,7 @@
   ],
   "browser_action": {
     "default_icon": "icon.png",
-    "default_title": "Selection styler",
+    "default_title": "Selection customizer",
     "browser_style": true
   }
 }
