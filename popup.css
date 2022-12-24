@@ -104,19 +104,23 @@ input:invalid {
   box-shadow: 0 0 0 1px #d70022, 0 0 0 4px rgba(251, 0, 34, 0.3);
 }
 
+input[type="url"]:focus:valid {
+  border: #0c2 solid 2px;
+  box-shadow: 0 0 0 1px #0c2, 0 0 0 4px rgba(0, 204, 34, 0.3);
+}
+
 input[type="url"]:placeholder-shown {
   border-color: rgba(12, 12, 13, 0.2) !important;
   box-shadow: none !important;
+}
+input[type="url"]:placeholder-shown:hover {
+  border-color: rgba(12, 12, 13, 0.3) !important;
 }
 input[type="url"]:placeholder-shown:focus {
   border-color: #0a84ff !important;
   box-shadow: 0 0 0 1px #0a84ff, 0 0 0 4px rgba(10, 132, 255, 0.3) !important;
 }
 
-input[type="url"]:valid {
-  border: #0c2 solid 2px;
-  box-shadow: 0 0 0 1px #0c2, 0 0 0 4px rgba(0, 204, 34, 0.3);
-}
 
 #textSadowOptions {
   display: none;
