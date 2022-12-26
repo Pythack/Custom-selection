@@ -258,7 +258,7 @@ document.querySelector("input#background_color").addEventListener("input", updat
 document.querySelector("input#color-picker-shadowColor").addEventListener("input", updateShadowColorInput);
 document.querySelector("input#shadow-color").addEventListener("input", updateShadowColorInputColor);
 document.querySelector("input#activate_textShadow").addEventListener("change", updateShadowColorDisplay);
-
+document.querySelector("#promotionaldiv").addEventListener("click", (event) => {document.querySelector("#promotionaldiv").style.display = "none"})
 /*browser.tabs.create({
     url:browser.extension.getURL('./popup.html')
 });*/
