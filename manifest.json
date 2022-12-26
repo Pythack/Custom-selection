@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Selection customizer",
+  "name": "Custom selection",
   "author": "Pythack",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Change the color, background color, and the text shadow of the text selection",
   "background": {
     "scripts": ["./background.js"]
@@ -22,7 +22,7 @@
   ],
   "browser_action": {
     "default_icon": "icon.png",
-    "default_title": "Selection customizer",
+    "default_title": "Custom selection",
     "browser_style": true
   }
 }
