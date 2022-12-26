@@ -25,7 +25,7 @@ Change the background color of the text selection | ✔️
 Change the text shadow of the text selection | ✔️
 Customize for specific websites | ✔️
 View live preview while editing | ✔️
-Good graphical interface | ❌
+Good graphical user interface (GUI) | ❌
 Dark theme | ❌
 
 ### Feature request
