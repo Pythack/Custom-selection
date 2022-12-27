@@ -13,7 +13,7 @@ Customize the text selection.
 
 ⚠️Extensions can't interact with mozilla websites
 
-<a text-align="center" href="https://addons.mozilla.org/firefox/addon/selection-customizer/"><img alt="Get for Firefox" src="https://addons.cdn.mozilla.net/static/img/addons-buttons/AMO-button_1.png" width="172" height="60"></a> or <a href="https://addons.mozilla.org/firefox/downloads/file/3783303/selection_customizer-1.2.4.2-fx.xpi">install now</a> !
+<a text-align="center" href="https://addons.mozilla.org/firefox/addon/selection-customizer/"><img alt="Get for Firefox" src="https://blog.mozilla.org/addons/files/2020/04/get-the-addon-fx-apr-2020.svg" width="172" height="60"></a> or <a href="https://addons.mozilla.org/firefox/downloads/file/3783303/selection_customizer-1.2.4.2-fx.xpi">install now</a> !
 
 ## Features
 <img src="https://badgen.net/amo/rating/selection-customizer/"> <img src="https://badgen.net/amo/stars/selection-customizer/"> <img src="https://badgen.net/amo/reviews/selection-customizer/" >
