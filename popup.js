@@ -141,13 +141,15 @@ function restoreOptions() {
     if (result.shadowActivated) {
       document.querySelector('div#textShadowOptions').style.display = "block";
     };
-    result.customOptions.forEach(element => {
-      var option = document.createElement("option");
-      option.textContent = element.url;
-      option.value = element.url;
-      var select = document.querySelector("#custom_select");
-      select.appendChild(option);
-    });
+	if (result.customOptions) {
+		result.customOptions.forEach(element => {
+		var option = document.createElement("option");
+		option.textContent = element.url;
+		option.value = element.url;
+		var select = document.querySelector("#custom_select");
+		select.appendChild(option);
+		});
+	}
   };
 
   function onError(error) {
