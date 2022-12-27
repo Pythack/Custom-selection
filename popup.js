@@ -92,9 +92,6 @@ function saveOptions(e) {
 			shadowBlur: document.querySelector("#shadow-blur").value || "0"
 		});
 		preferencesSave.then(saveSuccess, saveError);
-    browser.runtime.sendMessage({
-			request: "inject-css"
-		});
 	} else {
 		function continueCustom(result) {
 			var selectIndex = document.querySelector("#custom_select").selectedIndex - 1;
@@ -111,9 +108,6 @@ function saveOptions(e) {
 				customOptions: customs
 			});
 			preferencesSave.then(saveSuccess, saveError);
-      browser.runtime.sendMessage({
-				request: "inject-css"
-			});
 		};
 
 		function onError(error) {
@@ -122,6 +116,9 @@ function saveOptions(e) {
 		let getting = browser.storage.local.get();
 		getting.then(continueCustom, onError);
 	};
+	browser.runtime.sendMessage({
+		request: "inject-css-all"
+	});
 };
 function updatePreview() {
   document.querySelector("#preview").style.background = document.querySelector("#background_color").value;

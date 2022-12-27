@@ -1,2 +1,1 @@
-var url = window.location.href;
-browser.runtime.sendMessage({request:"inject-css", url:url});
+browser.runtime.sendMessage({request:"inject-css"});
