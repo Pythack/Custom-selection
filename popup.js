@@ -1,8 +1,16 @@
 function saveSuccess(item){browser.notifications.create("selesty-save-status",{type:'basic',title:'Selection styler: Saving success',message:"Preferences saved successfully. ","iconUrl":browser.runtime.getURL("./icon.png")});setTimeout(function(){browser.notifications.clear("selesty-save-status");},5000);};
 function saveError(item){browser.notifications.create("selesty-save-status",{type:'basic',title:'Selection styler: Saving error',message:"Error saving preferences","iconUrl":browser.runtime.getURL("./icon.png")});setTimeout(function(){browser.notifications.clear("selesty-save-status");},5000);};
 
-class Custom_option{constructor(url,background,color,shadowActivated,shadowColor,shadowBlur){this.url=url;this.color=color;this.background=background;this.shadowActivated=shadowActivated;this.shadowColor=shadowColor;this.shadowBlur=shadowBlur;}};
-
+class Custom_option {
+	constructor(url, background, color, shadowActivated, shadowColor, shadowBlur) {
+		this.url = url;
+		this.color = color;
+		this.background = background;
+		this.shadowActivated = shadowActivated;
+		this.shadowColor = shadowColor;
+		this.shadowBlur = shadowBlur;
+	}
+};
 
 function addCustom() {
 	function continueCustom(result) {
@@ -49,7 +57,7 @@ function removeCustom() {
 		document.querySelector("#background_color").jscolor.fromString(result.background_color || "#007ef3");
 		document.querySelector("#color").jscolor.fromString(result.color || "white");
 		document.querySelector("#shadow-color").jscolor.fromString(result.shadowColor || "#ffffff");
-		document.querySelector("#shadow-blur").jscolor.fromString(result.shadowBlur || "0px");
+		document.querySelector("#shadow-blur").value = result.shadowBlur || "0px";
 		document.querySelector("input#activate_textShadow").checked = result.shadowActivated;
 		if(result.shadowActivated) {
 			document.querySelector('div#textShadowOptions').style.display = "block";
@@ -131,7 +139,7 @@ function restoreOptions() {
     document.querySelector("#background_color").jscolor.fromString(result.background_color || "#00EF380");
     document.querySelector("#color").jscolor.fromString(result.color || "007EF3FF");
     document.querySelector("#shadow-color").jscolor.fromString(result.shadowColor || "#FFFFFF00");
-    document.querySelector("#shadow-blur").jscolor.fromString(result.shadowBlur || "0px");
+    document.querySelector("#shadow-blur").value = result.shadowBlur || "0px";
     document.querySelector("input#activate_textShadow").checked = result.shadowActivated;
     if (result.shadowActivated) {
       document.querySelector('div#textShadowOptions').style.display = "block";
@@ -207,7 +215,7 @@ function changeCustomDisplay() {
 			document.querySelector("#background_color").jscolor.fromString(result.background_color || "#007ef3");
 			document.querySelector("#color").jscolor.fromString(result.color || "white");
 			document.querySelector("#shadow-color").jscolor.fromString(result.shadowColor || "#ffffff");
-			document.querySelector("#shadow-blur").jscolor.fromString(result.shadowBlur || "0px");
+			document.querySelector("#shadow-blur").value = result.shadowBlur || "0px";
 			document.querySelector("input#activate_textShadow").checked = result.shadowActivated;
 			if(result.shadowActivated) {
 				document.querySelector('div#textShadowOptions').style.display = "block";
