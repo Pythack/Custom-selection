@@ -41,9 +41,9 @@ browser.runtime.onMessage.addListener((message) => {
 	};
 });
 
-function onIconClicked() {
-	browser.tabs.create({
-		url: browser.extension.getURL('./popup.html')
-	});
-};
-browser.browserAction.onClicked.addListener(onIconClicked);
+// function onIconClicked() {
+// 	browser.tabs.create({
+// 		url: browser.extension.getURL('./popup.html'),
+// 	});
+// };
+// browser.browserAction.onClicked.addListener(onIconClicked);

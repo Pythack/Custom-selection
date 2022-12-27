@@ -4,27 +4,32 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="./popup.css">
     <title>Selection customizer</title>
+    <script src="jscolor.min.js"></script>
   </head>
   <body>
     <h1 id="title">Selection customizer</h1>
-    <form>
+    <div id="formdiv">
+      <div id="formdivurl" class="formdivel">
         <select class="" id="custom_select" name="">
           <option value="general">General</option>
         </select><button type="button" id="remove_custom">-</button><br/>
         <label>New custom url: </label><br/><input type="url" placeholder="www.google.com" id="add_url"><button type="button" id="add_custom">+</button><br/><br/>
         <!--<label>Url (optional): </label><br/><input type="url" placeholder="https://www.google.com/" id="url"><br/><br/>-->
-        <hr/>
         <div id="url_div"><label>Url: </label><br/><input type="url" placeholder="white" id="change_url"><br/><br/></div>
+      </div>
+      <div id="formdivclr" class="formdivel">
         <label>Color: </label><br/>
-        <div class="colorinputcouple">
-        <input type="text" placeholder="white" id="color"> <input id="color-picker-textColor" type="color">
-        </div>
+        <input id="color" value="#007EF3FF" data-jscolor="{}">
         <br/><br/>
         <label>Background color: </label><br/>
-        <div class="colorinputcouple">
-          <input type="text" placeholder="#007ef3" id="background_color"> <input id="color-picker-backgroundColor" type="color">
-        </div>
+        <input id="background_color" value="#007EF380" data-jscolor="{}">
         <br/><br/>
+      </div>
+      <div id="formdivprv" class="formdivel">
+        <label>Preview: </label><br/><p id="preview">Lorem ipsum</p><br/><br/>
+        <button type="submit" id="save_btn">Save</button>
+      </div>
+      <div id="formdivtxtsh" class="formdivel">
         <input id="activate_textShadow" name="activate_textShadow" type="checkbox"><label for="activate_textShadow">Activate text shadow </label><br/><br/>
         <div id="textShadowOptions">
           <label>Text shadow color: </label><br/>
@@ -34,13 +39,13 @@
           <br/><br/>
           <label>Text shadow blur (in pixels): </label><br/><input type="number" placeholder="15" min="0" id="shadow-blur"><br/><br/>
         </div>
-        <label>Preview: </label><br/><p id="preview">Lorem ipsum</p><br/><br/>
-        <button type="submit" id="save_btn">Save</button>
-    </form>
-    <div id="promotionaldiv">
+      </div>
+    </div>
+    <!-- <div id="promotionaldiv">
       <h2>Rate this extension</h2>
       <p>If you enjoy this extension, please don't hesitate to rate it!👍</p>
-    </div>
+    </div> -->
   </body>
   <script type="text/javascript" src="./popup.js"></script>
-</html>
+  </html>
+  

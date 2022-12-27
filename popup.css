@@ -8,16 +8,27 @@ body {
   color: black;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 500px;
   justify-content: center;
   overflow-x: hidden;
   text-align: center;
-  width: 100%;
+  width: 600px;
 }
 
-form {
+#formdiv {
   text-align: left;
-  width: 7cm;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 50% 50%;
+}
+
+.formdivel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 h1 {
