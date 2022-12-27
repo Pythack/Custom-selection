@@ -185,7 +185,7 @@ function changeCustomDisplay() {
 			document.querySelector("#background_color").jscolor.fromString(customs[selectIndex - 1].background || "#007ef3");
 			document.querySelector("#color").jscolor.fromString(customs[selectIndex - 1].color || "white");
 			document.querySelector("#shadow-color").jscolor.fromString(customs[selectIndex - 1].shadowColor || "#ffffff");
-			document.querySelector("#shadow-blur").jscolor.fromString(customs[selectIndex - 1].shadowBlur || "0px");
+			document.querySelector("#shadow-blur").value = customs[selectIndex - 1].shadowBlur || "0px";
 			document.querySelector("input#activate_textShadow").checked = customs[selectIndex - 1].shadowActivated;
 			if(customs[selectIndex - 1].shadowActivated) {
 				document.querySelector('div#textShadowOptions').style.display = "block";
