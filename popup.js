@@ -89,7 +89,8 @@ function saveOptions(e) {
 			color: document.querySelector("#color").value || "white",
 			shadowActivated: document.querySelector("input#activate_textShadow").checked || false,
 			shadowColor: document.querySelector("#shadow-color").value || "none",
-			shadowBlur: document.querySelector("#shadow-blur").value || "0"
+			shadowBlur: document.querySelector("#shadow-blur").value || "0",
+			witness: true
 		});
 		preferencesSave.then(saveSuccess, saveError);
 	} else {

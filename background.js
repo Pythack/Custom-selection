@@ -29,7 +29,7 @@ function restoreOptions(tab) {
         };
       });
     };
-    if (!injected) {
+    if (!injected && result.witness) {
       if(result.shadowActivated) {
         css = '::selection { background: ' + result.background_color + '; color: ' + result.color + '; text-shadow: ' + result.shadowColor + ' 0px 0px ' + result.shadowBlur + 'px}';
       } else {
