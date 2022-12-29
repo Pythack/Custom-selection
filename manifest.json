@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Custom selection",
   "author": "Pythack",
-  "version": "1.5.3",
+  "version": "1.5.5",
   "description": "Change the color, background color, and the text shadow of the text selection!",
   "background": {
     "scripts": ["./background.js"]

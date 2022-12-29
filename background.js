@@ -2,63 +2,83 @@ function onError(error) {
     console.log(`Error:${error}`);
 }
 
-function restoreOptions(tab) {  
-    function setCurrentChoice(tab, result) {
-    browser.tabs.removeCSS(tab.id, {
-      allFrames: true,
-      code: localStorage.getItem(tab.id)
-    });
-    var css;
-    var url = new URL(tab.url);
-    url = url.host;
-    var injected = false;
-    if (result.customOptions) {
-      result.customOptions.forEach((element) => {
-        var elurl = new URL(element.url);
-        if (elurl.host === url) {
-          injected = true;
-          if(element.shadowActivated) {
-            css = '::selection { background: ' + element.background + '; color: ' + element.color + '; text-shadow: ' + element.shadowColor + ' 0px 0px ' + element.shadowBlur + 'px}';
-          } else {
-            css = '::selection { background: ' + element.background + '; color: ' + element.color + '; text-shadow: none}';
-          }
-          browser.tabs.insertCSS(tab.id, {
-            allFrames: true,
-            code: css
-          });
+async function restoreOptions(tab) {
+  var storage = await browser.storage.local.get();
+  browser.tabs.removeCSS(tab.id, {
+    allFrames: true,
+    code: localStorage.getItem(tab.id)
+  });
+  var css;
+  var url = new URL(tab.url);
+  url = url.host;
+  var injected = false;
+  if (storage.customOptions) {
+    storage.customOptions.forEach((element) => {
+      var elurl = new URL(element.url);
+      if (elurl.host === url) {
+        injected = true;
+        if(element.shadowActivated) {
+          css = '::selection { background: ' + element.background + ' !important; color: ' + element.color + ' !important; text-shadow: ' + element.shadowColor + ' 0px 0px ' + element.shadowBlur + 'px !important}';
+        } else {
+          css = '::selection { background: ' + element.background + ' !important; color: ' + element.color + ' !important; text-shadow: none !important}';
         }
-      });
-    }
-    if (!injected && result.witness) {
-      if(result.shadowActivated) {
-        css = '::selection { background: ' + result.background_color + '; color: ' + result.color + '; text-shadow: ' + result.shadowColor + ' 0px 0px ' + result.shadowBlur + 'px}';
-      } else {
-        css = '::selection { background: ' + result.background_color + '; color: ' + result.color + '; text-shadow: none}';
+        browser.tabs.insertCSS(tab.id, {
+          allFrames: true,
+          code: css
+        });
       }
-      browser.tabs.insertCSS(tab.id, {
-        allFrames: true,
-        code: css
-      });
-    }
-    localStorage.setItem(tab.id, css);
+    });
   }
-  var getting = browser.storage.local.get();
-  getting.then(setCurrentChoice.bind(null, tab), onError);
+  if (!injected && storage.witness) {
+    if(storage.shadowActivated) {
+      css = '::selection { background: ' + storage.background_color + ' !important; color: ' + storage.color + ' !important; text-shadow: ' + storage.shadowColor + ' 0px 0px ' + storage.shadowBlur + 'px !important}';
+    } else {
+      css = '::selection { background: ' + storage.background_color + ' !important; color: ' + storage.color + ' !important; text-shadow: none !important}';
+    }
+    browser.tabs.insertCSS(tab.id, {
+      allFrames: true,
+      code: css
+    });
+  }
+  localStorage.setItem(tab.id, css);
 }
+
+async function update_action_icon(tabin) {
+  var tab = await browser.tabs.get(tabin.tabId);
+  var storage = await browser.storage.local.get();
+  var taburl = new URL(tab.url);
+  var injected = false;
+  if (storage.customOptions) {
+    storage.customOptions.forEach((element) => {
+      var elurl = new URL(element.url);
+      if (elurl.host === taburl.host) {
+        injected = true;
+        browser.browserAction.setIcon({path: browser.extension.getURL('./iconcustom.png')});
+      }
+    });
+  }
+  if (!injected) {
+    browser.browserAction.setIcon({path: browser.extension.getURL('./icon.png')});
+  }
+}
+
 browser.runtime.onMessage.addListener((message, sender) => {
   switch(message.request) {
     case "inject-css":
       restoreOptions(sender.tab);
+      update_action_icon({tabId: sender.tab.id});
       break;
-    case "inject-css-all":
-      browser.tabs.query({}).then((result) => {
+      case "inject-css-all":
+        browser.tabs.query({}).then((result) => {
           tabids = result.forEach((tab) => {
-          restoreOptions(tab);
+            restoreOptions(tab);
+          });
         });
-      });
-            break;
-    }
-});
+        break;
+      }
+    });
+    
+    browser.tabs.onActivated.addListener(update_action_icon);
 
 // function onIconClicked() {
 // 	browser.tabs.create({
