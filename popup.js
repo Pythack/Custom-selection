@@ -112,8 +112,8 @@ function saveOptions(e) {
 		};
 
 		function onError(error) {
-			console.log(`Error:${error}`)
-		};
+			console.log(`Error:${error}`);
+		}
 		let getting = browser.storage.local.get();
 		getting.then(continueCustom, onError);
 	};
