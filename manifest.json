@@ -1,11 +1,11 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Custom selection",
   "author": "Pythack",
   "version": "1.5.5",
   "description": "Change the color, background color, and the text shadow of the text selection!",
   "background": {
-    "scripts": ["./background.js"]
+    "service_worker": "./background.js"
   },
   "content_scripts": [
     {
@@ -13,14 +13,9 @@
       "js": ["injector.js"]
     }
   ],
-  "permissions": [
-    "storage",
-    "<all_urls>",
-    "activeTab",
-    "tabs",
-    "notifications"
-  ],
-  "browser_action": {
+  "host_permissions": ["<all_urls>"],
+  "permissions": ["storage", "activeTab", "tabs", "notifications"],
+  "action": {
     "default_icon": "icon.png",
     "default_title": "Custom selection",
     "default_popup": "popup.html",
