@@ -2,15 +2,19 @@ if (typeof browser === "undefined") {
   var browser = chrome;
 }
 
+var localstorage = new Object;
+
 function onError(error) {
     console.log(`Error:${error}`);
 }
 
 async function restoreOptions(tab) {
   var storage = await browser.storage.local.get();
-  browser.tabs.removeCSS(tab.id, {
-    allFrames: true,
-    code: localStorage.getItem(tab.id)
+  browser.scripting.removeCSS({
+    target: {
+      tabId: tab.id,
+    },
+    css: localstorage[tab.id]
   });
   var css;
   var url = new URL(tab.url);
@@ -26,9 +30,11 @@ async function restoreOptions(tab) {
         } else {
           css = '::selection { background: ' + element.background + ' !important; color: ' + element.color + ' !important; text-shadow: none !important}';
         }
-        browser.tabs.insertCSS(tab.id, {
-          allFrames: true,
-          code: css
+        browser.scripting.insertCSS({
+          target: {
+            tabId: tab.id,
+          },
+          css: css
         });
       }
     });
@@ -39,12 +45,14 @@ async function restoreOptions(tab) {
     } else {
       css = '::selection { background: ' + storage.background_color + ' !important; color: ' + storage.color + ' !important; text-shadow: none !important}';
     }
-    browser.tabs.insertCSS(tab.id, {
-      allFrames: true,
-      code: css
+    browser.scripting.insertCSS({
+      target: {
+        tabId: tab.id,
+      },
+      css: css
     });
   }
-  localStorage.setItem(tab.id, css);
+  localstorage[tab.id] = css;
 }
 
 async function update_action_icon(tabin) {
@@ -57,12 +65,12 @@ async function update_action_icon(tabin) {
       var elurl = new URL(element.url);
       if (elurl.host === taburl.host) {
         injected = true;
-        browser.browserAction.setIcon({path: browser.extension.getURL('./iconcustom.png')});
+        browser.action.setIcon({path: browser.runtime.getURL('./iconcustom.png')});
       }
     });
   }
   if (!injected) {
-    browser.browserAction.setIcon({path: browser.extension.getURL('./icon.png')});
+    browser.action.setIcon({path: browser.runtime.getURL('./icon.png')});
   }
 }
 

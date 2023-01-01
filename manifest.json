@@ -14,11 +14,23 @@
     }
   ],
   "host_permissions": ["<all_urls>"],
-  "permissions": ["storage", "activeTab", "tabs", "notifications"],
+  "permissions": ["storage", "activeTab", "tabs", "notifications", "scripting"],
   "action": {
     "default_icon": "icon.png",
     "default_title": "Custom selection",
     "default_popup": "popup.html",
     "browser_style": true
-  }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "./icon.png",
+        "./iconcustom.png",
+        "./iconvalid.png",
+        "./iconfail.png",
+        "./icondisabled.png"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
