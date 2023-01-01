@@ -1,3 +1,7 @@
+if (typeof browser === "undefined") {
+    var browser = chrome;
+}
+
 function saveSuccess(item){browser.notifications.create("notification-save-status",{type:'basic',title:'Selection styler: Saving success',message:"Preferences saved successfully. ","iconUrl":browser.runtime.getURL("./iconvalid.png")});setTimeout(function(){browser.notifications.clear("notification-save-status");},1000);};
 function saveError(item){browser.notifications.create("notification-save-status",{type:'basic',title:'Selection styler: Saving error',message:"Error saving preferences","iconUrl":browser.runtime.getURL("./iconfail.png")});setTimeout(function(){browser.notifications.clear("notification-save-status");},1000);};
 
