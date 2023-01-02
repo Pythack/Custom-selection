@@ -9,7 +9,7 @@ function onError(error) { // Define onError function
 }
 
 async function restoreOptions(tab) {
-  if (/(chrome|about):\/\/.*/.test(tab.url)) { // If tab is chrome:// or about://
+  if (/^((chrome|about):\/\/.*|$|https:\/\/chrome\.google\.com\/webstore.*)/.test(tab.url)) { // If tab is chrome:// or about://
     return; // Abort the CSS injection
   }
   var storage = await browser.storage.local.get(); // Get settings
