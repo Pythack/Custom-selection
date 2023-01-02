@@ -9,13 +9,18 @@ function onError(error) {
 }
 
 async function restoreOptions(tab) {
+  if (/(chrome|about):\/\/.*/.test(tab.url)) {
+    return;
+  }
   var storage = await browser.storage.local.get();
-  browser.scripting.removeCSS({
-    target: {
-      tabId: tab.id,
-    },
-    css: localstorage[tab.id]
-  });
+  if (localstorage[tab.id]) {
+    browser.scripting.removeCSS({
+      target: {
+        tabId: tab.id,
+      },
+      css: localstorage[tab.id]
+    });
+  }
   var css;
   var url = new URL(tab.url);
   url = url.host;
@@ -58,7 +63,15 @@ async function restoreOptions(tab) {
 async function update_action_icon(tabin) {
   var tab = await browser.tabs.get(tabin.tabId);
   var storage = await browser.storage.local.get();
-  var taburl = new URL(tab.url);
+  if (/^((chrome|about):\/\/.*|$)/.test(tab.url)) {
+    browser.action.setIcon({path: browser.runtime.getURL('./icondisabled.png')});
+    return;
+  }
+  try {
+    var taburl = new URL(tab.url);
+  } catch {
+    return;
+  }
   var injected = false;
   if (storage.customOptions) {
     storage.customOptions.forEach((element) => {
@@ -90,7 +103,7 @@ browser.runtime.onMessage.addListener((message, sender) => {
       }
     });
     
-    browser.tabs.onActivated.addListener(update_action_icon);
+browser.tabs.onActivated.addListener(update_action_icon);
 
 // function onIconClicked() {
 // 	browser.tabs.create({
