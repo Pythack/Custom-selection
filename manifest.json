@@ -8,7 +8,7 @@
     "service_worker": "./background.js"
   },
   "host_permissions": ["<all_urls>"],
-  "permissions": ["storage", "activeTab", "tabs", "notifications", "scripting"],
+  "permissions": ["storage", "tabs", "notifications", "scripting"],
   "action": {
     "default_icon": "icon.png",
     "default_title": "Custom selection",
