@@ -87,12 +87,13 @@ async function update_action_icon(tabin) {
   }
 }
 
+browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+  restoreOptions(tab);
+  update_action_icon({tabId: tab.id});
+});
+
 browser.runtime.onMessage.addListener((message, sender) => {
   switch(message.request) {
-    case "inject-css":
-      restoreOptions(sender.tab);
-      update_action_icon({tabId: sender.tab.id});
-      break;
       case "inject-css-all":
         browser.tabs.query({}).then((result) => {
           tabids = result.forEach((tab) => {
