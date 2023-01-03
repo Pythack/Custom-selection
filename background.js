@@ -64,7 +64,7 @@ async function update_action_icon(tabin) {
   var tab = await browser.tabs.get(tabin.tabId); // Get the tab from the id
   var storage = await browser.storage.local.get(); // Get settings
   if (/^((chrome|about):\/\/.*|$|https:\/\/chrome\.google\.com\/webstore.*)/.test(tab.url)) { // If tab is on chrome://, about:// or on the chrome web store
-    browser.action.setIcon({path: browser.runtime.getURL('./icondisabled.png')}); // Set the icon to disabled (grey)
+    browser.action.setIcon({path: './images/icondisabled.png'}); // Set the icon to disabled (grey)
     return; // Abort
   }
   try {
@@ -78,12 +78,12 @@ async function update_action_icon(tabin) {
       var elurl = new URL(element.url);
       if (elurl.host === taburl.host) { // If the custom setting's url matches the hostname
         injected = true;
-        browser.action.setIcon({path: browser.runtime.getURL('./iconcustom.png')}); // Set to custom icon (yellow)
+        browser.action.setIcon({path: './images/iconcustom.png'}); // Set to custom icon (yellow)
       }
     });
   }
   if (!injected) { // If the default settings are applied
-    browser.action.setIcon({path: browser.runtime.getURL('./icon.png')}); // Set to the default icon (blue)
+    browser.action.setIcon({path: './images/icon.png'}); // Set to the default icon (blue)
   }
 }
 

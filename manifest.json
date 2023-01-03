@@ -10,19 +10,24 @@
   "host_permissions": ["<all_urls>"],
   "permissions": ["storage", "tabs", "notifications", "scripting"],
   "action": {
-    "default_icon": "icon.png",
+    "default_icon": "./images/icon.png",
     "default_title": "Custom selection",
     "default_popup": "popup.html",
     "browser_style": true
   },
+  "icons": {
+    "16": "images/icon-16.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon.png"
+  },
   "web_accessible_resources": [
     {
       "resources": [
-        "./icon.png",
-        "./iconcustom.png",
-        "./iconvalid.png",
-        "./iconfail.png",
-        "./icondisabled.png"
+        "./images/icon.png",
+        "./images/iconcustom.png",
+        "./images/iconvalid.png",
+        "./images/iconfail.png",
+        "./images/icondisabled.png"
       ],
       "matches": ["<all_urls>"]
     }
