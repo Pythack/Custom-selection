@@ -111,3 +111,16 @@ browser.runtime.onMessage.addListener((message, sender) => {
     });
     
 browser.tabs.onActivated.addListener(update_action_icon); // When the active tab has changed: update icon
+
+chrome.runtime.onInstalled.addListener(details => {
+  if (details.reason == "install") {
+    browser.storage.local.set({ // Set basic settings
+			background_color: "#007EF380",
+			color: "#007EF3FF",
+			shadowActivated: false,
+			shadowColor: "#007EF3FF",
+			shadowBlur: "0",
+			witness: true
+		});
+  }
+});

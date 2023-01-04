@@ -50,7 +50,7 @@ function addCustom() {
 	let getting = browser.storage.local.get(); // Get storage
 	getting.then(result => {
 		var custom_url = document.querySelector("#add_url").value; // Get new custom url
-		var customSettings = new Custom_option(custom_url, document.querySelector("#background_color").value || "#007ef3", document.querySelector("#color").value || "white", document.querySelector("input#activate_textShadow").checked || false, document.querySelector("#shadow-color").value || "none", document.querySelector("#shadow-blur").value || "0"); // Create new element with currently displayed settings
+		var customSettings = new Custom_option(custom_url, document.querySelector("#background_color").value || "#007EF3", document.querySelector("#color").value || "white", document.querySelector("input#activate_textShadow").checked || false, document.querySelector("#shadow-color").value || "none", document.querySelector("#shadow-blur").value || "0"); // Create new element with currently displayed settings
 		var customs = result.customOptions || []; // Get current saved settings; if there are none, initialize an empty list
 		customs.push(customSettings); // Add new custom settings to the list
 		browser.storage.local.set({ // Store the new list in the storage
@@ -79,7 +79,7 @@ function removeCustom() {
 		document.querySelector("#url_div").style.display = "none"; // Hide url edition input
 		document.querySelector("#remove_custom").style.display = "none"; // Hide remove button
 		// Restore default settings in the inputs
-		document.querySelector("#background_color").jscolor.fromString(result.background_color || "#007ef3");
+		document.querySelector("#background_color").jscolor.fromString(result.background_color || "#007EF3");
 		document.querySelector("#color").jscolor.fromString(result.color || "white");
 		document.querySelector("#shadow-color").jscolor.fromString(result.shadowColor || "#ffffff");
 		document.querySelector("#shadow-blur").value = result.shadowBlur || "0px";
@@ -98,7 +98,7 @@ function saveOptions(e) { // Function called when user clicks on "Save" button
 	var selectIndex = document.querySelector("#custom_select").selectedIndex; // Get selected custom option
 	if(selectIndex == 0) { // If 0, then user selected default settings
 		var preferencesSave = browser.storage.local.set({ // Update default settings
-			background_color: document.querySelector("#background_color").value || "#007ef3",
+			background_color: document.querySelector("#background_color").value || "#007EF3",
 			color: document.querySelector("#color").value || "white",
 			shadowActivated: document.querySelector("input#activate_textShadow").checked || false,
 			shadowColor: document.querySelector("#shadow-color").value || "none",
@@ -112,7 +112,7 @@ function saveOptions(e) { // Function called when user clicks on "Save" button
 			var selectIndex = document.querySelector("#custom_select").selectedIndex - 1; // Get index (-1 to ignore first index: default settings)
 			var customs = result.customOptions; // Get current custom settings
 			customs[selectIndex] = { // Update selected custom settings
-				background: document.querySelector("#background_color").value || "#007ef3",
+				background: document.querySelector("#background_color").value || "#007EF3",
 				color: document.querySelector("#color").value || "white",
 				shadowActivated: document.querySelector("input#activate_textShadow").checked || false,
 				shadowColor: document.querySelector("#shadow-color").value || "none",
@@ -177,7 +177,7 @@ function changeCustomDisplay() { // Function called when select changes
 		getting.then(result => {
 			var customs = result.customOptions; // Get custom settings
 			// Restore settings in inputs
-			document.querySelector("#background_color").jscolor.fromString(customs[selectIndex - 1].background || "#007ef3");
+			document.querySelector("#background_color").jscolor.fromString(customs[selectIndex - 1].background || "#007EF3");
 			document.querySelector("#color").jscolor.fromString(customs[selectIndex - 1].color || "white");
 			document.querySelector("#shadow-color").jscolor.fromString(customs[selectIndex - 1].shadowColor || "#ffffff");
 			document.querySelector("#shadow-blur").value = customs[selectIndex - 1].shadowBlur || "0px";
@@ -195,7 +195,7 @@ function changeCustomDisplay() { // Function called when select changes
 		let getting = browser.storage.local.get(); // Get storage
 		getting.then(result => {
 			// Restore settings in inputs
-			document.querySelector("#background_color").jscolor.fromString(result.background_color || "#007ef3");
+			document.querySelector("#background_color").jscolor.fromString(result.background_color || "#007EF3");
 			document.querySelector("#color").jscolor.fromString(result.color || "white");
 			document.querySelector("#shadow-color").jscolor.fromString(result.shadowColor || "#ffffff");
 			document.querySelector("#shadow-blur").value = result.shadowBlur || "0px";
