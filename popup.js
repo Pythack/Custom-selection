@@ -2,8 +2,34 @@ if (typeof browser === "undefined") {
     var browser = chrome;
 }
 
-function saveSuccess(item){browser.notifications.create("notification-save-status",{type:'basic',title:'Selection styler: Saving success',message:"Preferences saved successfully. ",iconUrl:"./images/iconvalid.png"});setTimeout(function(){browser.notifications.clear("notification-save-status");},1000);};
-function saveError(item){browser.notifications.create("notification-save-status",{type:'basic',title:'Selection styler: Saving error',message:"Error saving preferences",iconUrl:"./images/iconfail.png"});setTimeout(function(){browser.notifications.clear("notification-save-status");},1000);};
+function saveSuccess(item) {
+    browser.runtime.sendMessage({
+		request: "display-notification",
+		notificationName: "custom-selection-save", 
+		timeout: 1000,
+		notification: {
+			type: 'basic',
+            title: 'Selection styler: Saving success',
+            message: "Preferences saved successfully. ",
+            iconUrl: "./images/iconvalid.png"
+        }
+	});
+};
+
+function saveError(item) {
+	browser.runtime.sendMessage({
+		request: "display-notification",
+		notificationName: "custom-selection-save", 
+		timeout: 1000,
+		notification: {
+            type: 'basic',
+            title: 'Selection styler: Saving error',
+            message: "Error saving preferences",
+            iconUrl: "./images/iconfail.png"
+        }
+	});
+};
+
 
 function onError(error) {
 	console.log(`Error:${error}`);

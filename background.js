@@ -101,6 +101,12 @@ browser.runtime.onMessage.addListener((message, sender) => {
           });
         });
         break;
+      case "display-notification": // When the user saves the settings (from popup)
+          browser.notifications.create(message.notificationName, message.notification);
+          setTimeout(function() {
+            browser.notifications.clear(message.notificationName);
+          }, message.timeout);
+        break;
       }
     });
     
