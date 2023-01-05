@@ -1,9 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "Custom selection",
+  "name": "__MSG_appName__",
   "author": "Pythack",
+  "default_locale": "en",
   "version": "1.5.7",
-  "description": "Change the color, background color, and the text shadow of the text selection!",
+  "description": "__MSG_appDesc__",
   "background": {
     "service_worker": "./background.js"
   },
