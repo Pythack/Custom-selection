@@ -1,0 +1,47 @@
+{
+  "appName": {
+    "message": "Власний вибір"
+  },
+  "appDesc": {
+    "message": "Змініть колір, колір фону та тінь тексту виділеного тексту!"
+  },
+  "popupColorFieldName": {
+    "message": "Колір"
+  },
+  "popupBackgroundColorFieldName": {
+    "message": "Колір фону"
+  },
+  "popupTextShadowColorFieldName": {
+    "message": "Колір тіні тексту"
+  },
+  "popupTextShadowBlurFieldName": {
+    "message": "Розмиття тіні тексту (у пікселях)"
+  },
+  "popupTextShadowActivation": {
+    "message": "Активувати тінь тексту"
+  },
+  "popupNewCustomUrl": {
+    "message": "Нова спеціальна URL-адреса"
+  },
+  "popupDefault": {
+    "message": "За умовчанням"
+  },
+  "popupPreview": {
+    "message": "Попередній перегляд"
+  },
+  "popupSave": {
+    "message": "Зберегти"
+  },
+  "notifSuccessTitle": {
+    "message": "Користувацький вибір: успішне збереження"
+  },
+  "notifSuccessContent": {
+    "message": "Налаштування успішно збережено"
+  },
+  "notifFailTitle": {
+    "message": "Користувацький вибір: помилка збереження"
+  },
+  "notifFailContent": {
+    "message": "Помилка збереження налаштувань"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "appName": {
+    "message": "カスタム選択"
+  },
+  "appDesc": {
+    "message": "テキスト選択の色,背景色,テキストの影を変更してください!"
+  },
+  "popupColorFieldName": {
+    "message": "色"
+  },
+  "popupBackgroundColorFieldName": {
+    "message": "背景色"
+  },
+  "popupTextShadowColorFieldName": {
+    "message": "テキストの影の色"
+  },
+  "popupTextShadowBlurFieldName": {
+    "message": "テキストの影のぼかし (ピクセル単位)"
+  },
+  "popupTextShadowActivation": {
+    "message": "テキストの影を有効にする"
+  },
+  "popupNewCustomUrl": {
+    "message": "新しいカスタム URL"
+  },
+  "popupDefault": {
+    "message": "デフォルト"
+  },
+  "popupPreview": {
+    "message": "プレビュー"
+  },
+  "popupSave": {
+    "message": "保存"
+  },
+  "notifSuccessTitle": {
+    "message": "カスタム選択: 保存成功"
+  },
+  "notifSuccessContent": {
+    "message": "設定が正常に保存されました"
+  },
+  "notifFailTitle": {
+    "message": "カスタム選択: 保存エラー"
+  },
+  "notifFailContent": {
+    "message": "設定の保存中にエラーが発生しました"
+  }
+}
