@@ -7,37 +7,37 @@
     <script src="jscolor.min.js"></script>
   </head>
   <body>
-    <h1 id="title">Custom selection</h1>
+    <h1 id="title">__MSG_appName__</h1>
     <div id="formdiv">
       <div id="formdivurl" class="formdivel">
         <select class="" id="custom_select" name="">
-          <option value="general">Default</option>
+          <option value="general">__MSG_popupDefault__</option>
         </select><button type="button" id="remove_custom">-</button><br/>
-        <label>New custom url: </label><br/><input type="url" placeholder="www.google.com" id="add_url"><button type="button" id="add_custom">+</button><br/><br/>
+        <label>__MSG_popupNewCustomUrl__: </label><br/><input type="url" placeholder="www.google.com" id="add_url"><button type="button" id="add_custom">+</button><br/><br/>
         <!--<label>Url (optional): </label><br/><input type="url" placeholder="https://www.google.com/" id="url"><br/><br/>-->
         <div id="url_div"><label>Url: </label><br/><input type="url" placeholder="white" id="change_url"><br/><br/></div>
       </div>
       <div id="formdivclr" class="formdivel">
-        <label>Color: </label><br/>
+        <label>__MSG_popupColorFieldName__: </label><br/>
         <input id="color" value="#007EF3FF" data-jscolor="{}">
         <br/><br/>
-        <label>Background color: </label><br/>
+        <label>__MSG_popupBackgroundColorFieldName__: </label><br/>
         <input id="background_color" value="#007EF380" data-jscolor="{}">
         <br/><br/>
       </div>
       <div id="formdivprv" class="formdivel">
-        <label>Preview: </label><br/><p id="preview">Lorem ipsum</p><br/><br/>
-        <button type="submit" id="save_btn">Save</button>
+        <label>__MSG_popupPreview__: </label><br/><p id="preview">Lorem ipsum</p><br/><br/>
+        <button type="submit" id="save_btn">__MSG_popupSave__</button>
       </div>
       <div id="formdivtxtsh" class="formdivel">
-        <input id="activate_textShadow" name="activate_textShadow" type="checkbox"><label for="activate_textShadow">Activate text shadow </label><br/><br/>
+        <input id="activate_textShadow" name="activate_textShadow" type="checkbox"><label for="activate_textShadow">__MSG_popupTextShadowActivation__</label><br/><br/>
         <div id="textShadowOptions">
-          <label>Text shadow color: </label><br/>
+          <label>__MSG_popupTextShadowColorFieldName__: </label><br/>
           <div class="colorinputcouple">
             <input value="#00000000" id="shadow-color" data-jscolor="{}">
           </div>
           <br/><br/>
-          <label>Text shadow blur (in pixels): </label><br/><input type="number" placeholder="15" min="0" id="shadow-blur"><br/><br/>
+          <label>__MSG_popupTextShadowBlurFieldName__: </label><br/><input type="number" placeholder="15" min="0" id="shadow-blur"><br/><br/>
         </div>
       </div>
     </div>

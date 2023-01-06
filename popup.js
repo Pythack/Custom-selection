@@ -9,8 +9,8 @@ function saveSuccess(item) {
 		timeout: 1000,
 		notification: {
 			type: 'basic',
-            title: 'Selection styler: Saving success',
-            message: "Preferences saved successfully. ",
+            title: browser.i18n.getMessage("__MSG_notifSuccessTitle__"),
+            message: browser.i18n.getMessage("__MSG_notifSuccessContent__"),
             iconUrl: "./images/iconvalid.png"
         }
 	});
@@ -22,9 +22,9 @@ function saveError(item) {
 		notificationName: "custom-selection-save", 
 		timeout: 1000,
 		notification: {
-            type: 'basic',
-            title: 'Selection styler: Saving error',
-            message: "Error saving preferences",
+			type: 'basic',
+			title: browser.i18n.getMessage("__MSG_notifFailTitle__"),
+			message: browser.i18n.getMessage("__MSG_notifFailContent__"),
             iconUrl: "./images/iconfail.png"
         }
 	});
@@ -144,7 +144,7 @@ function restoreOptions() {
   let getting = browser.storage.local.get(); // Get storage
   getting.then(result => {
 	// Restore values to fields
-    document.querySelector("#background_color").jscolor.fromString(result.background_color || "#00EF380");
+    document.querySelector("#background_color").jscolor.fromString(result.background_color || "#007EF380");
     document.querySelector("#color").jscolor.fromString(result.color || "007EF3FF");
     document.querySelector("#shadow-color").jscolor.fromString(result.shadowColor || "#FFFFFF00");
     document.querySelector("#shadow-blur").value = result.shadowBlur || "0px";
@@ -166,7 +166,15 @@ function restoreOptions() {
 };
 
 
-function updateShadowColorDisplay(){if(document.querySelector("input#activate_textShadow").checked){document.querySelector('div#textShadowOptions').style.display="block"}else{document.querySelector('div#textShadowOptions').style.display="none"}};
+function updateShadowColorDisplay() {
+	console.log("ok");
+    if (document.querySelector("input#activate_textShadow").checked) {
+        document.querySelector('div#textShadowOptions').style.display = "block"
+    } else {
+        document.querySelector('div#textShadowOptions').style.display = "none"
+    }
+};
+
 function changeCustomDisplay() { // Function called when select changes
 	var selectIndex = document.querySelector("#custom_select").selectedIndex; // Get selected index
 	if(selectIndex != 0) { // If selected option is not default settings
@@ -209,6 +217,29 @@ function changeCustomDisplay() { // Function called when select changes
 		}, onError);
 	};
 };
+
+function localizeHtmlPage()
+{
+    //Localize by replacing __MSG_***__ meta tags
+    var objects = document.getElementsByTagName('html');
+    for (var j = 0; j < objects.length; j++)
+    {
+        var obj = objects[j];
+
+        var valStrH = obj.innerHTML.toString();
+        var valNewH = valStrH.replace(/__MSG_(\w+)__/g, function(match, v1)
+        {
+            return v1 ? browser.i18n.getMessage(v1) : "";
+        });
+
+        if(valNewH != valStrH)
+        {
+            obj.innerHTML = valNewH;
+        }
+    }
+}
+
+localizeHtmlPage();
 
 // Set event listeners
 document.addEventListener("DOMContentLoaded", restoreOptions);
