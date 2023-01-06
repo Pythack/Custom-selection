@@ -1,0 +1,47 @@
+{
+  "appName": {
+    "message": "맞춤 텍스트 선택"
+  },
+  "appDesc": {
+    "message": "텍스트 선택의 색상, 배경색 및 텍스트 그림자를 변경할수있습니다!"
+  },
+  "popupColorFieldName": {
+    "message": "색상"
+  },
+  "popupBackgroundColorFieldName": {
+    "message": "배경색"
+  },
+  "popupTextShadowColorFieldName": {
+    "message": "텍스트 그림자 색상"
+  },
+  "popupTextShadowBlurFieldName": {
+    "message": "텍스트 그림자 흐림(픽셀 단위)"
+  },
+  "popupTextShadowActivation": {
+    "message": "텍스트 그림자 활성화"
+  },
+  "popupNewCustomUrl": {
+    "message": "새 맞춤 URL"
+  },
+  "popupDefault": {
+    "message": "기본"
+  },
+  "popupPreview": {
+    "message": "시사"
+  },
+  "popupSave": {
+    "message": "저장"
+  },
+  "notifSuccessTitle": {
+    "message": "맞춤 텍스트 선택: 저장 성공"
+  },
+  "notifSuccessContent": {
+    "message": "환경설정이 성공적으로 저장되었습니다."
+  },
+  "notifFailTitle": {
+    "message": "맞춤 텍스트 선택: 저장 실패"
+  },
+  "notifFailContent": {
+    "message": "환경설정을 저장하는 중에 오류가 발생했습니다."
+  }
+}

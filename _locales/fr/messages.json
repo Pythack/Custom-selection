@@ -4,5 +4,44 @@
   },
   "appDesc": {
     "message": "Changez la couleur, la couleur de fond, et l'ombre de la sélection de texte!"
+  },
+  "popupColorFieldName": {
+    "message": "Couleur"
+  },
+  "popupBackgroundColorFieldName": {
+    "message": "Couleur de l'arrière-plan"
+  },
+  "popupTextShadowColorFieldName": {
+    "message": "Couleur d'ombre de text"
+  },
+  "popupTextShadowBlurFieldName": {
+    "message": "Flou d'ombre de texte (en pixels)"
+  },
+  "popupTextShadowActivation": {
+    "message": "Activer l'ombre de texte"
+  },
+  "popupNewCustomUrl": {
+    "message": "Nouvelle url personalisée"
+  },
+  "popupDefault": {
+    "message": "Défaut"
+  },
+  "popupPreview": {
+    "message": "Aperçu"
+  },
+  "popupSave": {
+    "message": "Enregistrer"
+  },
+  "notifSuccessTitle": {
+    "message": "Sélection personalisée: Enregistrement réussi"
+  },
+  "notifSuccessContent": {
+    "message": "Préférences enregistrées avec succès"
+  },
+  "notifFailTitle": {
+    "message": "Sélection personalisée: Enregistrement échoué"
+  },
+  "notifFailContent": {
+    "message": "Erreur lors de l'enregistrement des préférences"
   }
 }

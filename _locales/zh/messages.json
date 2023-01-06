@@ -1,0 +1,47 @@
+{
+  "appName": {
+    "message": "选择自定义文本"
+  },
+  "appDesc": {
+    "message": "您可以更改文本选择的颜色、背景颜色和文本阴影！"
+  },
+  "popupColorFieldName": {
+    "message": "颜色"
+  },
+  "popupBackgroundColorFieldName": {
+    "message": "背景颜色"
+  },
+  "popupTextShadowColorFieldName": {
+    "message": "文字阴影颜色"
+  },
+  "popupTextShadowBlurFieldName": {
+    "message": "文本阴影模糊（以像素为单位）"
+  },
+  "popupTextShadowActivation": {
+    "message": "启用文本阴影"
+  },
+  "popupNewCustomUrl": {
+    "message": "新自定义 URL"
+  },
+  "弹出默认": {
+    "message": "默认"
+  },
+  "弹出预览": {
+    "message": "时事"
+  },
+  "弹出保存": {
+    "message": "保存"
+  },
+  "notifSuccessTitle": {
+    "message": "选择自定义文本:保存成功"
+  },
+  "notifSuccessContent": {
+    "message": "您的偏好已成功保存。"
+  },
+  "notifFailTitle": {
+    "message": "选择自定义文本:保存失败"
+  },
+  "notifFailContent": {
+    "message": "保存首选项时出错。"
+  }
+}

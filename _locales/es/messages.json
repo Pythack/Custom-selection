@@ -1,0 +1,47 @@
+{
+  "appName": {
+    "message": "Selección personalizada"
+  },
+  "appDesc": {
+    "message": "¡Cambien el color, el color de fondo y la sombra del texto del texto seleccionado!"
+  },
+  "popupColorFieldName": {
+    "message": "Color"
+  },
+  "popupBackgroundColorFieldName": {
+    "message": "Color de fondo"
+  },
+  "popupTextShadowColorFieldName": {
+    "message": "Color de la sombra del texto"
+  },
+  "popupTextShadowBlurFieldName": {
+    "message": "Desenfoque de sombra de texto (en píxeles)"
+  },
+  "popupTextShadowActivation": {
+    "message": "Activar sombra de texto"
+  },
+  "popupNewCustomUrl": {
+    "message": "Nueva URL personalizada"
+  },
+  "popupDefault": {
+    "message": "Defecto"
+  },
+  "popupPreview": {
+    "message": "Avance"
+  },
+  "popupSave": {
+    "message": "Guardar"
+  },
+  "notifSuccessTitle": {
+    "message": "Selección personalizada: succeso"
+  },
+  "notifSuccessContent": {
+    "message": "Preferencias guardadas con succeso"
+  },
+  "notifFailTitle": {
+    "message": "Selección personalizada: Error de guardar"
+  },
+  "notifFailContent": {
+    "message": "Error de guardar preferencias"
+  }
+}
