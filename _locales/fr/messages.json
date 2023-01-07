@@ -12,7 +12,7 @@
     "message": "Couleur de l'arrière-plan"
   },
   "popupTextShadowColorFieldName": {
-    "message": "Couleur d'ombre de text"
+    "message": "Couleur d'ombre de texte"
   },
   "popupTextShadowBlurFieldName": {
     "message": "Flou d'ombre de texte (en pixels)"
