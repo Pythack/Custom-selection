@@ -9,7 +9,7 @@ function onError(error) { // Define onError function
 }
 
 async function restoreOptions(tab) {
-  if (/^((chrome|about):\/\/.*|$|https:\/\/chrome\.google\.com\/webstore.*)/.test(tab.url)) { // If tab is chrome:// or about://
+  if (/^((chrome:\/\/|about:).*|$|https:\/\/chrome\.google\.com\/webstore.*|https:\/\/addons\.mozilla\.org.*)/.test(tab.url)) { // If tab is chrome:// or about://
     return; // Abort the CSS injection
   }
   var storage = await browser.storage.local.get(); // Get settings
@@ -63,7 +63,7 @@ async function restoreOptions(tab) {
 async function update_action_icon(tabin) {
   var tab = await browser.tabs.get(tabin.tabId); // Get the tab from the id
   var storage = await browser.storage.local.get(); // Get settings
-  if (/^((chrome|about):\/\/.*|$|https:\/\/chrome\.google\.com\/webstore.*)/.test(tab.url)) { // If tab is on chrome://, about:// or on the chrome web store
+  if (/^((chrome:\/\/|about:).*|$|https:\/\/chrome\.google\.com\/webstore.*|https:\/\/addons\.mozilla\.org.*)/.test(tab.url)) { // If tab is on chrome://, about:// or on the chrome web store
     browser.action.setIcon({path: './images/icondisabled.png'}); // Set the icon to disabled (grey)
     return; // Abort
   }
