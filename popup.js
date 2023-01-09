@@ -9,8 +9,8 @@ function saveSuccess(item) {
 		timeout: 1000,
 		notification: {
 			type: 'basic',
-            title: browser.i18n.getMessage("__MSG_notifSuccessTitle__"),
-            message: browser.i18n.getMessage("__MSG_notifSuccessContent__"),
+            title: browser.i18n.getMessage("notifSuccessTitle"),
+            message: browser.i18n.getMessage("notifSuccessContent"),
             iconUrl: "./images/iconvalid.png"
         }
 	});
@@ -23,8 +23,8 @@ function saveError(item) {
 		timeout: 1000,
 		notification: {
 			type: 'basic',
-			title: browser.i18n.getMessage("__MSG_notifFailTitle__"),
-			message: browser.i18n.getMessage("__MSG_notifFailContent__"),
+			title: browser.i18n.getMessage("notifFailTitle"),
+			message: browser.i18n.getMessage("notifFailContent"),
             iconUrl: "./images/iconfail.png"
         }
 	});
