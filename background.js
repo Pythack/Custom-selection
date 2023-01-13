@@ -35,12 +35,6 @@ async function restoreOptions(tab) {
         } else {
           css = '::selection { background: ' + element.background + ' !important; color: ' + element.color + ' !important; text-shadow: none !important}';
         }
-        browser.scripting.insertCSS({
-          target: {
-            tabId: tab.id,
-          },
-          css: css
-        });
       }
     });
   }
@@ -50,13 +44,13 @@ async function restoreOptions(tab) {
     } else {
       css = '::selection { background: ' + storage.background_color + ' !important; color: ' + storage.color + ' !important; text-shadow: none !important}';
     }
-    browser.scripting.insertCSS({
-      target: {
-        tabId: tab.id,
-      },
-      css: css
-    });
   }
+  browser.scripting.insertCSS({
+    target: {
+      tabId: tab.id,
+    },
+    css: css
+  });
   localstorage[tab.id] = css; // Store the injected CSS into local storage so that we can remove it later
 }
 
