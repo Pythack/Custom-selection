@@ -2,40 +2,49 @@
   font-family: Futura,Trebuchet MS,Arial,sans-serif;
 }
 
+html {
+  height: 500px;
+  width: 300px;
+}
+
 body {
   align-items: center;
   background: #fff;
   color: black;
   display: flex;
   flex-direction: column;
-  height: 500px;
-  justify-content: center;
+  justify-content: baseline;
   overflow-x: hidden;
   text-align: center;
-  width: 650px;
+  height: fit-content;
+  margin: 0;
+  width: 100%;
 }
 
 #formdiv {
   text-align: left;
   width: 100%;
   height: 100%;
-  display: grid;
-  margin-left: 100px;
-  grid-template-columns: 30% 70%;
-  grid-template-rows: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
 }
 
 .formdivel {
+  width: 100%;
+  height: fit-content;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
 }
 
 h1 {
   color: black;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 200;
+  margin-top: 60px;
 }
 
 h2 {
@@ -54,6 +63,7 @@ input {
   border-radius: 2px;
   margin-top: 8px;
   outline: none;
+  width: 70%;
 }
 
 #activate_textShadow {
@@ -70,6 +80,10 @@ input {
 
 #textShadowOptions {
   display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 #url_div {
@@ -84,14 +98,12 @@ input[type="text"] {
   height: 32px;
   padding-left: 8px;
   padding-right: 8px;
-  width: auto;
 }
 
 input[type="url"] {
   height: 32px;
   padding-left: 8px;
   padding-right: 8px;
-  width: auto;
 }
 
 input:hover {
@@ -107,16 +119,10 @@ select {
   height: 32px;
   padding-left: 8px;
   padding-right: 8px;
-  width: auto;
-}
-
-select:hover {
-  border-color: rgba(12, 12, 13, 0.3);
-}
-
-select:focus {
-  border: #0a84ff solid 2px;
-  box-shadow: 0 0 0 1px #0a84ff, 0 0 0 4px rgba(10, 132, 255, 0.3);
+  width: 100%;
+  border: none;
+  background-color: #f3f3f3;
+  box-shadow: 0 0 15px #f3f3f3;
 }
 
 input:invalid {
@@ -148,6 +154,32 @@ input[type="url"]:placeholder-shown:focus {
 
 #remove_custom {
   display: none;
+  cursor: pointer;
+  margin-top: 5px;
+  background-color: #ffb3b3;
+  box-shadow: 0 0 15px #ffb3b3;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  transition: 0.5s;
+}
+#remove_custom:hover {
+  background-color: #ff8080;
+  box-shadow: 0 0 15px #ff8080;
+}
+#add_custom {
+  cursor: pointer;
+  margin-top: 5px;
+  background-color: #b3ffb3;
+  box-shadow: 0 0 15px #b3ffb3;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  transition: 0.5s;
+}
+#add_custom:hover {
+  background-color: #80ff80;
+  box-shadow: 0 0 15px #80ff80;
 }
 
 .colorinputcouple {
@@ -194,6 +226,18 @@ input[type="url"]:placeholder-shown:focus {
 #promotionaldiv p {
   width: 100%;
   height: 100%;
+}
+
+#formdivprv {
+  position: fixed;
+  padding-top: 5px;
+  bottom: 0;
+  background-color: #f3f3f3;
+  box-shadow: 0 0 15px rgb(200, 200, 200);
+}
+
+#formdivtxtsh {
+  margin-bottom: 3cm;
 }
 
 h1, h2, label, p, #preview {

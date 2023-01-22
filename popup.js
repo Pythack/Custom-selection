@@ -85,7 +85,7 @@ function removeCustom() {
 		document.querySelector("#shadow-blur").value = result.shadowBlur || "0px";
 		document.querySelector("input#activate_textShadow").checked = result.shadowActivated;
 		if(result.shadowActivated) {
-			document.querySelector('div#textShadowOptions').style.display = "block";
+			document.querySelector('div#textShadowOptions').style.display = "flex";
 		} else {
 			document.querySelector('div#textShadowOptions').style.display = "none";
 		}
@@ -150,7 +150,7 @@ function restoreOptions() {
     document.querySelector("#shadow-blur").value = result.shadowBlur || "0px";
     document.querySelector("input#activate_textShadow").checked = result.shadowActivated;
     if (result.shadowActivated) {
-      document.querySelector('div#textShadowOptions').style.display = "block";
+      document.querySelector('div#textShadowOptions').style.display = "flex";
     };
 	if (result.customOptions) { // If there are custom settings
 		result.customOptions.forEach(element => { // For each custom setting: add option to select
@@ -167,9 +167,8 @@ function restoreOptions() {
 
 
 function updateShadowColorDisplay() {
-	console.log("ok");
     if (document.querySelector("input#activate_textShadow").checked) {
-        document.querySelector('div#textShadowOptions').style.display = "block"
+        document.querySelector('div#textShadowOptions').style.display = "flex"
     } else {
         document.querySelector('div#textShadowOptions').style.display = "none"
     }
@@ -191,7 +190,7 @@ function changeCustomDisplay() { // Function called when select changes
 			document.querySelector("#shadow-blur").value = customs[selectIndex - 1].shadowBlur || "0px";
 			document.querySelector("input#activate_textShadow").checked = customs[selectIndex - 1].shadowActivated;
 			if(customs[selectIndex - 1].shadowActivated) {
-				document.querySelector('div#textShadowOptions').style.display = "block";
+				document.querySelector('div#textShadowOptions').style.display = "flex";
 			} else {
 				document.querySelector('div#textShadowOptions').style.display = "none";
 			};
@@ -209,7 +208,7 @@ function changeCustomDisplay() { // Function called when select changes
 			document.querySelector("#shadow-blur").value = result.shadowBlur || "0px";
 			document.querySelector("input#activate_textShadow").checked = result.shadowActivated;
 			if(result.shadowActivated) {
-				document.querySelector('div#textShadowOptions').style.display = "block";
+				document.querySelector('div#textShadowOptions').style.display = "flex";
 			} else {
 				document.querySelector('div#textShadowOptions').style.display = "none";
 			}
@@ -243,6 +242,7 @@ localizeHtmlPage();
 
 // Set event listeners
 document.addEventListener("DOMContentLoaded", restoreOptions);
+document.addEventListener("DOMContentLoaded", () => {let myPicker = new JSColor('#shadow-color', {'position': 'top'})});
 document.addEventListener("DOMContentLoaded", () => {setTimeout(updatePreview, 100)});
 document.querySelector("#save_btn").addEventListener("click", saveOptions);
 document.querySelector("#formdiv").addEventListener("keyup", updatePreview);
