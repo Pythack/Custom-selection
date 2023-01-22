@@ -9,9 +9,6 @@ function onError(error) { // Define onError function
 }
 
 async function restoreOptions(tab) {
-  if (/^((chrome:\/\/|about:).*|$|https:\/\/chrome\.google\.com\/webstore.*|https:\/\/addons\.mozilla\.org.*)/.test(tab.url)) { // If tab is chrome:// or about://
-    return; // Abort the CSS injection
-  }
   var storage = await browser.storage.local.get(); // Get settings
   if (localstorage[tab.id]) { // If extension already injected CSS in this tab, remove it
     browser.scripting.removeCSS({
@@ -19,7 +16,7 @@ async function restoreOptions(tab) {
         tabId: tab.id,
       },
       css: localstorage[tab.id]
-    });
+    }).catch(error => {return;});
   }
   var css;
   var url = new URL(tab.url);
@@ -50,14 +47,14 @@ async function restoreOptions(tab) {
       tabId: tab.id,
     },
     css: css
-  });
+  }).catch(error => {return;});
   localstorage[tab.id] = css; // Store the injected CSS into local storage so that we can remove it later
 }
 
 async function update_action_icon(tabin) {
   var tab = await browser.tabs.get(tabin.tabId); // Get the tab from the id
   var storage = await browser.storage.local.get(); // Get settings
-  if (/^((chrome:\/\/|about:).*|$|https:\/\/chrome\.google\.com\/webstore.*|https:\/\/addons\.mozilla\.org.*)/.test(tab.url)) { // If tab is on chrome://, about:// or on the chrome web store
+  if (/^((chrome:\/\/|chrome-extension:\/\/|about:).*|$|https:\/\/chrome\.google\.com\/webstore.*|https:\/\/addons\.mozilla\.org.*)/.test(tab.url)) { // If tab is on chrome://, about:// or on the chrome web store
     browser.action.setIcon({path: './images/icondisabled.png'}); // Set the icon to disabled (grey)
     return; // Abort
   }
