@@ -240,6 +240,24 @@ input[type="url"]:placeholder-shown:focus {
   margin-bottom: 3cm;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #a8a8a8;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #a8a8a865;
+}
+
 h1, h2, label, p, #preview {
   -webkit-touch-callout: none;
     -webkit-user-select: none;
