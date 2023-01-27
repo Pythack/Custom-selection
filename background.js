@@ -80,7 +80,9 @@ async function update_action_icon(tabin) {
 
 browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {// When a tab is updated
   restoreOptions(tab); // Inject CSS
-  update_action_icon({tabId: tab.id}); // Update icon
+  browser.tabs.query({ active: true, currentWindow: true }, tabs => {
+    update_action_icon({ tabId: tabs[0].id })// Update icon
+  });
 });
 
 browser.runtime.onMessage.addListener((message, sender) => {

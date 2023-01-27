@@ -143,26 +143,32 @@ function updatePreview() { // Function called when input values are changed
 function restoreOptions() {
   let getting = browser.storage.local.get(); // Get storage
   getting.then(result => {
-	// Restore values to fields
-    document.querySelector("#background_color").jscolor.fromString(result.background_color || "#007EF380");
-    document.querySelector("#color").jscolor.fromString(result.color || "007EF3FF");
-    document.querySelector("#shadow-color").jscolor.fromString(result.shadowColor || "#FFFFFF00");
-    document.querySelector("#shadow-blur").value = result.shadowBlur || "0px";
-    document.querySelector("input#activate_textShadow").checked = result.shadowActivated;
-    if (result.shadowActivated) {
-      document.querySelector('div#textShadowOptions').style.display = "flex";
-    };
 	if (result.customOptions) { // If there are custom settings
 		result.customOptions.forEach(element => { // For each custom setting: add option to select
-		var option = document.createElement("option");
+		const option = document.createElement("option");
 		option.textContent = element.url;
 		option.value = element.url;
-		var select = document.querySelector("#custom_select");
+		const select = document.querySelector("#custom_select");
 		select.appendChild(option);
 		});
 	}
   }, onError);
-  updatePreview(); // Update preview
+  var indexToUpdate = 0;
+  chrome.tabs.query({active: true, currentWindow: true}, async tabs => {
+	var activeTab = tabs[0];
+	var activeTabURL = new URL(activeTab.url);
+	var storage = await browser.storage.local.get();
+	if (storage.customOptions) { // If custom settings are defined
+		storage.customOptions.forEach((element) => {
+			var elurl = new URL(element.url);
+			if (elurl.host === activeTabURL.host) { // Compare custom setting's hostname with the tab's
+			const select = document.querySelector("#custom_select");
+			select.value = element.url;
+			select.dispatchEvent(new Event('change'));
+		  }
+		});
+	  }
+ });
 };
 
 
@@ -174,8 +180,8 @@ function updateShadowColorDisplay() {
     }
 };
 
-function changeCustomDisplay() { // Function called when select changes
-	var selectIndex = document.querySelector("#custom_select").selectedIndex; // Get selected index
+function changeCustomDisplay(event) { // Function called when select changes
+		var selectIndex = document.querySelector("#custom_select").selectedIndex;
 	if(selectIndex != 0) { // If selected option is not default settings
 		document.querySelector("#change_url").value = document.querySelector("#custom_select").value; // Initialize url edition input to selected setting's url
 		document.querySelector("#url_div").style.display = "block"; // Display custom url edition div
