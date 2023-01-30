@@ -47,7 +47,7 @@ async function restoreOptions(tab) {
       tabId: tab.id,
     },
     css: css
-  }).catch(error => {return;});
+  }).then(result => {return;}, error => {console.log(error);});
   localstorage[tab.id] = css; // Store the injected CSS into local storage so that we can remove it later
 }
 
