@@ -1,0 +1,47 @@
+{
+  "appName": {
+    "message": "Selezione personalizzata"
+  },
+  "appDesc": {
+    "message": "Cambia il colore, il colore di sfondo e l'ombra del testo della selezione del testo!"
+  },
+  "popupColorFieldName": {
+    "message": "Colore"
+  },
+  "popupBackgroundColorFieldName": {
+    "message": "Colore di sfondo"
+  },
+  "popupTextShadowColorFieldName": {
+    "message": "Colore dell'ombra del testo"
+  },
+  "popupTextShadowBlurFieldName": {
+    "message": "Sfocatura dell'ombra del testo (in pixel)"
+  },
+  "popupTextShadowActivation": {
+    "message": "Attivare l'ombreggiatura del testo"
+  },
+  "popupNewCustomUrl": {
+    "message": "Nuovo URL personalizzato"
+  },
+  "popupDefault": {
+    "message": "Predefinita"
+  },
+  "popupPreview": {
+    "message": "Anteprima"
+  },
+  "popupSave": {
+    "message": "Salvare"
+  },
+  "notifSuccessTitle": {
+    "message": "Selezione personalizzata: risparmio di successo"
+  },
+  "notifSuccessContent": {
+    "message": "Preferenze salvate correttamente"
+  },
+  "notifFailTitle": {
+    "message": "Selezione personalizzata: errore di salvataggio"
+  },
+  "notifFailContent": {
+    "message": "Errore durante il salvataggio delle preferenze"
+  }
+}
