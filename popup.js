@@ -3,31 +3,31 @@ if (typeof browser === "undefined") {
 }
 
 function saveSuccess(item) {
-    browser.runtime.sendMessage({
-		request: "display-notification",
-		notificationName: "custom-selection-save", 
-		timeout: 1000,
-		notification: {
-			type: 'basic',
-            title: browser.i18n.getMessage("notifSuccessTitle"),
-            message: browser.i18n.getMessage("notifSuccessContent"),
-            iconUrl: "./images/iconvalid.png"
-        }
-	});
+    // browser.runtime.sendMessage({
+	// 	request: "display-notification",
+	// 	notificationName: "custom-selection-save", 
+	// 	timeout: 1000,
+	// 	notification: {
+	// 		type: 'basic',
+    //         title: browser.i18n.getMessage("notifSuccessTitle"),
+    //         message: browser.i18n.getMessage("notifSuccessContent"),
+    //         iconUrl: "./images/iconvalid.png"
+    //     }
+	// });
 };
 
 function saveError(item) {
-	browser.runtime.sendMessage({
-		request: "display-notification",
-		notificationName: "custom-selection-save", 
-		timeout: 1000,
-		notification: {
-			type: 'basic',
-			title: browser.i18n.getMessage("notifFailTitle"),
-			message: browser.i18n.getMessage("notifFailContent"),
-            iconUrl: "./images/iconfail.png"
-        }
-	});
+	// browser.runtime.sendMessage({
+	// 	request: "display-notification",
+	// 	notificationName: "custom-selection-save", 
+	// 	timeout: 1000,
+	// 	notification: {
+	// 		type: 'basic',
+	// 		title: browser.i18n.getMessage("notifFailTitle"),
+	// 		message: browser.i18n.getMessage("notifFailContent"),
+    //         iconUrl: "./images/iconfail.png"
+    //     }
+	// });
 };
 
 
