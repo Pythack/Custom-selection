@@ -12,7 +12,7 @@
   "permissions": ["storage", "tabs", "scripting"],
   "action": {
     "default_icon": "./images/icon.png",
-    "default_title": "Custom selection",
+    "default_title": "__MSG_appName__",
     "default_popup": "popup.html",
     "browser_style": true
   },
