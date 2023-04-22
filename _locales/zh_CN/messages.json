@@ -23,13 +23,13 @@
   "popupNewCustomUrl": {
     "message": "新自定义 URL"
   },
-  "弹出默认": {
+  "popupDefault": {
     "message": "默认"
   },
-  "弹出预览": {
+  "popupPreview": {
     "message": "时事"
   },
-  "弹出保存": {
+  "popupSave": {
     "message": "保存"
   },
   "notifSuccessTitle": {
