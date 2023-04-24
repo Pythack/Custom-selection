@@ -161,8 +161,7 @@ function restoreOptions() {
 	var isOnCustom = false;
 	if (storage.customOptions) { // If custom settings are defined
 		storage.customOptions.forEach((element) => {
-			var elurl = new URL(element.url);
-			if (elurl.host === activeTabURL.host) { // Compare custom setting's hostname with the tab's
+			if (element.url === activeTabURL.host) { // Compare custom setting's hostname with the tab's
 				const select = document.querySelector("#custom_select");
 				select.value = element.url;
 				select.dispatchEvent(new Event('change'));

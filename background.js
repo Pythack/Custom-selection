@@ -24,8 +24,7 @@ async function restoreOptions(tab) {
   var injected = false;
   if (storage.customOptions) { // If custom settings are defined
     storage.customOptions.forEach((element) => {
-      var elurl = new URL(element.url);
-      if (elurl.host === url) { // Compare custom setting's hostname with the tab's
+      if (element.url === url) { // Compare custom setting's hostname with the tab's
         injected = true;
         if(element.shadowActivated) { // If the settings has text shadow activated
           css = '::selection { background: ' + element.background + ' !important; color: ' + element.color + ' !important; text-shadow: ' + element.shadowColor + ' 0px 0px ' + element.shadowBlur + 'px !important}';
@@ -66,8 +65,7 @@ async function update_action_icon(tabin) {
   var injected = false;
   if (storage.customOptions) { // If custom settings are defined
     storage.customOptions.forEach((element) => { // For each custom setting
-      var elurl = new URL(element.url);
-      if (elurl.host === taburl.host) { // If the custom setting's url matches the hostname
+      if (element.url === taburl.host) { // If the custom setting's url matches the hostname
         injected = true;
         browser.action.setIcon({path: './images/iconcustom.png'}); // Set to custom icon (yellow)
       }
@@ -105,15 +103,36 @@ browser.runtime.onMessage.addListener((message, sender) => {
     
 browser.tabs.onActivated.addListener(update_action_icon); // When the active tab has changed: update icon
 
-chrome.runtime.onInstalled.addListener(details => {
-  if (details.reason == "install") {
-    browser.storage.local.set({ // Set basic settings
-			background_color: "#007EF380",
-			color: "#007EF3FF",
-			shadowActivated: false,
-			shadowColor: "#007EF3FF",
-			shadowBlur: "0",
-			witness: true
-		});
+chrome.runtime.onInstalled.addListener(async details => {
+  switch (details.reason) {
+    case "install":
+      browser.storage.local.set({ // Set basic settings
+        background_color: "#007EF380",
+        color: "#007EF3FF",
+        shadowActivated: false,
+        shadowColor: "#007EF3FF",
+        shadowBlur: "0",
+        witness: true
+      });
+      break;
+    case "update":
+      var storage = await browser.storage.local.get(); // Get settings
+      if (storage.customOptions) { // If custom settings are defined
+        var customs = storage.customOptions;
+        customs.forEach((element) => {
+          try {
+            let cururl = new URL(element.url);
+            element.url = cururl.host;
+          } catch (error) {
+            
+          }
+        });
+        browser.storage.local.set({ // Update custom settings
+          customOptions: customs
+        });
+      }
+      break;
+    default:
+      break;
   }
 });
