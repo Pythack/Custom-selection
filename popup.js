@@ -158,16 +158,22 @@ function restoreOptions() {
 	var activeTab = tabs[0];
 	var activeTabURL = new URL(activeTab.url);
 	var storage = await browser.storage.local.get();
+	var isOnCustom = false;
 	if (storage.customOptions) { // If custom settings are defined
 		storage.customOptions.forEach((element) => {
 			var elurl = new URL(element.url);
 			if (elurl.host === activeTabURL.host) { // Compare custom setting's hostname with the tab's
-			const select = document.querySelector("#custom_select");
-			select.value = element.url;
-			select.dispatchEvent(new Event('change'));
-		  }
+				const select = document.querySelector("#custom_select");
+				select.value = element.url;
+				select.dispatchEvent(new Event('change'));
+				isOnCustom = true;
+		  	}
 		});
-	  }
+	}
+	if (!isOnCustom) {
+		let urlField = document.querySelector("#add_url");
+		urlField.value = activeTabURL.host;
+	}
  });
 };
 
@@ -244,6 +250,16 @@ function localizeHtmlPage()
     }
 }
 
+function checkURLHost(event) {
+	const inp = event.target;
+	const regex = new RegExp('^(([a-zA-Z]|[a-zA-Z][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z]|[A-Za-z][A-Za-z0-9\-]*[A-Za-z0-9])$');
+	if (regex.test(inp.value)) {
+		inp.setCustomValidity("");
+	} else {
+		inp.setCustomValidity("Please enter a hostname")
+	}
+}
+
 localizeHtmlPage();
 
 // Set event listeners
@@ -253,6 +269,8 @@ document.addEventListener("DOMContentLoaded", () => {setTimeout(updatePreview, 1
 document.querySelector("#save_btn").addEventListener("click", saveOptions);
 document.querySelector("#formdiv").addEventListener("keyup", updatePreview);
 document.querySelector("#formdiv").addEventListener("input", updatePreview);
+document.querySelector("#add_url").addEventListener("input", checkURLHost);
+document.querySelector("#change_url").addEventListener("input", checkURLHost);
 document.querySelector("#add_custom").addEventListener("click", addCustom);
 document.querySelector("#remove_custom").addEventListener("click", removeCustom);
 document.querySelector("input#activate_textShadow").addEventListener("change", updatePreview);
