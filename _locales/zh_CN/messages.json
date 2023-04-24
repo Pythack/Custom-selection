@@ -23,6 +23,12 @@
   "popupNewCustomUrl": {
     "message": "新自定义 URL"
   },
+  "popupAdd": {
+    "message": "添加"
+  },
+  "popupRemove": {
+    "message": "消除"
+  },
   "popupDefault": {
     "message": "默认"
   },

@@ -23,6 +23,12 @@
   "popupNewCustomUrl": {
     "message": "새 맞춤 URL"
   },
+  "popupAdd": {
+    "message": "추가"
+  },
+  "popupRemove": {
+    "message": "삭제"
+  },
   "popupDefault": {
     "message": "기본"
   },

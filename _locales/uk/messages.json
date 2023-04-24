@@ -23,6 +23,12 @@
   "popupNewCustomUrl": {
     "message": "Нова спеціальна URL-адреса"
   },
+  "popupAdd": {
+    "message": "додати"
+  },
+  "popupRemove": {
+    "message": "видалити"
+  },
   "popupDefault": {
     "message": "За умовчанням"
   },

@@ -23,6 +23,12 @@
   "popupNewCustomUrl": {
     "message": "新しいカスタム URL"
   },
+  "popupAdd": {
+    "message": "添加"
+  },
+  "popupRemove": {
+    "message": "削除"
+  },
   "popupDefault": {
     "message": "デフォルト"
   },

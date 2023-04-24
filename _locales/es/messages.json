@@ -23,6 +23,12 @@
   "popupNewCustomUrl": {
     "message": "Nueva URL personalizada"
   },
+  "popupAdd": {
+    "message": "Agregar"
+  },
+  "popupRemove": {
+    "message": "Eliminar"
+  },
   "popupDefault": {
     "message": "Defecto"
   },
