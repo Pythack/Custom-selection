@@ -1,0 +1,53 @@
+{
+  "appName": {
+    "message": "Özel seçim"
+  },
+  "appDesc": {
+    "message": "Metin seçiminin rengini, arka plan rengini ve metin gölgesini değiştirin!"
+  },
+  "popupColorFieldName": {
+    "message": "Renk"
+  },
+  "popupBackgroundColorFieldName": {
+    "message": "Arka plan rengi"
+  },
+  "popupTextShadowColorFieldName": {
+    "message": "Metin gölge rengi"
+  },
+  "popupTextShadowBlurFieldName": {
+    "message": "Metin gölge bulanıklığı (piksel olarak)"
+  },
+  "popupTextShadowActivation": {
+    "message": "Metin gölgesini etkinleştir"
+  },
+  "popupNewCustomUrl": {
+    "message": "Yeni özel url"
+  },
+  "popupAdd": {
+    "message": "Eklemek"
+  },
+  "popupRemove": {
+    "message": "Kaldırmak"
+  },
+  "popupDefault": {
+    "message": "Varsayılan"
+  },
+  "popupPreview": {
+    "message": "Ön izleme"
+  },
+  "popupSave": {
+    "message": "Kaydetmek"
+  },
+  "notifSuccessTitle": {
+    "message": "Özel seçim: Başarıyı kaydetme"
+  },
+  "notifSuccessContent": {
+    "message": "Tercihler başarıyla kaydedildi"
+  },
+  "notifFailTitle": {
+    "message": "Özel seçim: Kaydetme hatası"
+  },
+  "notifFailContent": {
+    "message": "Tercihler kaydedilirken hata oluştu"
+  }
+}

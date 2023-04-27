@@ -1,0 +1,53 @@
+{
+  "appName": {
+    "message": "בחירה מותאמת אישית"
+  },
+  "appDesc": {
+    "message": "שנה את הצבע, צבע הרקע ואת צל הטקסט של בחירת הטקסט!"
+  },
+  "popupColorFieldName": {
+    "message": "צֶבַע"
+  },
+  "popupBackgroundColorFieldName": {
+    "message": "צבע רקע"
+  },
+  "popupTextShadowColorFieldName": {
+    "message": "צבע צל טקסט"
+  },
+  "popupTextShadowBlurFieldName": {
+    "message": "טשטוש צל טקסט (בפיקסלים)"
+  },
+  "popupTextShadowActivation": {
+    "message": "הפעל צל טקסט"
+  },
+  "popupNewCustomUrl": {
+    "message": "כתובת אתר מותאמת אישית חדשה"
+  },
+  "popupAdd": {
+    "message": "לְהוֹסִיף"
+  },
+  "popupRemove": {
+    "message": "לְהַסִיר"
+  },
+  "popupDefault": {
+    "message": "בְּרִירַת מֶחדָל"
+  },
+  "popupPreview": {
+    "message": "תצוגה מקדימה"
+  },
+  "popupSave": {
+    "message": "להציל"
+  },
+  "notifSuccessTitle": {
+    "message": "בחירה מותאמת אישית: שמירת הצלחה"
+  },
+  "notifSuccessContent": {
+    "message": "ההעדפות נשמרו בהצלחה"
+  },
+  "notifFailTitle": {
+    "message": "בחירה מותאמת אישית: שגיאת שמירת"
+  },
+  "notifFailContent": {
+    "message": "שגיאה בשמירת העדפות"
+  }
+}
