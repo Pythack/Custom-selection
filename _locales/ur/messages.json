@@ -1,53 +1,53 @@
 {
   "appName": {
-    "message": "Custom selection"
+    "message": "حسب ضرورت انتخاب"
   },
   "appDesc": {
-    "message": "Change the color, background color, and the text shadow of the text selection!"
+    "message": "متن کے انتخاب کا رنگ، پس منظر کا رنگ، اور ٹیکسٹ شیڈو کو تبدیل کریں!"
   },
   "popupColorFieldName": {
-    "message": "Color"
+    "message": "رنگ"
   },
   "popupBackgroundColorFieldName": {
-    "message": "Background color"
+    "message": "پس منظر کا رنگ"
   },
   "popupTextShadowColorFieldName": {
-    "message": "Text shadow color"
+    "message": "ٹیکسٹ شیڈو کا رنگ"
   },
   "popupTextShadowBlurFieldName": {
-    "message": "Text shadow blur (in pixels)"
+    "message": "ٹیکسٹ شیڈو بلر (پکسلز میں)"
   },
   "popupTextShadowActivation": {
-    "message": "Activate text shadow"
+    "message": "ٹیکسٹ شیڈو کو چالو کریں۔"
   },
   "popupNewCustomUrl": {
-    "message": "New custom url"
+    "message": "نیا حسب ضرورت یو آر ایل"
   },
   "popupAdd": {
-    "message": "Add"
+    "message": "شامل کریں۔"
   },
   "popupRemove": {
-    "message": "Remove"
+    "message": "دور"
   },
   "popupDefault": {
-    "message": "Default"
+    "message": "طے شدہ"
   },
   "popupPreview": {
-    "message": "Preview"
+    "message": "پیش نظارہ"
   },
   "popupSave": {
-    "message": "Save"
+    "message": "محفوظ کریں۔"
   },
   "notifSuccessTitle": {
-    "message": "Custom selection: Saving success"
+    "message": "حسب ضرورت انتخاب: کامیابی کی بچت"
   },
   "notifSuccessContent": {
-    "message": "Preferences saved successfully"
+    "message": "ترجیحات کامیابی سے محفوظ ہو گئیں۔"
   },
   "notifFailTitle": {
-    "message": "Custom selection: Saving error"
+    "message": "حسب ضرورت انتخاب: محفوظ کرنے میں خرابی۔"
   },
   "notifFailContent": {
-    "message": "Error saving preferences"
+    "message": "ترجیحات کو محفوظ کرنے میں خرابی۔"
   }
 }
