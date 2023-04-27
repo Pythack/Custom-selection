@@ -1,0 +1,53 @@
+{
+  "appName": {
+    "message": "Пользовательский выбор"
+  },
+  "appDesc": {
+    "message": "Измените цвет, цвет фона и тень текста выделенного текста!"
+  },
+  "popupColorFieldName": {
+    "message": "Цвет"
+  },
+  "popupBackgroundColorFieldName": {
+    "message": "Фоновый цвет"
+  },
+  "popupTextShadowColorFieldName": {
+    "message": "Цвет тени текста"
+  },
+  "popupTextShadowBlurFieldName": {
+    "message": "Размытие тени текста (в пикселях)"
+  },
+  "popupTextShadowActivation": {
+    "message": "Активировать тень текста"
+  },
+  "popupNewCustomUrl": {
+    "message": "Новый пользовательский URL"
+  },
+  "popupAdd": {
+    "message": "Добавлять"
+  },
+  "popupRemove": {
+    "message": "Удалять"
+  },
+  "popupDefault": {
+    "message": "По умолчанию"
+  },
+  "popupPreview": {
+    "message": "Предварительный просмотр"
+  },
+  "popupSave": {
+    "message": "Сохранять"
+  },
+  "notifSuccessTitle": {
+    "message": "Пользовательский выбор: сохранение успешно"
+  },
+  "notifSuccessContent": {
+    "message": "Настройки успешно сохранены"
+  },
+  "notifFailTitle": {
+    "message": "Пользовательский выбор: ошибка сохранения"
+  },
+  "notifFailContent": {
+    "message": "Не удалось сохранить настройки"
+  }
+}

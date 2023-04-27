@@ -1,0 +1,53 @@
+{
+  "appName": {
+    "message": "কাস্টম নির্বাচন"
+  },
+  "appDesc": {
+    "message": "রঙ, পটভূমির রঙ এবং পাঠ্য নির্বাচনের পাঠ্য ছায়া পরিবর্তন করুন!"
+  },
+  "popupColorFieldName": {
+    "message": "রঙ"
+  },
+  "popupBackgroundColorFieldName": {
+    "message": "পেছনের রং"
+  },
+  "popupTextShadowColorFieldName": {
+    "message": "পাঠ্য ছায়ার রঙ"
+  },
+  "popupTextShadowBlurFieldName": {
+    "message": "টেক্সট শ্যাডো ব্লার (পিক্সেলে)"
+  },
+  "popupTextShadowActivation": {
+    "message": "পাঠ্য ছায়া সক্রিয় করুন"
+  },
+  "popupNewCustomUrl": {
+    "message": "নতুন কাস্টম ইউআরএল"
+  },
+  "popupAdd": {
+    "message": "যোগ করুন"
+  },
+  "popupRemove": {
+    "message": "অপসারণ"
+  },
+  "popupDefault": {
+    "message": "ডিফল্ট"
+  },
+  "popupPreview": {
+    "message": "পূর্বরূপ"
+  },
+  "popupSave": {
+    "message": "সংরক্ষণ"
+  },
+  "notifSuccessTitle": {
+    "message": "কাস্টম নির্বাচন: সাফল্য সংরক্ষণ"
+  },
+  "notifSuccessContent": {
+    "message": "পছন্দগুলি সফলভাবে সংরক্ষিত হয়েছে৷"
+  },
+  "notifFailTitle": {
+    "message": "কাস্টম নির্বাচন: সংরক্ষণ ত্রুটি"
+  },
+  "notifFailContent": {
+    "message": "পছন্দগুলি সংরক্ষণে ত্রুটি৷"
+  }
+}

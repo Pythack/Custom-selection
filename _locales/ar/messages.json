@@ -1,0 +1,53 @@
+{
+  "appName": {
+    "message": "اختيار مخصص"
+  },
+  "appDesc": {
+    "message": "تغيير اللون ولون الخلفية وظل النص لاختيار النص!"
+  },
+  "popupColorFieldName": {
+    "message": "لون"
+  },
+  "popupBackgroundColorFieldName": {
+    "message": "لون الخلفية"
+  },
+  "popupTextShadowColorFieldName": {
+    "message": "لون ظل النص"
+  },
+  "popupTextShadowBlurFieldName": {
+    "message": "تمويه ظل النص (بالبكسل)"
+  },
+  "popupTextShadowActivation": {
+    "message": "تنشيط ظل النص"
+  },
+  "popupNewCustomUrl": {
+    "message": "عنوان url مخصص جديد"
+  },
+  "popupAdd": {
+    "message": "يضيف"
+  },
+  "popupRemove": {
+    "message": "يزيل"
+  },
+  "popupDefault": {
+    "message": "تقصير"
+  },
+  "popupPreview": {
+    "message": "معاينة"
+  },
+  "popupSave": {
+    "message": "يحفظ"
+  },
+  "notifSuccessTitle": {
+    "message": "التحديد المخصص: حفظ النجاح"
+  },
+  "notifSuccessContent": {
+    "message": "تم حفظ التفضيلات بنجاح"
+  },
+  "notifFailTitle": {
+    "message": "التحديد المخصص: حفظ الخطأ"
+  },
+  "notifFailContent": {
+    "message": "خطأ في حفظ التفضيلات"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "appName": {
+    "message": "حسب ضرورت انتخاب"
+  },
+  "appDesc": {
+    "message": "متن کے انتخاب کا رنگ، پس منظر کا رنگ، اور ٹیکسٹ شیڈو کو تبدیل کریں!"
+  },
+  "popupColorFieldName": {
+    "message": "رنگ"
+  },
+  "popupBackgroundColorFieldName": {
+    "message": "پس منظر کا رنگ"
+  },
+  "popupTextShadowColorFieldName": {
+    "message": "ٹیکسٹ شیڈو کا رنگ"
+  },
+  "popupTextShadowBlurFieldName": {
+    "message": "ٹیکسٹ شیڈو بلر (پکسلز میں)"
+  },
+  "popupTextShadowActivation": {
+    "message": "ٹیکسٹ شیڈو کو چالو کریں۔"
+  },
+  "popupNewCustomUrl": {
+    "message": "نیا حسب ضرورت یو آر ایل"
+  },
+  "popupAdd": {
+    "message": "شامل کریں۔"
+  },
+  "popupRemove": {
+    "message": "دور"
+  },
+  "popupDefault": {
+    "message": "طے شدہ"
+  },
+  "popupPreview": {
+    "message": "پیش نظارہ"
+  },
+  "popupSave": {
+    "message": "محفوظ کریں۔"
+  },
+  "notifSuccessTitle": {
+    "message": "حسب ضرورت انتخاب: کامیابی کی بچت"
+  },
+  "notifSuccessContent": {
+    "message": "ترجیحات کامیابی سے محفوظ ہو گئیں۔"
+  },
+  "notifFailTitle": {
+    "message": "حسب ضرورت انتخاب: محفوظ کرنے میں خرابی۔"
+  },
+  "notifFailContent": {
+    "message": "ترجیحات کو محفوظ کرنے میں خرابی۔"
+  }
+}

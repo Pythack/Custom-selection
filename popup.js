@@ -50,6 +50,7 @@ function addCustom() {
 	let getting = browser.storage.local.get(); // Get storage
 	getting.then(result => {
 		var custom_url = document.querySelector("#add_url").value; // Get new custom url
+		document.querySelector("#add_url").value = "";
 		var customSettings = new Custom_option(custom_url, document.querySelector("#background_color").value || "#007EF3", document.querySelector("#color").value || "white", document.querySelector("input#activate_textShadow").checked || false, document.querySelector("#shadow-color").value || "none", document.querySelector("#shadow-blur").value || "0"); // Create new element with currently displayed settings
 		var customs = result.customOptions || []; // Get current saved settings; if there are none, initialize an empty list
 		customs.push(customSettings); // Add new custom settings to the list
@@ -61,6 +62,8 @@ function addCustom() {
 		optionToAdd.value = custom_url; // Add custom url to option value
 		var select = document.querySelector("#custom_select");
 		select.appendChild(optionToAdd); // Append new option to select
+		select.value = custom_url;
+		select.dispatchEvent(new Event('change'));
 	}, onError);
 };
 

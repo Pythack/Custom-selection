@@ -1,0 +1,53 @@
+{
+  "appName": {
+    "message": "Benutzerdefinierte Auswahl"
+  },
+  "appDesc": {
+    "message": "Ändern Sie die Farbe, die Hintergrundfarbe und den Textschatten der Textauswahl!"
+  },
+  "popupColorFieldName": {
+    "message": "Farbe"
+  },
+  "popupBackgroundColorFieldName": {
+    "message": "Hintergrundfarbe"
+  },
+  "popupTextShadowColorFieldName": {
+    "message": "Textschattenfarbe"
+  },
+  "popupTextShadowBlurFieldName": {
+    "message": "Textschattenunschärfe (in Pixel)"
+  },
+  "popupTextShadowActivation": {
+    "message": "Textschatten aktivieren"
+  },
+  "popupNewCustomUrl": {
+    "message": "Neue benutzerdefinierte URL"
+  },
+  "popupAdd": {
+    "message": "Hinzufügen"
+  },
+  "popupRemove": {
+    "message": "Entfernen"
+  },
+  "popupDefault": {
+    "message": "Standard"
+  },
+  "popupPreview": {
+    "message": "Vorschau"
+  },
+  "popupSave": {
+    "message": "Speichern"
+  },
+  "notifSuccessTitle": {
+    "message": "Benutzerdefinierte Auswahl: Sparerfolg"
+  },
+  "notifSuccessContent": {
+    "message": "Einstellungen erfolgreich gespeichert"
+  },
+  "notifFailTitle": {
+    "message": "Benutzerdefinierte Auswahl: Fehler beim Speichern"
+  },
+  "notifFailContent": {
+    "message": "Fehler beim Speichern der Einstellungen"
+  }
+}

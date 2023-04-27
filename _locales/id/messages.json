@@ -1,0 +1,53 @@
+{
+  "appName": {
+    "message": "Pilihan kustom"
+  },
+  "appDesc": {
+    "message": "Ubah warna, warna latar belakang, dan bayangan teks dari pemilihan teks!"
+  },
+  "popupColorFieldName": {
+    "message": "Warna"
+  },
+  "popupBackgroundColorFieldName": {
+    "message": "Warna latar belakang"
+  },
+  "popupTextShadowColorFieldName": {
+    "message": "Warna bayangan teks"
+  },
+  "popupTextShadowBlurFieldName": {
+    "message": "Kekaburan bayangan teks (dalam piksel)"
+  },
+  "popupTextShadowActivation": {
+    "message": "Aktifkan bayangan teks"
+  },
+  "popupNewCustomUrl": {
+    "message": "URL kustom baru"
+  },
+  "popupAdd": {
+    "message": "Menambahkan"
+  },
+  "popupRemove": {
+    "message": "Menghapus"
+  },
+  "popupDefault": {
+    "message": "Bawaan"
+  },
+  "popupPreview": {
+    "message": "Pratinjau"
+  },
+  "popupSave": {
+    "message": "Menyimpan"
+  },
+  "notifSuccessTitle": {
+    "message": "Pilihan kustom: Menyimpan keberhasilan"
+  },
+  "notifSuccessContent": {
+    "message": "Preferensi berhasil disimpan"
+  },
+  "notifFailTitle": {
+    "message": "Pilihan khusus: Kesalahan penyimpanan"
+  },
+  "notifFailContent": {
+    "message": "Kesalahan menyimpan preferensi"
+  }
+}

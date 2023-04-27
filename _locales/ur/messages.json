@@ -1,0 +1,53 @@
+{
+  "appName": {
+    "message": "Custom selection"
+  },
+  "appDesc": {
+    "message": "Change the color, background color, and the text shadow of the text selection!"
+  },
+  "popupColorFieldName": {
+    "message": "Color"
+  },
+  "popupBackgroundColorFieldName": {
+    "message": "Background color"
+  },
+  "popupTextShadowColorFieldName": {
+    "message": "Text shadow color"
+  },
+  "popupTextShadowBlurFieldName": {
+    "message": "Text shadow blur (in pixels)"
+  },
+  "popupTextShadowActivation": {
+    "message": "Activate text shadow"
+  },
+  "popupNewCustomUrl": {
+    "message": "New custom url"
+  },
+  "popupAdd": {
+    "message": "Add"
+  },
+  "popupRemove": {
+    "message": "Remove"
+  },
+  "popupDefault": {
+    "message": "Default"
+  },
+  "popupPreview": {
+    "message": "Preview"
+  },
+  "popupSave": {
+    "message": "Save"
+  },
+  "notifSuccessTitle": {
+    "message": "Custom selection: Saving success"
+  },
+  "notifSuccessContent": {
+    "message": "Preferences saved successfully"
+  },
+  "notifFailTitle": {
+    "message": "Custom selection: Saving error"
+  },
+  "notifFailContent": {
+    "message": "Error saving preferences"
+  }
+}
