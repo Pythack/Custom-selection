@@ -2,7 +2,7 @@ if (typeof browser === "undefined") {
   var browser = chrome;
 }
 
-var localstorage = new Object; // Initialize a local storage
+var localstorage = new Object(); // Initialize a local storage
 
 function onError(error) { // Define onError function
     console.log(`Error:${error}`);
