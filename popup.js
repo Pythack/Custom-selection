@@ -30,6 +30,11 @@ function saveError(item) {
 	// });
 };
 
+function matchRuleShort(str, rule) {
+	var escapeRegex = (str) => str.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
+	return new RegExp("^" + rule.split("*").map(escapeRegex).join(".*") + "$").test(str);
+  }
+
 
 function onError(error) {
 	console.log(`Error:${error}`);
@@ -120,11 +125,14 @@ function saveOptions(e) { // Function called when user clicks on "Save" button
 				shadowActivated: document.querySelector("input#activate_textShadow").checked || false,
 				shadowColor: document.querySelector("#shadow-color").value || "none",
 				shadowBlur: document.querySelector("#shadow-blur").value || "0",
-				url: document.querySelector("#change_url").value || "auto"
+				url: document.querySelector("#change_url").value
 			};
 			var preferencesSave = browser.storage.local.set({ // Update custom settings
 				customOptions: customs
 			});
+			let select = document.querySelector("#custom_select");
+			select.options[select.selectedIndex].textContent = document.querySelector("#change_url").value;
+			select.options[select.selectedIndex].value = document.querySelector("#change_url").value;
 			preferencesSave.then(saveSuccess, saveError); // Display notifications
 		}, onError);
 	};
@@ -164,7 +172,7 @@ function restoreOptions() {
 	var isOnCustom = false;
 	if (storage.customOptions) { // If custom settings are defined
 		storage.customOptions.forEach((element) => {
-			if (element.url === activeTabURL.host) { // Compare custom setting's hostname with the tab's
+			if (matchRuleShort(activeTabURL.host, element.url)) { // Compare custom setting's hostname with the tab's
 				const select = document.querySelector("#custom_select");
 				select.value = element.url;
 				select.dispatchEvent(new Event('change'));
@@ -192,6 +200,7 @@ function changeCustomDisplay(event) { // Function called when select changes
 		var selectIndex = document.querySelector("#custom_select").selectedIndex;
 	if(selectIndex != 0) { // If selected option is not default settings
 		document.querySelector("#change_url").value = document.querySelector("#custom_select").value; // Initialize url edition input to selected setting's url
+		document.querySelector("#change_url").placeholder = document.querySelector("#custom_select").value;
 		document.querySelector("#url_div").style.display = "block"; // Display custom url edition div
 		document.querySelector("#remove_custom").style.display = "block"; // Display remove button
 		let getting = browser.storage.local.get(); // Get storage
@@ -254,7 +263,7 @@ function localizeHtmlPage()
 
 function checkURLHost(event) {
 	const inp = event.target;
-	const regex = new RegExp('^(([a-zA-Z]|[a-zA-Z][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z]|[A-Za-z][A-Za-z0-9\-]*[A-Za-z0-9])$');
+	const regex = new RegExp('^(([a-zA-Z\*]|[a-zA-Z\*][a-zA-Z0-9\-\*]*[a-zA-Z0-9\*])\.)*([A-Za-z\*]|[A-Za-z\*][A-Za-z0-9\-\*]*[A-Za-z0-9\*])$');
 	if (regex.test(inp.value)) {
 		inp.setCustomValidity("");
 	} else {

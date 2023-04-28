@@ -8,6 +8,11 @@ function onError(error) { // Define onError function
     console.log(`Error:${error}`);
 }
 
+function matchRuleShort(str, rule) {
+  var escapeRegex = (str) => str.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
+  return new RegExp("^" + rule.split("*").map(escapeRegex).join(".*") + "$").test(str);
+}
+
 async function restoreOptions(tab) {
   var storage = await browser.storage.local.get(); // Get settings
   if (localstorage[tab.id]) { // If extension already injected CSS in this tab, remove it
@@ -24,7 +29,7 @@ async function restoreOptions(tab) {
   var injected = false;
   if (storage.customOptions) { // If custom settings are defined
     storage.customOptions.forEach((element) => {
-      if (element.url === url) { // Compare custom setting's hostname with the tab's
+      if (matchRuleShort(url, element.url)) { // Compare custom setting's hostname with the tab's
         injected = true;
         if(element.shadowActivated) { // If the settings has text shadow activated
           css = '::selection { background: ' + element.background + ' !important; color: ' + element.color + ' !important; text-shadow: ' + element.shadowColor + ' 0px 0px ' + element.shadowBlur + 'px !important}';
@@ -65,7 +70,7 @@ async function update_action_icon(tabin) {
   var injected = false;
   if (storage.customOptions) { // If custom settings are defined
     storage.customOptions.forEach((element) => { // For each custom setting
-      if (element.url === taburl.host) { // If the custom setting's url matches the hostname
+      if (matchRuleShort(taburl.host, element.url)) { // If the custom setting's url matches the hostname
         injected = true;
         browser.action.setIcon({path: './images/iconcustom.png'}); // Set to custom icon (yellow)
       }
