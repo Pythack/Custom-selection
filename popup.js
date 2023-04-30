@@ -177,12 +177,14 @@ function restoreOptions() {
 				select.value = element.url;
 				select.dispatchEvent(new Event('change'));
 				isOnCustom = true;
-		  	}
+			}
 		});
 	}
 	if (!isOnCustom) {
 		let urlField = document.querySelector("#add_url");
 		urlField.value = activeTabURL.host;
+		const select = document.querySelector("#custom_select");
+		select.dispatchEvent(new Event('change'));
 	}
  });
 };
