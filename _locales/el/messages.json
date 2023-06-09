@@ -1,0 +1,53 @@
+{
+  "appName": {
+    "message": "Προσαρμοσμένη επιλογή"
+  },
+  "appDesc": {
+    "message": "Αλλάξτε το χρώμα, το χρώμα φόντου και τη σκιά κειμένου της επιλογής κειμένου!"
+  },
+  "popupColorFieldName": {
+    "message": "Χρώμα"
+  },
+  "popupBackgroundColorFieldName": {
+    "message": "Χρώμα του φόντου"
+  },
+  "popupTextShadowColorFieldName": {
+    "message": "Χρώμα σκιάς κειμένου"
+  },
+  "popupTextShadowBlurFieldName": {
+    "message": "Θάμπωμα σκιάς κειμένου (σε pixel)"
+  },
+  "popupTextShadowActivation": {
+    "message": "Ενεργοποίηση σκιάς κειμένου"
+  },
+  "popupNewCustomUrl": {
+    "message": "Νέα προσαρμοσμένη διεύθυνση url"
+  },
+  "popupAdd": {
+    "message": "Προσθήκη"
+  },
+  "popupRemove": {
+    "message": "Αφαιρώ"
+  },
+  "popupDefault": {
+    "message": "Προκαθορισμένο"
+  },
+  "popupPreview": {
+    "message": "Προεπισκόπηση"
+  },
+  "popupSave": {
+    "message": "Αποθηκεύσετε"
+  },
+  "notifSuccessTitle": {
+    "message": "Προσαρμοσμένη επιλογή: Αποθήκευση επιτυχίας"
+  },
+  "notifSuccessContent": {
+    "message": "Οι προτιμήσεις αποθηκεύτηκαν με επιτυχία"
+  },
+  "notifFailTitle": {
+    "message": "Προσαρμοσμένη επιλογή: Σφάλμα αποθήκευσης"
+  },
+  "notifFailContent": {
+    "message": "Σφάλμα αποθήκευσης προτιμήσεων"
+  }
+}
