@@ -3,7 +3,7 @@
     "message": "Selezione personalizzata"
   },
   "appDesc": {
-    "message": "Cambia il colore, il colore di sfondo e l'ombra del testo della selezione del testo!"
+    "message": "Personalizza istantaneamente le selezioni di testo, migliorando la tua navigazione con colori e ombre personalizzati."
   },
   "popupColorFieldName": {
     "message": "Colore"
@@ -18,7 +18,7 @@
     "message": "Sfocatura dell'ombra del testo (in pixel)"
   },
   "popupTextShadowActivation": {
-    "message": "Attivare l'ombreggiatura del testo"
+    "message": "Attiva l'ombra del testo"
   },
   "popupNewCustomUrl": {
     "message": "Nuovo URL personalizzato"
@@ -30,19 +30,19 @@
     "message": "Rimuovere"
   },
   "popupDefault": {
-    "message": "Predefinita"
+    "message": "Predefinito"
   },
   "popupPreview": {
     "message": "Anteprima"
   },
   "popupSave": {
-    "message": "Salvare"
+    "message": "Salva"
   },
   "notifSuccessTitle": {
-    "message": "Selezione personalizzata: risparmio di successo"
+    "message": "Selezione personalizzata: salvataggio del successo"
   },
   "notifSuccessContent": {
-    "message": "Preferenze salvate correttamente"
+    "message": "Preferenze salvate con successo"
   },
   "notifFailTitle": {
     "message": "Selezione personalizzata: errore di salvataggio"

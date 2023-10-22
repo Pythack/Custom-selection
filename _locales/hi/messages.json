@@ -3,7 +3,7 @@
     "message": "कस्टम चयन"
   },
   "appDesc": {
-    "message": "पाठ चयन का रंग, पृष्ठभूमि का रंग और पाठ की छाया बदलें!"
+    "message": "वैयक्तिकृत रंगों और छायाओं के साथ अपनी ब्राउज़िंग को बेहतर बनाते हुए, टेक्स्ट चयनों को तुरंत अनुकूलित करें।"
   },
   "popupColorFieldName": {
     "message": "रंग"
@@ -15,10 +15,10 @@
     "message": "पाठ छाया रंग"
   },
   "popupTextShadowBlurFieldName": {
-    "message": "टेक्स्ट शैडो ब्लर (पिक्सेल में)"
+    "message": "टेक्स्ट छाया धुंधला (पिक्सेल में)"
   },
   "popupTextShadowActivation": {
-    "message": "पाठ छाया सक्रिय करें"
+    "message": "टेक्स्ट छाया सक्रिय करें"
   },
   "popupNewCustomUrl": {
     "message": "नया कस्टम यूआरएल"
@@ -39,15 +39,15 @@
     "message": "बचाना"
   },
   "notifSuccessTitle": {
-    "message": "कस्टम चयन: सफलता सहेजना"
+    "message": "कस्टम चयन: सफलता सहेजा जा रहा है"
   },
   "notifSuccessContent": {
-    "message": "प्राथमिकताएं सफलतापूर्वक सहेजी गईं"
+    "message": "प्राथमिकताएँ सफलतापूर्वक सहेजी गईं"
   },
   "notifFailTitle": {
-    "message": "कस्टम चयन: बचत त्रुटि"
+    "message": "कस्टम चयन: सहेजने में त्रुटि"
   },
   "notifFailContent": {
-    "message": "प्राथमिकताएं सहेजने में त्रुटि"
+    "message": "प्राथमिकताएँ सहेजने में त्रुटि"
   }
 }

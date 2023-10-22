@@ -3,7 +3,7 @@
     "message": "Benutzerdefinierte Auswahl"
   },
   "appDesc": {
-    "message": "Ändern Sie die Farbe, die Hintergrundfarbe und den Textschatten der Textauswahl!"
+    "message": "Passen Sie die Textauswahl sofort an und verbessern Sie Ihr Surferlebnis mit personalisierten Farben und Schatten."
   },
   "popupColorFieldName": {
     "message": "Farbe"
@@ -39,7 +39,7 @@
     "message": "Speichern"
   },
   "notifSuccessTitle": {
-    "message": "Benutzerdefinierte Auswahl: Sparerfolg"
+    "message": "Benutzerdefinierte Auswahl: Erfolg speichern"
   },
   "notifSuccessContent": {
     "message": "Einstellungen erfolgreich gespeichert"

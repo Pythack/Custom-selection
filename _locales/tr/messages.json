@@ -3,7 +3,7 @@
     "message": "Özel seçim"
   },
   "appDesc": {
-    "message": "Metin seçiminin rengini, arka plan rengini ve metin gölgesini değiştirin!"
+    "message": "Kişiselleştirilmiş renkler ve gölgelerle gezinme deneyiminizi geliştirerek metin seçimlerini anında özelleştirin."
   },
   "popupColorFieldName": {
     "message": "Renk"
@@ -15,13 +15,13 @@
     "message": "Metin gölge rengi"
   },
   "popupTextShadowBlurFieldName": {
-    "message": "Metin gölge bulanıklığı (piksel olarak)"
+    "message": "Metin gölgesi bulanıklığı (piksel cinsinden)"
   },
   "popupTextShadowActivation": {
     "message": "Metin gölgesini etkinleştir"
   },
   "popupNewCustomUrl": {
-    "message": "Yeni özel url"
+    "message": "Yeni özel URL"
   },
   "popupAdd": {
     "message": "Eklemek"

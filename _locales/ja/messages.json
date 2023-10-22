@@ -1,53 +1,53 @@
 {
   "appName": {
-    "message": "カスタム選択"
+    "message": "맞춤 선택"
   },
   "appDesc": {
-    "message": "テキスト選択の色,背景色,テキストの影を変更してください!"
+    "message": "텍스트 선택 항목을 즉시 사용자 정의하고 개인화된 색상과 그림자로 탐색 기능을 향상합니다."
   },
   "popupColorFieldName": {
-    "message": "色"
+    "message": "색상"
   },
   "popupBackgroundColorFieldName": {
-    "message": "背景色"
+    "message": "배경색"
   },
   "popupTextShadowColorFieldName": {
-    "message": "テキストの影の色"
+    "message": "텍스트 그림자 색상"
   },
   "popupTextShadowBlurFieldName": {
-    "message": "テキストの影のぼかし (ピクセル単位)"
+    "message": "텍스트 그림자 흐림(픽셀 단위)"
   },
   "popupTextShadowActivation": {
-    "message": "テキストの影を有効にする"
+    "message": "텍스트 그림자 활성화"
   },
   "popupNewCustomUrl": {
-    "message": "新しいカスタム URL"
+    "message": "새로운 맞춤 URL"
   },
   "popupAdd": {
-    "message": "添加"
+    "message": "추가하다"
   },
   "popupRemove": {
-    "message": "削除"
+    "message": "제거하다"
   },
   "popupDefault": {
-    "message": "デフォルト"
+    "message": "기본"
   },
   "popupPreview": {
-    "message": "プレビュー"
+    "message": "시사"
   },
   "popupSave": {
-    "message": "保存"
+    "message": "구하다"
   },
   "notifSuccessTitle": {
-    "message": "カスタム選択: 保存成功"
+    "message": "맞춤 선택: 저장 성공"
   },
   "notifSuccessContent": {
-    "message": "設定が正常に保存されました"
+    "message": "환경설정이 성공적으로 저장되었습니다."
   },
   "notifFailTitle": {
-    "message": "カスタム選択: 保存エラー"
+    "message": "맞춤 선택: 저장 오류"
   },
   "notifFailContent": {
-    "message": "設定の保存中にエラーが発生しました"
+    "message": "환경설정을 저장하는 중에 오류가 발생했습니다."
   }
 }

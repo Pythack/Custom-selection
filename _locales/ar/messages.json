@@ -3,7 +3,7 @@
     "message": "اختيار مخصص"
   },
   "appDesc": {
-    "message": "تغيير اللون ولون الخلفية وظل النص لاختيار النص!"
+    "message": "قم بتخصيص تحديدات النص على الفور، مما يعزز تصفحك باستخدام الألوان والظلال المخصصة."
   },
   "popupColorFieldName": {
     "message": "لون"
@@ -15,13 +15,13 @@
     "message": "لون ظل النص"
   },
   "popupTextShadowBlurFieldName": {
-    "message": "تمويه ظل النص (بالبكسل)"
+    "message": "طمس ظل النص (بالبكسل)"
   },
   "popupTextShadowActivation": {
-    "message": "تنشيط ظل النص"
+    "message": "تفعيل ظل النص"
   },
   "popupNewCustomUrl": {
-    "message": "عنوان url مخصص جديد"
+    "message": "عنوان URL مخصص جديد"
   },
   "popupAdd": {
     "message": "يضيف"
@@ -45,9 +45,9 @@
     "message": "تم حفظ التفضيلات بنجاح"
   },
   "notifFailTitle": {
-    "message": "التحديد المخصص: حفظ الخطأ"
+    "message": "التحديد المخصص: خطأ في الحفظ"
   },
   "notifFailContent": {
-    "message": "خطأ في حفظ التفضيلات"
+    "message": "حدث خطأ أثناء حفظ التفضيلات"
   }
 }

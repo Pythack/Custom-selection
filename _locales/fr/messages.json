@@ -1,33 +1,33 @@
 {
   "appName": {
-    "message": "Sélection personalisée"
+    "message": "Sélection personnalisée"
   },
   "appDesc": {
-    "message": "Changez la couleur, la couleur de fond, et l'ombre de la sélection de texte!"
+    "message": "Personnalisez instantanément les sélections de texte, améliorant votre navigation avec des couleurs et des ombres personnalisées."
   },
   "popupColorFieldName": {
     "message": "Couleur"
   },
   "popupBackgroundColorFieldName": {
-    "message": "Couleur de l'arrière-plan"
+    "message": "Couleur de l'arrière plan"
   },
   "popupTextShadowColorFieldName": {
-    "message": "Couleur d'ombre de texte"
+    "message": "Couleur de l'ombre du texte"
   },
   "popupTextShadowBlurFieldName": {
-    "message": "Flou d'ombre de texte (en pixels)"
+    "message": "Flou de l'ombre du texte (en pixels)"
   },
   "popupTextShadowActivation": {
-    "message": "Activer l'ombre de texte"
+    "message": "Activer l'ombre du texte"
   },
   "popupNewCustomUrl": {
-    "message": "Nouvelle url personalisée"
+    "message": "Nouvelle URL personnalisée"
   },
   "popupAdd": {
     "message": "Ajouter"
   },
   "popupRemove": {
-    "message": "Supprimer"
+    "message": "Retirer"
   },
   "popupDefault": {
     "message": "Défaut"
@@ -36,16 +36,16 @@
     "message": "Aperçu"
   },
   "popupSave": {
-    "message": "Enregistrer"
+    "message": "Sauvegarder"
   },
   "notifSuccessTitle": {
-    "message": "Sélection personalisée: Enregistrement réussi"
+    "message": "Sélection personnalisée : Sauvegarder le succès"
   },
   "notifSuccessContent": {
     "message": "Préférences enregistrées avec succès"
   },
   "notifFailTitle": {
-    "message": "Sélection personalisée: Enregistrement échoué"
+    "message": "Sélection personnalisée : erreur d'enregistrement"
   },
   "notifFailContent": {
     "message": "Erreur lors de l'enregistrement des préférences"

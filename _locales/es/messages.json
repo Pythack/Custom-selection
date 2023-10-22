@@ -3,7 +3,7 @@
     "message": "Selección personalizada"
   },
   "appDesc": {
-    "message": "¡Cambien el color, el color de fondo y la sombra del texto del texto seleccionado!"
+    "message": "Personalice instantáneamente las selecciones de texto, mejorando su navegación con colores y sombras personalizados."
   },
   "popupColorFieldName": {
     "message": "Color"
@@ -12,7 +12,7 @@
     "message": "Color de fondo"
   },
   "popupTextShadowColorFieldName": {
-    "message": "Color de la sombra del texto"
+    "message": "Color de sombra del texto"
   },
   "popupTextShadowBlurFieldName": {
     "message": "Desenfoque de sombra de texto (en píxeles)"
@@ -30,24 +30,24 @@
     "message": "Eliminar"
   },
   "popupDefault": {
-    "message": "Defecto"
+    "message": "Por defecto"
   },
   "popupPreview": {
     "message": "Avance"
   },
   "popupSave": {
-    "message": "Guardar"
+    "message": "Ahorrar"
   },
   "notifSuccessTitle": {
-    "message": "Selección personalizada: succeso"
+    "message": "Selección personalizada: ahorro exitoso"
   },
   "notifSuccessContent": {
-    "message": "Preferencias guardadas con succeso"
+    "message": "Preferencias guardadas correctamente"
   },
   "notifFailTitle": {
-    "message": "Selección personalizada: Error de guardar"
+    "message": "Selección personalizada: Error al guardar"
   },
   "notifFailContent": {
-    "message": "Error de guardar preferencias"
+    "message": "Error al guardar preferencias"
   }
 }

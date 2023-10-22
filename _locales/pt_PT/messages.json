@@ -3,7 +3,7 @@
     "message": "Seleção personalizada"
   },
   "appDesc": {
-    "message": "Altere a cor, a cor de fundo e a sombra do texto da seleção de texto!"
+    "message": "Personalize instantaneamente as seleções de texto, aprimorando sua navegação com cores e sombras personalizadas."
   },
   "popupColorFieldName": {
     "message": "Cor"
@@ -39,7 +39,7 @@
     "message": "Salvar"
   },
   "notifSuccessTitle": {
-    "message": "Seleção personalizada: salvando o sucesso"
+    "message": "Seleção personalizada: Salvando sucesso"
   },
   "notifSuccessContent": {
     "message": "Preferências salvas com sucesso"
