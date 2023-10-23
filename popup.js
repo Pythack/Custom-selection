@@ -100,6 +100,12 @@ function removeCustom() {
 		} else {
 			document.querySelector('div#textShadowOptions').style.display = "none";
 		}
+		chrome.tabs.query({active: true, currentWindow: true}, async tabs => {
+			var activeTab = tabs[0];
+			var activeTabURL = new URL(activeTab.url);
+			let urlField = document.querySelector("#add_url");
+			urlField.value = activeTabURL.host;
+		 });
 		updatePreview(); // Update preview
 		browser.runtime.sendMessage({ // Send message to background script asking to update the action icon
 			request: "update-action-icon"
