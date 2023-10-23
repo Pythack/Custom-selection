@@ -20,6 +20,15 @@
   "popupTextShadowActivation": {
     "message": "Aktifkan bayangan teks"
   },
+  "popupTextDecorationActivation": {
+    "message": "Aktifkan dekorasi teks"
+  },
+  "popupTextDecorationTypeFieldName": {
+    "message": "Jenis dekorasi"
+  },
+  "popupDecorationColorFieldName": {
+    "message": "Warna dekorasi"
+  },
   "popupNewCustomUrl": {
     "message": "Url khusus baru"
   },

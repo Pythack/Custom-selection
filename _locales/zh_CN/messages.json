@@ -1,6 +1,6 @@
 {
   "appName": {
-    "message": "选择自定义文本"
+    "message": "定制选择"
   },
   "appDesc": {
     "message": "立即自定义文本选择，通过个性化的颜色和阴影增强您的浏览体验。"
@@ -19,6 +19,15 @@
   },
   "popupTextShadowActivation": {
     "message": "激活文字阴影"
+  },
+  "popupTextDecorationActivation": {
+    "message": "激活文字装饰"
+  },
+  "popupTextDecorationTypeFieldName": {
+    "message": "装修类型"
+  },
+  "popupDecorationColorFieldName": {
+    "message": "装修色彩"
   },
   "popupNewCustomUrl": {
     "message": "新的自定义网址"

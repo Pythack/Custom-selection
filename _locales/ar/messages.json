@@ -20,6 +20,15 @@
   "popupTextShadowActivation": {
     "message": "تفعيل ظل النص"
   },
+  "popupTextDecorationActivation": {
+    "message": "تفعيل زخرفة النص"
+  },
+  "popupTextDecorationTypeFieldName": {
+    "message": "نوع الديكور"
+  },
+  "popupDecorationColorFieldName": {
+    "message": "لون الديكور"
+  },
   "popupNewCustomUrl": {
     "message": "عنوان URL مخصص جديد"
   },

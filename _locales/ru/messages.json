@@ -20,6 +20,15 @@
   "popupTextShadowActivation": {
     "message": "Активировать тень текста"
   },
+  "popupTextDecorationActivation": {
+    "message": "Активировать оформление текста"
+  },
+  "popupTextDecorationTypeFieldName": {
+    "message": "Тип украшения"
+  },
+  "popupDecorationColorFieldName": {
+    "message": "Цвет украшения"
+  },
   "popupNewCustomUrl": {
     "message": "Новый пользовательский URL"
   },

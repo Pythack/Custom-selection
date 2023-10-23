@@ -20,6 +20,15 @@
   "popupTextShadowActivation": {
     "message": "टेक्स्ट छाया सक्रिय करें"
   },
+  "popupTextDecorationActivation": {
+    "message": "पाठ सजावट सक्रिय करें"
+  },
+  "popupTextDecorationTypeFieldName": {
+    "message": "सजावट का प्रकार"
+  },
+  "popupDecorationColorFieldName": {
+    "message": "सजावट का रंग"
+  },
   "popupNewCustomUrl": {
     "message": "नया कस्टम यूआरएल"
   },

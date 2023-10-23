@@ -20,6 +20,15 @@
   "popupTextShadowActivation": {
     "message": "Ativar sombra de texto"
   },
+  "popupTextDecorationActivation": {
+    "message": "Ativar decoração de texto"
+  },
+  "popupTextDecorationTypeFieldName": {
+    "message": "Tipo de decoração"
+  },
+  "popupDecorationColorFieldName": {
+    "message": "Cor da decoração"
+  },
   "popupNewCustomUrl": {
     "message": "Novo URL personalizado"
   },

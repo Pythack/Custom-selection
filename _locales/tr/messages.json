@@ -20,6 +20,15 @@
   "popupTextShadowActivation": {
     "message": "Metin gölgesini etkinleştir"
   },
+  "popupTextDecorationActivation": {
+    "message": "Metin dekorasyonunu etkinleştir"
+  },
+  "popupTextDecorationTypeFieldName": {
+    "message": "Dekorasyon türü"
+  },
+  "popupDecorationColorFieldName": {
+    "message": "Dekorasyon rengi"
+  },
   "popupNewCustomUrl": {
     "message": "Yeni özel URL"
   },

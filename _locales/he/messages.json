@@ -20,6 +20,15 @@
   "popupTextShadowActivation": {
     "message": "הפעל צל טקסט"
   },
+  "popupTextDecorationActivation": {
+    "message": "הפעל עיטור טקסט"
+  },
+  "popupTextDecorationTypeFieldName": {
+    "message": "סוג קישוט"
+  },
+  "popupDecorationColorFieldName": {
+    "message": "צבע קישוט"
+  },
   "popupNewCustomUrl": {
     "message": "כתובת אתר מותאמת אישית חדשה"
   },

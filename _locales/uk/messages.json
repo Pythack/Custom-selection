@@ -20,6 +20,15 @@
   "popupTextShadowActivation": {
     "message": "Активувати тінь тексту"
   },
+  "popupTextDecorationActivation": {
+    "message": "Активувати декорування тексту"
+  },
+  "popupTextDecorationTypeFieldName": {
+    "message": "Вид декору"
+  },
+  "popupDecorationColorFieldName": {
+    "message": "Колір декору"
+  },
   "popupNewCustomUrl": {
     "message": "Нова спеціальна URL-адреса"
   },

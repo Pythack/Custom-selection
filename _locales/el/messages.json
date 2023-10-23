@@ -20,6 +20,15 @@
   "popupTextShadowActivation": {
     "message": "Ενεργοποίηση σκιάς κειμένου"
   },
+  "popupTextDecorationActivation": {
+    "message": "Ενεργοποίηση διακόσμησης κειμένου"
+  },
+  "popupTextDecorationTypeFieldName": {
+    "message": "Τύπος διακόσμησης"
+  },
+  "popupDecorationColorFieldName": {
+    "message": "Χρώμα διακόσμησης"
+  },
   "popupNewCustomUrl": {
     "message": "Νέα προσαρμοσμένη διεύθυνση url"
   },

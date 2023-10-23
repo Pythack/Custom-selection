@@ -1,6 +1,6 @@
 {
   "appName": {
-    "message": "Selección personalizada"
+    "message": "La selección personalizada"
   },
   "appDesc": {
     "message": "Personalice instantáneamente las selecciones de texto, mejorando su navegación con colores y sombras personalizados."
@@ -19,6 +19,15 @@
   },
   "popupTextShadowActivation": {
     "message": "Activar sombra de texto"
+  },
+  "popupTextDecorationActivation": {
+    "message": "Activar decoración de texto"
+  },
+  "popupTextDecorationTypeFieldName": {
+    "message": "Tipo de decoración"
+  },
+  "popupDecorationColorFieldName": {
+    "message": "Color de decoración"
   },
   "popupNewCustomUrl": {
     "message": "Nueva URL personalizada"

@@ -20,6 +20,15 @@
   "popupTextShadowActivation": {
     "message": "ٹیکسٹ شیڈو کو چالو کریں۔"
   },
+  "popupTextDecorationActivation": {
+    "message": "متن کی سجاوٹ کو چالو کریں۔"
+  },
+  "popupTextDecorationTypeFieldName": {
+    "message": "سجاوٹ کی قسم"
+  },
+  "popupDecorationColorFieldName": {
+    "message": "سجاوٹ کا رنگ"
+  },
   "popupNewCustomUrl": {
     "message": "نیا حسب ضرورت یو آر ایل"
   },

@@ -20,6 +20,15 @@
   "popupTextShadowActivation": {
     "message": "텍스트 그림자 활성화"
   },
+  "popupTextDecorationActivation": {
+    "message": "텍스트 장식 활성화"
+  },
+  "popupTextDecorationTypeFieldName": {
+    "message": "장식 유형"
+  },
+  "popupDecorationColorFieldName": {
+    "message": "장식 색상"
+  },
   "popupNewCustomUrl": {
     "message": "새로운 맞춤 URL"
   },
