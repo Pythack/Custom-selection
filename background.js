@@ -31,12 +31,12 @@ async function restoreOptions(tab) {
     storage.customOptions.forEach((element) => {
       if (matchRuleShort(url, element.url)) { // Compare custom setting's hostname with the tab's
         injected = true;
-        css = '::selection { background: ' + element.background + ' !important; color: ' + element.color + ((element.shadowActivated) ? ' !important; text-shadow: ' + element.shadowColor + ' 0px 0px ' + element.shadowBlur + 'px !important' : '') + '}';
+        css = '::selection { background: ' + element.background + ' !important; color: ' + element.color + ' !important;' + ((element.shadowActivated) ? 'text-shadow: ' + element.shadowColor + ' 0px 0px ' + element.shadowBlur + 'px !important;' : '') + ((element.decorationActivated) ? 'text-decoration: ' + element.decorationType + ' ' + element.decorationColor + ' !important;' : '') + '}';
       }
     });
   }
   if (!injected && storage.witness) { // If url didn't match any custom settings and the user already defined some settings (avoid injecting undefined values into CSS)
-    css = '::selection { background: ' + storage.background_color + ' !important; color: ' + storage.color + ((storage.shadowActivated) ? ' !important; text-shadow: ' + storage.shadowColor + ' 0px 0px ' + storage.shadowBlur + 'px !important' : '') + '}';
+    css = '::selection { background: ' + storage.background_color + ' !important; color: ' + storage.color + ' !important;' + ((storage.shadowActivated) ? 'text-shadow: ' + storage.shadowColor + ' 0px 0px ' + storage.shadowBlur + 'px !important;' : '') + ((storage.decorationActivated) ? 'text-decoration: ' + storage.decorationType + ' ' + storage.decorationColor + ' !important;' : '') + '}';
   }
   browser.scripting.insertCSS({
     target: {
@@ -113,17 +113,32 @@ chrome.runtime.onInstalled.addListener(async details => {
         shadowActivated: false,
         shadowColor: "#007EF3FF",
         shadowBlur: "0",
+        decorationActivated: false,
+        decorationType: "none",
+        decorationColor: "#007EF3FF",
         witness: true
       });
       break;
     case "update":
       var storage = await browser.storage.local.get(); // Get settings
+      if (!storage.hasOwnProperty('decorationActivated')) {
+        browser.storage.local.set({ // Set basic settings
+          decorationActivated: false,
+          decorationType: "none",
+          decorationColor: "#007EF3FF"
+        });
+      }
       if (storage.customOptions) { // If custom settings are defined
         var customs = storage.customOptions;
         customs.forEach((element) => {
           try {
             let cururl = new URL(element.url);
             element.url = cururl.host;
+            if (!element.hasOwnProperty('decorationActivated')) {
+              element.decorationActivated = false;
+              element.decorationType = "none";
+              element.decorationColor = "#007EF3FF";
+            }
           } catch (error) {
             
           }

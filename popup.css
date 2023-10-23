@@ -66,7 +66,7 @@ input {
   width: 70%;
 }
 
-#activate_textShadow {
+input[type="checkbox"] {
   background: rgba(12, 12, 13, 0.1);
   border: 1px rgba(12, 12, 13, 0.3);
   height: 16px;
@@ -74,11 +74,19 @@ input {
   width: 16px;
 }
 
-#activate_textShadow:checked {
+input[type="checkbox"]:checked {
   background: #0060df;
 }
 
 #textShadowOptions {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+#textDecorationOptions {
   display: none;
   justify-content: center;
   align-items: center;
@@ -236,7 +244,7 @@ input[type="url"]:placeholder-shown:focus {
   box-shadow: 0 0 15px rgb(200, 200, 200);
 }
 
-#formdivtxtsh {
+#formdivtxtdec {
   margin-bottom: 3cm;
 }
 
