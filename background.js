@@ -116,7 +116,7 @@ chrome.runtime.onInstalled.addListener(async details => {
   switch (details.reason) {
     case "install":
       browser.storage.local.set({ // Set basic settings
-        background_color: "#007EF380",
+        background_color: "#007EF333",
         color: "#007EF3FF",
         shadowActivated: false,
         shadowColor: "#007EF3FF",
