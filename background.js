@@ -31,20 +31,12 @@ async function restoreOptions(tab) {
     storage.customOptions.forEach((element) => {
       if (matchRuleShort(url, element.url)) { // Compare custom setting's hostname with the tab's
         injected = true;
-        if(element.shadowActivated) { // If the settings has text shadow activated
-          css = '::selection { background: ' + element.background + ' !important; color: ' + element.color + ' !important; text-shadow: ' + element.shadowColor + ' 0px 0px ' + element.shadowBlur + 'px !important}';
-        } else {
-          css = '::selection { background: ' + element.background + ' !important; color: ' + element.color + ' !important; text-shadow: none !important}';
-        }
+        css = '::selection { background: ' + element.background + ' !important; color: ' + element.color + ((element.shadowActivated) ? ' !important; text-shadow: ' + element.shadowColor + ' 0px 0px ' + element.shadowBlur + 'px !important' : '') + '}';
       }
     });
   }
   if (!injected && storage.witness) { // If url didn't match any custom settings and the user already defined some settings (avoid injecting undefined values into CSS)
-    if(storage.shadowActivated) { // If the settings has text shadow activated
-      css = '::selection { background: ' + storage.background_color + ' !important; color: ' + storage.color + ' !important; text-shadow: ' + storage.shadowColor + ' 0px 0px ' + storage.shadowBlur + 'px !important}';
-    } else {
-      css = '::selection { background: ' + storage.background_color + ' !important; color: ' + storage.color + ' !important; text-shadow: none !important}';
-    }
+    css = '::selection { background: ' + storage.background_color + ' !important; color: ' + storage.color + ((storage.shadowActivated) ? ' !important; text-shadow: ' + storage.shadowColor + ' 0px 0px ' + storage.shadowBlur + 'px !important' : '') + '}';
   }
   browser.scripting.insertCSS({
     target: {
