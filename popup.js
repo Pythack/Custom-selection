@@ -69,6 +69,9 @@ function addCustom() {
 		select.appendChild(optionToAdd); // Append new option to select
 		select.value = custom_url;
 		select.dispatchEvent(new Event('change'));
+		browser.runtime.sendMessage({ // Send message to background script asking to update the action icon
+			request: "update-action-icon"
+		});
 	}, onError);
 };
 
@@ -98,6 +101,9 @@ function removeCustom() {
 			document.querySelector('div#textShadowOptions').style.display = "none";
 		}
 		updatePreview(); // Update preview
+		browser.runtime.sendMessage({ // Send message to background script asking to update the action icon
+			request: "update-action-icon"
+		});
 	}, onError);
 };
 

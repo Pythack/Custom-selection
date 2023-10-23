@@ -96,6 +96,10 @@ browser.runtime.onMessage.addListener((message, sender) => {
             restoreOptions(tab); // Apply new settings in each tab
           });
         });
+      case "update-action-icon": // When the user adds a new custom setting
+        browser.tabs.query({ active: true, currentWindow: true }, tabs => {
+          update_action_icon({ tabId: tabs[0].id })// Update icon
+        });
         break;
       // case "display-notification": // When the user saves the settings (from popup)
       //     browser.notifications.create(message.notificationName, message.notification);
