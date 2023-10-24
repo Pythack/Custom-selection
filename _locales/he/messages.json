@@ -29,6 +29,21 @@
   "popupDecorationColorFieldName": {
     "message": "צבע קישוט"
   },
+  "popupTextDecorationUnderline": {
+    "message": "לָשִׂים דָגֵשׁ"
+  },
+  "popupTextDecorationOverline": {
+    "message": "קו-על"
+  },
+  "popupTextDecorationStrikeThrough": {
+    "message": "מחץ דרך"
+  },
+  "popupTextDecorationDotted": {
+    "message": "מְנוּקָד"
+  },
+  "popupTextDecorationWave": {
+    "message": "גַל"
+  },
   "popupNewCustomUrl": {
     "message": "כתובת אתר מותאמת אישית חדשה"
   },

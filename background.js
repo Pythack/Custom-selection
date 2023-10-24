@@ -114,7 +114,7 @@ chrome.runtime.onInstalled.addListener(async details => {
         shadowColor: "#007EF3FF",
         shadowBlur: "0",
         decorationActivated: false,
-        decorationType: "none",
+        decorationType: "underline",
         decorationColor: "#007EF3FF",
         witness: true
       });
@@ -124,7 +124,7 @@ chrome.runtime.onInstalled.addListener(async details => {
       if (!storage.hasOwnProperty('decorationActivated')) {
         browser.storage.local.set({ // Set basic settings
           decorationActivated: false,
-          decorationType: "none",
+          decorationType: "underline",
           decorationColor: "#007EF3FF"
         });
       }
@@ -136,7 +136,7 @@ chrome.runtime.onInstalled.addListener(async details => {
             element.url = cururl.host;
             if (!element.hasOwnProperty('decorationActivated')) {
               element.decorationActivated = false;
-              element.decorationType = "none";
+              element.decorationType = "underline";
               element.decorationColor = "#007EF3FF";
             }
           } catch (error) {

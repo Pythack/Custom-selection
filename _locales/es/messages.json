@@ -29,6 +29,21 @@
   "popupDecorationColorFieldName": {
     "message": "Color de decoración"
   },
+  "popupTextDecorationUnderline": {
+    "message": "Subrayar"
+  },
+  "popupTextDecorationOverline": {
+    "message": "sobrelínea"
+  },
+  "popupTextDecorationStrikeThrough": {
+    "message": "Tachado"
+  },
+  "popupTextDecorationDotted": {
+    "message": "Punteado"
+  },
+  "popupTextDecorationWave": {
+    "message": "Ola"
+  },
   "popupNewCustomUrl": {
     "message": "Nueva URL personalizada"
   },

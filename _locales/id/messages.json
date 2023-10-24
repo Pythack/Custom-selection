@@ -29,6 +29,21 @@
   "popupDecorationColorFieldName": {
     "message": "Warna dekorasi"
   },
+  "popupTextDecorationUnderline": {
+    "message": "Menggarisbawahi"
+  },
+  "popupTextDecorationOverline": {
+    "message": "garis besar"
+  },
+  "popupTextDecorationStrikeThrough": {
+    "message": "Coret"
+  },
+  "popupTextDecorationDotted": {
+    "message": "Burik"
+  },
+  "popupTextDecorationWave": {
+    "message": "Melambai"
+  },
   "popupNewCustomUrl": {
     "message": "Url khusus baru"
   },

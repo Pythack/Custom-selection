@@ -1,62 +1,77 @@
 {
   "appName": {
-    "message": "Индивидуальный выбор"
+    "message": "Özel seçim"
   },
   "appDesc": {
-    "message": "Мгновенно настраивайте выделенный текст, улучшая просмотр с помощью персонализированных цветов и теней."
+    "message": "Kişiselleştirilmiş renkler ve gölgelerle gezinme deneyiminizi geliştirerek metin seçimlerini anında özelleştirin."
   },
   "popupColorFieldName": {
-    "message": "Цвет"
+    "message": "Renk"
   },
   "popupBackgroundColorFieldName": {
-    "message": "Фоновый цвет"
+    "message": "Arka plan rengi"
   },
   "popupTextShadowColorFieldName": {
-    "message": "Цвет тени текста"
+    "message": "Metin gölge rengi"
   },
   "popupTextShadowBlurFieldName": {
-    "message": "Размытие тени текста (в пикселях)"
+    "message": "Metin gölgesi bulanıklığı (piksel cinsinden)"
   },
   "popupTextShadowActivation": {
-    "message": "Активировать тень текста"
+    "message": "Metin gölgesini etkinleştir"
   },
   "popupTextDecorationActivation": {
-    "message": "Активировать оформление текста"
+    "message": "Metin dekorasyonunu etkinleştir"
   },
   "popupTextDecorationTypeFieldName": {
-    "message": "Тип украшения"
+    "message": "Dekorasyon türü"
   },
   "popupDecorationColorFieldName": {
-    "message": "Цвет украшения"
+    "message": "Dekorasyon rengi"
+  },
+  "popupTextDecorationUnderline": {
+    "message": "Altını çizmek"
+  },
+  "popupTextDecorationOverline": {
+    "message": "Üst çizgi"
+  },
+  "popupTextDecorationStrikeThrough": {
+    "message": "Üstü çizili"
+  },
+  "popupTextDecorationDotted": {
+    "message": "Noktalı"
+  },
+  "popupTextDecorationWave": {
+    "message": "Dalga"
   },
   "popupNewCustomUrl": {
-    "message": "Новый пользовательский URL"
+    "message": "Yeni özel URL"
   },
   "popupAdd": {
-    "message": "Добавлять"
+    "message": "Eklemek"
   },
   "popupRemove": {
-    "message": "Удалять"
+    "message": "Kaldırmak"
   },
   "popupDefault": {
-    "message": "По умолчанию"
+    "message": "Varsayılan"
   },
   "popupPreview": {
-    "message": "Предварительный просмотр"
+    "message": "Ön izleme"
   },
   "popupSave": {
-    "message": "Сохранять"
+    "message": "Kaydetmek"
   },
   "notifSuccessTitle": {
-    "message": "Пользовательский выбор: сохранение успеха"
+    "message": "Özel seçim: Başarıyı kaydetme"
   },
   "notifSuccessContent": {
-    "message": "Настройки успешно сохранены"
+    "message": "Tercihler başarıyla kaydedildi"
   },
   "notifFailTitle": {
-    "message": "Пользовательский выбор: ошибка сохранения"
+    "message": "Özel seçim: Kaydetme hatası"
   },
   "notifFailContent": {
-    "message": "Ошибка сохранения настроек."
+    "message": "Tercihler kaydedilirken hata oluştu"
   }
 }

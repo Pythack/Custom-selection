@@ -29,6 +29,21 @@
   "popupDecorationColorFieldName": {
     "message": "لون الديكور"
   },
+  "popupTextDecorationUnderline": {
+    "message": "تسطير"
+  },
+  "popupTextDecorationOverline": {
+    "message": "خط علوي"
+  },
+  "popupTextDecorationStrikeThrough": {
+    "message": "الإضراب"
+  },
+  "popupTextDecorationDotted": {
+    "message": "منقط"
+  },
+  "popupTextDecorationWave": {
+    "message": "موجة"
+  },
   "popupNewCustomUrl": {
     "message": "عنوان URL مخصص جديد"
   },

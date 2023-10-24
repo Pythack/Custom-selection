@@ -29,6 +29,21 @@
   "popupDecorationColorFieldName": {
     "message": "সাজসজ্জার রঙ"
   },
+  "popupTextDecorationUnderline": {
+    "message": "আন্ডারলাইন করুন"
+  },
+  "popupTextDecorationOverline": {
+    "message": "ওভারলাইন"
+  },
+  "popupTextDecorationStrikeThrough": {
+    "message": "স্ট্রাইক-থ্রু"
+  },
+  "popupTextDecorationDotted": {
+    "message": "বিন্দুযুক্ত"
+  },
+  "popupTextDecorationWave": {
+    "message": "তরঙ্গ"
+  },
   "popupNewCustomUrl": {
     "message": "নতুন কাস্টম ইউআরএল"
   },

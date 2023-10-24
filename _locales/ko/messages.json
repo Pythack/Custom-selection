@@ -29,6 +29,21 @@
   "popupDecorationColorFieldName": {
     "message": "장식 색상"
   },
+  "popupTextDecorationUnderline": {
+    "message": "밑줄"
+  },
+  "popupTextDecorationOverline": {
+    "message": "윗줄"
+  },
+  "popupTextDecorationStrikeThrough": {
+    "message": "취소선"
+  },
+  "popupTextDecorationDotted": {
+    "message": "점이 찍힌"
+  },
+  "popupTextDecorationWave": {
+    "message": "파도"
+  },
   "popupNewCustomUrl": {
     "message": "새로운 맞춤 URL"
   },

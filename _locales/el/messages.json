@@ -29,6 +29,21 @@
   "popupDecorationColorFieldName": {
     "message": "Χρώμα διακόσμησης"
   },
+  "popupTextDecorationUnderline": {
+    "message": "Υπογραμμίζω"
+  },
+  "popupTextDecorationOverline": {
+    "message": "Overline"
+  },
+  "popupTextDecorationStrikeThrough": {
+    "message": "Strike-through"
+  },
+  "popupTextDecorationDotted": {
+    "message": "Διάσπαρτος"
+  },
+  "popupTextDecorationWave": {
+    "message": "Κύμα"
+  },
   "popupNewCustomUrl": {
     "message": "Νέα προσαρμοσμένη διεύθυνση url"
   },

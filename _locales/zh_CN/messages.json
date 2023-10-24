@@ -29,6 +29,21 @@
   "popupDecorationColorFieldName": {
     "message": "装修色彩"
   },
+  "popupTextDecorationUnderline": {
+    "message": "强调"
+  },
+  "popupTextDecorationOverline": {
+    "message": "上划线"
+  },
+  "popupTextDecorationStrikeThrough": {
+    "message": "删除线"
+  },
+  "popupTextDecorationDotted": {
+    "message": "点状"
+  },
+  "popupTextDecorationWave": {
+    "message": "海浪"
+  },
   "popupNewCustomUrl": {
     "message": "新的自定义网址"
   },

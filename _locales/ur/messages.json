@@ -29,6 +29,21 @@
   "popupDecorationColorFieldName": {
     "message": "سجاوٹ کا رنگ"
   },
+  "popupTextDecorationUnderline": {
+    "message": "انڈر لائن"
+  },
+  "popupTextDecorationOverline": {
+    "message": "اوور لائن"
+  },
+  "popupTextDecorationStrikeThrough": {
+    "message": "ہڑتال کے ذریعے"
+  },
+  "popupTextDecorationDotted": {
+    "message": "نقطے دار"
+  },
+  "popupTextDecorationWave": {
+    "message": "لہر"
+  },
   "popupNewCustomUrl": {
     "message": "نیا حسب ضرورت یو آر ایل"
   },

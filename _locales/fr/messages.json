@@ -29,6 +29,21 @@
   "popupDecorationColorFieldName": {
     "message": "Couleur de décoration"
   },
+  "popupTextDecorationUnderline": {
+    "message": "Souligner"
+  },
+  "popupTextDecorationOverline": {
+    "message": "Surligner"
+  },
+  "popupTextDecorationStrikeThrough": {
+    "message": "Barré"
+  },
+  "popupTextDecorationDotted": {
+    "message": "Pointillé"
+  },
+  "popupTextDecorationWave": {
+    "message": "Vague"
+  },
   "popupNewCustomUrl": {
     "message": "Nouvelle URL personnalisée"
   },
@@ -48,13 +63,13 @@
     "message": "Sauvegarder"
   },
   "notifSuccessTitle": {
-    "message": "Sélection personnalisée : Sauvegarder le succès"
+    "message": "Sélection personnalisée : Sauvegarder le succès"
   },
   "notifSuccessContent": {
     "message": "Préférences enregistrées avec succès"
   },
   "notifFailTitle": {
-    "message": "Sélection personnalisée : erreur d'enregistrement"
+    "message": "Sélection personnalisée : erreur d'enregistrement"
   },
   "notifFailContent": {
     "message": "Erreur lors de l'enregistrement des préférences"

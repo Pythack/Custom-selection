@@ -29,6 +29,21 @@
   "popupDecorationColorFieldName": {
     "message": "सजावट का रंग"
   },
+  "popupTextDecorationUnderline": {
+    "message": "रेखांकन"
+  },
+  "popupTextDecorationOverline": {
+    "message": "ओवरलाइन"
+  },
+  "popupTextDecorationStrikeThrough": {
+    "message": "स्ट्राइक-थ्रू"
+  },
+  "popupTextDecorationDotted": {
+    "message": "छितराया हुआ"
+  },
+  "popupTextDecorationWave": {
+    "message": "लहर"
+  },
   "popupNewCustomUrl": {
     "message": "नया कस्टम यूआरएल"
   },

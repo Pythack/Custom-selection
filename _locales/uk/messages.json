@@ -29,6 +29,21 @@
   "popupDecorationColorFieldName": {
     "message": "Колір декору"
   },
+  "popupTextDecorationUnderline": {
+    "message": "Підкреслити"
+  },
+  "popupTextDecorationOverline": {
+    "message": "Надкреслення"
+  },
+  "popupTextDecorationStrikeThrough": {
+    "message": "Закреслення"
+  },
+  "popupTextDecorationDotted": {
+    "message": "Пунктирний"
+  },
+  "popupTextDecorationWave": {
+    "message": "Хвиля"
+  },
   "popupNewCustomUrl": {
     "message": "Нова спеціальна URL-адреса"
   },

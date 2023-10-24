@@ -29,6 +29,21 @@
   "popupDecorationColorFieldName": {
     "message": "装飾色"
   },
+  "popupTextDecorationUnderline": {
+    "message": "下線"
+  },
+  "popupTextDecorationOverline": {
+    "message": "上線"
+  },
+  "popupTextDecorationStrikeThrough": {
+    "message": "取り消し線"
+  },
+  "popupTextDecorationDotted": {
+    "message": "点在"
+  },
+  "popupTextDecorationWave": {
+    "message": "波"
+  },
   "popupNewCustomUrl": {
     "message": "新しいカスタム URL"
   },

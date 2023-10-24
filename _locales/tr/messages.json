@@ -29,6 +29,21 @@
   "popupDecorationColorFieldName": {
     "message": "Dekorasyon rengi"
   },
+  "popupTextDecorationUnderline": {
+    "message": "Altını çizmek"
+  },
+  "popupTextDecorationOverline": {
+    "message": "Üst çizgi"
+  },
+  "popupTextDecorationStrikeThrough": {
+    "message": "Üstü çizili"
+  },
+  "popupTextDecorationDotted": {
+    "message": "Noktalı"
+  },
+  "popupTextDecorationWave": {
+    "message": "Dalga"
+  },
   "popupNewCustomUrl": {
     "message": "Yeni özel URL"
   },
