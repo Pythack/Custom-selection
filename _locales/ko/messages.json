@@ -24,7 +24,7 @@
     "message": "텍스트 장식 활성화"
   },
   "popupTextDecorationTypeFieldName": {
-    "message": "장식 유형"
+    "message": "장식 종류"
   },
   "popupDecorationColorFieldName": {
     "message": "장식 색상"
@@ -39,7 +39,7 @@
     "message": "취소선"
   },
   "popupTextDecorationDotted": {
-    "message": "점이 찍힌"
+    "message": "점이 찍힘"
   },
   "popupTextDecorationWave": {
     "message": "파도"
@@ -48,10 +48,10 @@
     "message": "새로운 맞춤 URL"
   },
   "popupAdd": {
-    "message": "추가하다"
+    "message": "추가"
   },
   "popupRemove": {
-    "message": "제거하다"
+    "message": "제거"
   },
   "popupDefault": {
     "message": "기본"
@@ -60,7 +60,7 @@
     "message": "시사"
   },
   "popupSave": {
-    "message": "구하다"
+    "message": "저장"
   },
   "notifSuccessTitle": {
     "message": "맞춤 선택: 저장 성공"
