@@ -3,7 +3,7 @@
     "message": "Özel seçim"
   },
   "appDesc": {
-    "message": "Kişiselleştirilmiş renkler ve gölgelerle gezinme deneyiminizi geliştirerek metin seçimlerini anında özelleştirin."
+    "message": "Kişiselleştirilmiş renkler, gölgeler ve süslemelerle gezinme deneyiminizi geliştirerek metin seçimlerinizi anında özelleştirin."
   },
   "popupColorFieldName": {
     "message": "Renk"
@@ -15,7 +15,7 @@
     "message": "Metin gölge rengi"
   },
   "popupTextShadowBlurFieldName": {
-    "message": "Metin gölgesi bulanıklığı (piksel cinsinden)"
+    "message": "Metin gölgesi bulanıklığı (piksel olarak)"
   },
   "popupTextShadowActivation": {
     "message": "Metin gölgesini etkinleştir"
