@@ -1,5 +1,8 @@
 if (typeof browser === "undefined") {
     var browser = chrome;
+	text_decoration = true;
+} else {
+	text_decoration = false;
 }
 
 function saveSuccess(item) {
@@ -225,6 +228,9 @@ function restoreOptions() {
 		select.dispatchEvent(new Event('change'));
 	}
  });
+ if (!text_decoration) {
+	document.querySelector("#formdivtxtdec").style.display = "none";
+ };
 };
 
 

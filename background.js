@@ -1,5 +1,43 @@
 if (typeof browser === "undefined") {
   var browser = chrome;
+  var browser_action = browser.action
+  function insertCSS(tabId, css) {
+    browser.scripting.insertCSS({
+      target: {
+        tabId: tabId,
+      },
+      css: css
+    }).then(result => {return;}, error => {console.log(error);});
+  };
+  function removeCSS(tabId, css) {
+    browser.scripting.removeCSS({
+      target: {
+        tabId: tabId,
+      },
+      css: css
+    }).catch(error => {return;});
+  };
+} else {
+  var browser_action = browser.browserAction
+  function insertCSS(tabId, css) {
+    browser.tabs.insertCSS(tabId, {
+      code: css,
+    }).then(
+      () => {
+        return;
+      },
+      (error) => {
+        console.error(error);
+      }
+    );
+  };
+  function removeCSS(tabId, css) {
+    browser.tabs.removeCSS(tabId, {
+      code: css,
+    }).catch((error) => {
+      console.error(error);
+    });
+  };
 }
 
 var localstorage = new Object(); // Initialize a local storage
@@ -16,12 +54,7 @@ function matchRuleShort(str, rule) {
 async function restoreOptions(tab) {
   var storage = await browser.storage.local.get(); // Get settings
   if (localstorage[tab.id]) { // If extension already injected CSS in this tab, remove it
-    browser.scripting.removeCSS({
-      target: {
-        tabId: tab.id,
-      },
-      css: localstorage[tab.id]
-    }).catch(error => {return;});
+    removeCSS(tab.id, localstorage[tab.id])
   }
   var css;
   var url = new URL(tab.url);
@@ -35,15 +68,12 @@ async function restoreOptions(tab) {
       }
     });
   }
-  if (!injected && storage.witness) { // If url didn't match any custom settings and the user already defined some settings (avoid injecting undefined values into CSS)
+  if (!injected && storage.witness && !/^((chrome:\/\/|chrome-extension:\/\/|about:).*|$|https:\/\/chrome\.google\.com\/webstore.*|https:\/\/addons\.mozilla\.org.*)/.test(tab.url)) { // If url didn't match any custom settings and the user already defined some settings (avoid injecting undefined values into CSS)
     css = '::selection { background: ' + storage.background_color + ' !important; color: ' + storage.color + ' !important;' + ((storage.shadowActivated) ? 'text-shadow: ' + storage.shadowColor + ' 0px 0px ' + storage.shadowBlur + 'px !important;' : '') + ((storage.decorationActivated) ? 'text-decoration: ' + storage.decorationType + ' ' + storage.decorationColor + ' !important;' : '') + '}';
   }
-  browser.scripting.insertCSS({
-    target: {
-      tabId: tab.id,
-    },
-    css: css
-  }).then(result => {return;}, error => {console.log(error);});
+  if (css) {
+    insertCSS(tab.id, css);
+  }
   localstorage[tab.id] = css; // Store the injected CSS into local storage so that we can remove it later
 }
 
@@ -51,7 +81,7 @@ async function update_action_icon(tabin) {
   var tab = await browser.tabs.get(tabin.tabId); // Get the tab from the id
   var storage = await browser.storage.local.get(); // Get settings
   if (/^((chrome:\/\/|chrome-extension:\/\/|about:).*|$|https:\/\/chrome\.google\.com\/webstore.*|https:\/\/addons\.mozilla\.org.*)/.test(tab.url)) { // If tab is on chrome://, about:// or on the chrome web store
-    browser.action.setIcon({path: './images/icondisabled.png'}); // Set the icon to disabled (grey)
+    browser_action.setIcon({path: './images/icondisabled.png'}); // Set the icon to disabled (grey)
     return; // Abort
   }
   try {
@@ -64,12 +94,12 @@ async function update_action_icon(tabin) {
     storage.customOptions.forEach((element) => { // For each custom setting
       if (matchRuleShort(taburl.host, element.url)) { // If the custom setting's url matches the hostname
         injected = true;
-        browser.action.setIcon({path: './images/iconcustom.png'}); // Set to custom icon (yellow)
+        browser_action.setIcon({path: './images/iconcustom.png'}); // Set to custom icon (yellow)
       }
     });
   }
   if (!injected) { // If the default settings are applied
-    browser.action.setIcon({path: './images/icon.png'}); // Set to the default icon (blue)
+    browser_action.setIcon({path: './images/icon.png'}); // Set to the default icon (blue)
   }
 }
 
@@ -104,7 +134,7 @@ browser.runtime.onMessage.addListener((message, sender) => {
     
 browser.tabs.onActivated.addListener(update_action_icon); // When the active tab has changed: update icon
 
-chrome.runtime.onInstalled.addListener(async details => {
+browser.runtime.onInstalled.addListener(async details => {
   switch (details.reason) {
     case "install":
       browser.storage.local.set({ // Set basic settings
@@ -153,4 +183,4 @@ chrome.runtime.onInstalled.addListener(async details => {
   }
 });
 
-chrome.runtime.setUninstallURL("https://forms.gle/uRLUAXrwUa7bbBRH8");
+browser.runtime.setUninstallURL("https://forms.gle/uRLUAXrwUa7bbBRH8");
