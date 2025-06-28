@@ -3,7 +3,7 @@
     "message": "맞춤 선택"
   },
   "appDesc": {
-    "message": "텍스트 선택 항목을 즉시 사용자 정의하고 개인화된 색상, 그림자 및 장식으로 탐색 기능을 향상합니다."
+    "message": "텍스트 선택 항목을 즉시 사용자 정의하고 개인화된 색상, 그림자 및 장식으로 브라우징 경험을 향상합니다."
   },
   "popupColorFieldName": {
     "message": "색상"
@@ -15,7 +15,7 @@
     "message": "텍스트 그림자 색상"
   },
   "popupTextShadowBlurFieldName": {
-    "message": "텍스트 그림자 흐림(픽셀 단위)"
+    "message": "텍스트 그림자 흐림 (픽셀 단위)"
   },
   "popupTextShadowActivation": {
     "message": "텍스트 그림자 활성화"
@@ -39,10 +39,10 @@
     "message": "취소선"
   },
   "popupTextDecorationDotted": {
-    "message": "점이 찍힘"
+    "message": "점선"
   },
   "popupTextDecorationWave": {
-    "message": "파도"
+    "message": "물결선"
   },
   "popupNewCustomUrl": {
     "message": "새로운 맞춤 URL"
@@ -57,7 +57,7 @@
     "message": "기본"
   },
   "popupPreview": {
-    "message": "시사"
+    "message": "미리보기"
   },
   "popupSave": {
     "message": "저장"
