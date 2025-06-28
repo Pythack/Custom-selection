@@ -3,7 +3,7 @@
     "message": "カスタム選択"
   },
   "appDesc": {
-    "message": "テキストの選択を即座にカスタマイズし、パーソナライズされた色、影、装飾でブラウジングを強化します。"
+    "message": "テキスト選択を即座にカスタマイズし、パーソナライズされた色、影、装飾でブラウジングを強化します。"
   },
   "popupColorFieldName": {
     "message": "色"
@@ -12,10 +12,10 @@
     "message": "背景色"
   },
   "popupTextShadowColorFieldName": {
-    "message": "文字の影の色"
+    "message": "テキストシャドウの色"
   },
   "popupTextShadowBlurFieldName": {
-    "message": "テキストの影のぼかし (ピクセル単位)"
+    "message": "テキストシャドウのぼかし（ピクセル単位）"
   },
   "popupTextShadowActivation": {
     "message": "テキストシャドウを有効にする"
@@ -39,19 +39,19 @@
     "message": "取り消し線"
   },
   "popupTextDecorationDotted": {
-    "message": "点在"
+    "message": "点線"
   },
   "popupTextDecorationWave": {
-    "message": "波"
+    "message": "波線"
   },
   "popupNewCustomUrl": {
-    "message": "新しいカスタム URL"
+    "message": "新しいカスタムURL"
   },
   "popupAdd": {
     "message": "追加"
   },
   "popupRemove": {
-    "message": "取り除く"
+    "message": "削除"
   },
   "popupDefault": {
     "message": "デフォルト"
@@ -63,13 +63,13 @@
     "message": "保存"
   },
   "notifSuccessTitle": {
-    "message": "カスタム選択: 保存成功"
+    "message": "カスタム選択：保存成功"
   },
   "notifSuccessContent": {
     "message": "設定が正常に保存されました"
   },
   "notifFailTitle": {
-    "message": "カスタム選択: 保存エラー"
+    "message": "カスタム選択：保存エラー"
   },
   "notifFailContent": {
     "message": "設定の保存中にエラーが発生しました"
