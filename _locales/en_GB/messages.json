@@ -1,0 +1,77 @@
+{
+  "appName": {
+    "message": "Custom selection"
+  },
+  "appDesc": {
+    "message": "Instantly customise text selections, enhancing your browsing with personalised colours, shadows, and decorations."
+  },
+  "popupColorFieldName": {
+    "message": "Colour"
+  },
+  "popupBackgroundColorFieldName": {
+    "message": "Background colour"
+  },
+  "popupTextShadowColorFieldName": {
+    "message": "Text shadow colour"
+  },
+  "popupTextShadowBlurFieldName": {
+    "message": "Text shadow blur (in pixels)"
+  },
+  "popupTextShadowActivation": {
+    "message": "Activate text shadow"
+  },
+  "popupTextDecorationActivation": {
+    "message": "Activate text decoration"
+  },
+  "popupTextDecorationTypeFieldName": {
+    "message": "Decoration type"
+  },
+  "popupDecorationColorFieldName": {
+    "message": "Decoration colour"
+  },
+  "popupTextDecorationUnderline": {
+    "message": "Underline"
+  },
+  "popupTextDecorationOverline": {
+    "message": "Overline"
+  },
+  "popupTextDecorationStrikeThrough": {
+    "message": "Strike-through"
+  },
+  "popupTextDecorationDotted": {
+    "message": "Dotted"
+  },
+  "popupTextDecorationWave": {
+    "message": "Wave"
+  },
+  "popupNewCustomUrl": {
+    "message": "New custom url"
+  },
+  "popupAdd": {
+    "message": "Add"
+  },
+  "popupRemove": {
+    "message": "Remove"
+  },
+  "popupDefault": {
+    "message": "Default"
+  },
+  "popupPreview": {
+    "message": "Preview"
+  },
+  "popupSave": {
+    "message": "Save"
+  },
+  "notifSuccessTitle": {
+    "message": "Custom selection: Saving success"
+  },
+  "notifSuccessContent": {
+    "message": "Preferences saved successfully"
+  },
+  "notifFailTitle": {
+    "message": "Custom selection: Saving error"
+  },
+  "notifFailContent": {
+    "message": "Error saving preferences"
+  }
+}
