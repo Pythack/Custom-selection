@@ -3,7 +3,7 @@
     "message": "Selezione personalizzata"
   },
   "appDesc": {
-    "message": "Personalizza istantaneamente le selezioni di testo, migliorando la tua navigazione con colori, ombre e decorazioni personalizzate."
+    "message": "Personalizza istantaneamente le selezioni di testo, migliorando l'esperienza di navigazione con colori, ombre e decorazioni personalizzate."
   },
   "popupColorFieldName": {
     "message": "Colore"
@@ -12,28 +12,28 @@
     "message": "Colore di sfondo"
   },
   "popupTextShadowColorFieldName": {
-    "message": "Colore dell'ombra del testo"
+    "message": "Colore ombra testo"
   },
   "popupTextShadowBlurFieldName": {
-    "message": "Sfocatura dell'ombra del testo (in pixel)"
+    "message": "Sfocatura ombra testo (in pixel)"
   },
   "popupTextShadowActivation": {
-    "message": "Attiva l'ombra del testo"
+    "message": "Attiva ombra testo"
   },
   "popupTextDecorationActivation": {
-    "message": "Attiva la decorazione del testo"
+    "message": "Attiva decorazione testo"
   },
   "popupTextDecorationTypeFieldName": {
     "message": "Tipo di decorazione"
   },
   "popupDecorationColorFieldName": {
-    "message": "Colore della decorazione"
+    "message": "Colore decorazione"
   },
   "popupTextDecorationUnderline": {
-    "message": "Sottolineare"
+    "message": "Sottolineatura"
   },
   "popupTextDecorationOverline": {
-    "message": "Sopralineato"
+    "message": "Sopralinea"
   },
   "popupTextDecorationStrikeThrough": {
     "message": "Barrato"
@@ -42,16 +42,16 @@
     "message": "Punteggiato"
   },
   "popupTextDecorationWave": {
-    "message": "Onda"
+    "message": "Linea ondulata"
   },
   "popupNewCustomUrl": {
     "message": "Nuovo URL personalizzato"
   },
   "popupAdd": {
-    "message": "Aggiungere"
+    "message": "Aggiungi"
   },
   "popupRemove": {
-    "message": "Rimuovere"
+    "message": "Rimuovi"
   },
   "popupDefault": {
     "message": "Predefinito"
@@ -63,7 +63,7 @@
     "message": "Salva"
   },
   "notifSuccessTitle": {
-    "message": "Selezione personalizzata: salvataggio del successo"
+    "message": "Selezione personalizzata: salvataggio riuscito"
   },
   "notifSuccessContent": {
     "message": "Preferenze salvate con successo"
