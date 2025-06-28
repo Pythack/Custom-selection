@@ -1,9 +1,9 @@
 {
   "appName": {
-    "message": "Индивидуальный выбор"
+    "message": "Пользовательский выбор"
   },
   "appDesc": {
-    "message": "Мгновенно настраивайте выделенный текст, улучшая просмотр с помощью персонализированных цветов, теней и украшений."
+    "message": "Мгновенно настраивайте выделение текста, улучшая веб-просмотр с помощью персонализированных цветов, теней и декораций."
   },
   "popupColorFieldName": {
     "message": "Цвет"
@@ -24,13 +24,13 @@
     "message": "Активировать оформление текста"
   },
   "popupTextDecorationTypeFieldName": {
-    "message": "Тип украшения"
+    "message": "Тип декорации"
   },
   "popupDecorationColorFieldName": {
-    "message": "Цвет украшения"
+    "message": "Цвет декорации"
   },
   "popupTextDecorationUnderline": {
-    "message": "Подчеркнуть"
+    "message": "Подчеркивание"
   },
   "popupTextDecorationOverline": {
     "message": "Надчеркивание"
@@ -39,19 +39,19 @@
     "message": "Зачеркивание"
   },
   "popupTextDecorationDotted": {
-    "message": "Пунктирный"
+    "message": "Пунктирная линия"
   },
   "popupTextDecorationWave": {
-    "message": "Волна"
+    "message": "Волнистая линия"
   },
   "popupNewCustomUrl": {
     "message": "Новый пользовательский URL"
   },
   "popupAdd": {
-    "message": "Добавлять"
+    "message": "Добавить"
   },
   "popupRemove": {
-    "message": "Удалять"
+    "message": "Удалить"
   },
   "popupDefault": {
     "message": "По умолчанию"
@@ -60,10 +60,10 @@
     "message": "Предварительный просмотр"
   },
   "popupSave": {
-    "message": "Сохранять"
+    "message": "Сохранить"
   },
   "notifSuccessTitle": {
-    "message": "Пользовательский выбор: сохранение успеха"
+    "message": "Пользовательский выбор: успешно сохранено"
   },
   "notifSuccessContent": {
     "message": "Настройки успешно сохранены"
@@ -72,6 +72,6 @@
     "message": "Пользовательский выбор: ошибка сохранения"
   },
   "notifFailContent": {
-    "message": "Ошибка сохранения настроек."
+    "message": "Ошибка сохранения настроек"
   }
 }
