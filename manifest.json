@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "__MSG_appName__",
-  "author": "Pythack",
+  "author": "Noé Manwaring-Favennec",
   "default_locale": "en_US",
   "version": "2.2.0",
   "description": "__MSG_appDesc__",
