@@ -62,6 +62,9 @@
   "popupSave": {
     "message": "يحفظ"
   },
+  "popupThemeLibrary": {
+    "message": "تصفح المظاهر"
+  },
   "notifSuccessTitle": {
     "message": "التحديد المخصص: حفظ النجاح"
   },

@@ -62,6 +62,9 @@
   "popupSave": {
     "message": "Kaydetmek"
   },
+  "popupThemeLibrary": {
+    "message": "Temalara göz at"
+  },
   "notifSuccessTitle": {
     "message": "Özel seçim: Başarıyı kaydetme"
   },

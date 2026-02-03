@@ -62,6 +62,9 @@
   "popupSave": {
     "message": "зберегти"
   },
+  "popupThemeLibrary": {
+    "message": "Перегляд тем"
+  },
   "notifSuccessTitle": {
     "message": "Спеціальний вибір: збереження успіху"
   },

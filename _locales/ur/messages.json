@@ -62,6 +62,9 @@
   "popupSave": {
     "message": "محفوظ کریں۔"
   },
+  "popupThemeLibrary": {
+    "message": "تھیمز براؤز کریں"
+  },
   "notifSuccessTitle": {
     "message": "حسب ضرورت انتخاب: کامیابی کی بچت"
   },

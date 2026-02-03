@@ -62,6 +62,9 @@
   "popupSave": {
     "message": "节省"
   },
+  "popupThemeLibrary": {
+    "message": "浏览主题"
+  },
   "notifSuccessTitle": {
     "message": "自定义选择：保存成功"
   },

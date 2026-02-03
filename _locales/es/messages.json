@@ -62,6 +62,9 @@
   "popupSave": {
     "message": "Ahorrar"
   },
+  "popupThemeLibrary": {
+    "message": "Explorar temas"
+  },
   "notifSuccessTitle": {
     "message": "Selección personalizada: ahorro exitoso"
   },

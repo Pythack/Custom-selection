@@ -62,6 +62,9 @@
   "popupSave": {
     "message": "সংরক্ষণ"
   },
+  "popupThemeLibrary": {
+    "message": "থিম ব্রাউজ করুন"
+  },
   "notifSuccessTitle": {
     "message": "কাস্টম নির্বাচন: সাফল্য সংরক্ষণ"
   },

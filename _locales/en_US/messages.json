@@ -62,6 +62,9 @@
   "popupSave": {
     "message": "Save"
   },
+  "popupThemeLibrary": {
+    "message": "Browse themes"
+  },
   "notifSuccessTitle": {
     "message": "Custom selection: Saving success"
   },

@@ -62,6 +62,9 @@
   "popupSave": {
     "message": "बचाना"
   },
+  "popupThemeLibrary": {
+    "message": "थीम ब्राउज़ करें"
+  },
   "notifSuccessTitle": {
     "message": "कस्टम चयन: सफलता सहेजा जा रहा है"
   },

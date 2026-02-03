@@ -62,6 +62,9 @@
   "popupSave": {
     "message": "Сохранить"
   },
+  "popupThemeLibrary": {
+    "message": "Обзор тем"
+  },
   "notifSuccessTitle": {
     "message": "Пользовательский выбор: успешно сохранено"
   },

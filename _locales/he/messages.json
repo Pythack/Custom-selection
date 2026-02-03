@@ -62,6 +62,9 @@
   "popupSave": {
     "message": "להציל"
   },
+  "popupThemeLibrary": {
+    "message": "עיון בערכות נושא"
+  },
   "notifSuccessTitle": {
     "message": "בחירה מותאמת אישית: הצלת הצלחות"
   },

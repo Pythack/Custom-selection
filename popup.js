@@ -358,3 +358,62 @@ document.querySelector("input#activate_textShadow").addEventListener("change", u
 document.querySelector("select#custom_select").addEventListener("change", changeCustomDisplay);
 document.querySelector("input#activate_textShadow").addEventListener("change", updateShadowColorDisplay);
 document.querySelector("input#activate_textDecoration").addEventListener("change", updateDecorationDisplay);
+document.addEventListener("paste", (e) => {
+	const t = e.target;
+	const isEditable = t instanceof HTMLInputElement || t instanceof HTMLTextAreaElement || (t && t.isContentEditable);
+	if (!isEditable) {
+		e.preventDefault();
+		const clipboardData = e.clipboardData || window.clipboardData;
+        if (!clipboardData) return; 
+
+        const clipboardText = clipboardData.getData("text") || "";
+		// attempt to parse json
+		try {
+			const json = JSON.parse(clipboardText);
+			if (json) {
+				if (json.color) {
+					document.querySelector("#color").jscolor.fromString("FFFFFFFF");
+					document.querySelector("#color").jscolor.fromString(json.color);
+				}
+				if (json.background_color) {
+					document.querySelector("#background_color").jscolor.fromString("FFFFFFFF");
+					document.querySelector("#background_color").jscolor.fromString(json.background_color);
+				}
+				if (json.shadowActivated !== undefined) {
+					document.querySelector("input#activate_textShadow").checked = json.shadowActivated;
+					if (json.shadowActivated) {
+						document.querySelector('div#textShadowOptions').style.display = "flex";
+					} else {
+						document.querySelector('div#textShadowOptions').style.display = "none";
+					}
+				}
+				if (json.shadowColor) {
+					document.querySelector("#shadow-color").jscolor.fromString("FFFFFFFF");
+					document.querySelector("#shadow-color").jscolor.fromString(json.shadowColor);
+				}
+				if (json.shadowBlur) {
+					document.querySelector("#shadow-blur").value = json.shadowBlur;
+				}
+				if (json.decorationActivated !== undefined) {
+					document.querySelector("input#activate_textDecoration").checked = json.decorationActivated;
+					if (json.decorationActivated) {
+						document.querySelector('div#textDecorationOptions').style.display = "flex";
+					} else {
+						document.querySelector('div#textDecorationOptions').style.display = "none";
+					}
+				}
+				if (json.decorationType) {
+					document.querySelector("#decoration_select").value = json.decorationType;
+				}
+				if (json.decorationColor) {
+					document.querySelector("#decoration-color").jscolor.fromString("FFFFFFFF");
+					document.querySelector("#decoration-color").jscolor.fromString(json.decorationColor);
+				}
+				updatePreview();
+				return;
+			}
+		} catch (err) {
+			// not json
+		}
+	}
+});

@@ -62,6 +62,9 @@
   "popupSave": {
     "message": "Speichern"
   },
+  "popupThemeLibrary": {
+    "message": "Themen durchsuchen"
+  },
   "notifSuccessTitle": {
     "message": "Benutzerdefinierte Auswahl: Erfolg speichern"
   },

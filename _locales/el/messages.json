@@ -62,6 +62,9 @@
   "popupSave": {
     "message": "Αποθηκεύσετε"
   },
+  "popupThemeLibrary": {
+    "message": "Περιήγηση στα θέματα"
+  },
   "notifSuccessTitle": {
     "message": "Προσαρμοσμένη επιλογή: Αποθήκευση επιτυχίας"
   },
