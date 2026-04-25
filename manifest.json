@@ -3,7 +3,7 @@
   "name": "__MSG_appName__",
   "author": "Noé Manwaring-Favennec",
   "default_locale": "en_US",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "__MSG_appDesc__",
   "background": {
     "service_worker": "./background.js"
